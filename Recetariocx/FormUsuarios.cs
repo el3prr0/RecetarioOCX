@@ -38,7 +38,7 @@ namespace Recetariocx
 
                 if (await _usuarioRepository.Add(new Login { Nombre = txtNombre.Text.Trim(), Telefono = txtTelefono.Text.Trim(), Correo = txtCorreo.Text.Trim(), Password = txtPassword.Text.Trim(), Usuario = txtUsuario.Text.Trim() }))
                 {
-                    MetroFramework.MetroMessageBox.Show(this, "Se Agrego Ingrediente");
+                    MetroFramework.MetroMessageBox.Show(this, "Se Agrego Usuario");
                 }
                 else
                 {
@@ -63,7 +63,7 @@ namespace Recetariocx
 
                 if (await _usuarioRepository.Save(new Login { Nombre = txtNombre.Text.Trim(), Telefono = txtTelefono.Text.Trim(), Id = _id, Correo = txtCorreo.Text.Trim(),Password = txtPassword.Text.Trim(),Usuario = txtUsuario.Text.Trim() }))
                 {
-                    MetroFramework.MetroMessageBox.Show(this, "Se Agrego Usuario");
+                    MetroFramework.MetroMessageBox.Show(this, "Se Modifico Usuario");
                 }
                 else
                 {

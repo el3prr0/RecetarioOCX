@@ -15,6 +15,8 @@ namespace Logic.Models
         public int Orden { get; set; } = 0;
 
         public bool Activo { get; set; }
+
+        public string PasoDB { get; set; }
         public string Paso { get => _paso.Contains("Paso")? _paso: $"Paso {Orden}:" +_paso ; set => _paso = value; }
     }
 }

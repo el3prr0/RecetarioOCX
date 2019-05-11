@@ -45,27 +45,27 @@
             // 
             // pbImagen1
             // 
-            this.pbImagen1.Location = new System.Drawing.Point(39, 133);
+            this.pbImagen1.Location = new System.Drawing.Point(36, 147);
             this.pbImagen1.Name = "pbImagen1";
-            this.pbImagen1.Size = new System.Drawing.Size(151, 114);
+            this.pbImagen1.Size = new System.Drawing.Size(178, 146);
             this.pbImagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen1.TabIndex = 128;
             this.pbImagen1.TabStop = false;
             // 
             // pbImagen2
             // 
-            this.pbImagen2.Location = new System.Drawing.Point(294, 133);
+            this.pbImagen2.Location = new System.Drawing.Point(287, 147);
             this.pbImagen2.Name = "pbImagen2";
-            this.pbImagen2.Size = new System.Drawing.Size(151, 114);
+            this.pbImagen2.Size = new System.Drawing.Size(178, 146);
             this.pbImagen2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen2.TabIndex = 129;
             this.pbImagen2.TabStop = false;
             // 
             // pbImagen3
             // 
-            this.pbImagen3.Location = new System.Drawing.Point(554, 133);
+            this.pbImagen3.Location = new System.Drawing.Point(549, 147);
             this.pbImagen3.Name = "pbImagen3";
-            this.pbImagen3.Size = new System.Drawing.Size(151, 114);
+            this.pbImagen3.Size = new System.Drawing.Size(178, 146);
             this.pbImagen3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen3.TabIndex = 130;
             this.pbImagen3.TabStop = false;
@@ -80,9 +80,9 @@
             // 
             // btnAgregar1
             // 
-            this.btnAgregar1.Location = new System.Drawing.Point(39, 81);
+            this.btnAgregar1.Location = new System.Drawing.Point(39, 105);
             this.btnAgregar1.Name = "btnAgregar1";
-            this.btnAgregar1.Size = new System.Drawing.Size(151, 46);
+            this.btnAgregar1.Size = new System.Drawing.Size(173, 25);
             this.btnAgregar1.TabIndex = 137;
             this.btnAgregar1.Text = "Agregar";
             this.btnAgregar1.UseSelectable = true;
@@ -90,9 +90,9 @@
             // 
             // btnAgregar2
             // 
-            this.btnAgregar2.Location = new System.Drawing.Point(294, 81);
+            this.btnAgregar2.Location = new System.Drawing.Point(291, 105);
             this.btnAgregar2.Name = "btnAgregar2";
-            this.btnAgregar2.Size = new System.Drawing.Size(151, 46);
+            this.btnAgregar2.Size = new System.Drawing.Size(173, 26);
             this.btnAgregar2.TabIndex = 138;
             this.btnAgregar2.Text = "Agregar";
             this.btnAgregar2.UseSelectable = true;
@@ -100,9 +100,9 @@
             // 
             // btnAgregar3
             // 
-            this.btnAgregar3.Location = new System.Drawing.Point(554, 81);
+            this.btnAgregar3.Location = new System.Drawing.Point(552, 105);
             this.btnAgregar3.Name = "btnAgregar3";
-            this.btnAgregar3.Size = new System.Drawing.Size(151, 46);
+            this.btnAgregar3.Size = new System.Drawing.Size(173, 26);
             this.btnAgregar3.TabIndex = 139;
             this.btnAgregar3.Text = "Agregar";
             this.btnAgregar3.UseSelectable = true;
@@ -110,9 +110,9 @@
             // 
             // btnEliminar1
             // 
-            this.btnEliminar1.Location = new System.Drawing.Point(39, 268);
+            this.btnEliminar1.Location = new System.Drawing.Point(39, 311);
             this.btnEliminar1.Name = "btnEliminar1";
-            this.btnEliminar1.Size = new System.Drawing.Size(151, 46);
+            this.btnEliminar1.Size = new System.Drawing.Size(172, 25);
             this.btnEliminar1.TabIndex = 140;
             this.btnEliminar1.Text = "Eliminar";
             this.btnEliminar1.UseSelectable = true;
@@ -120,9 +120,9 @@
             // 
             // btnEliminar2
             // 
-            this.btnEliminar2.Location = new System.Drawing.Point(294, 268);
+            this.btnEliminar2.Location = new System.Drawing.Point(290, 311);
             this.btnEliminar2.Name = "btnEliminar2";
-            this.btnEliminar2.Size = new System.Drawing.Size(151, 46);
+            this.btnEliminar2.Size = new System.Drawing.Size(172, 26);
             this.btnEliminar2.TabIndex = 141;
             this.btnEliminar2.Text = "Eliminar";
             this.btnEliminar2.UseSelectable = true;
@@ -130,9 +130,9 @@
             // 
             // btnEliminar3
             // 
-            this.btnEliminar3.Location = new System.Drawing.Point(554, 268);
+            this.btnEliminar3.Location = new System.Drawing.Point(552, 311);
             this.btnEliminar3.Name = "btnEliminar3";
-            this.btnEliminar3.Size = new System.Drawing.Size(151, 46);
+            this.btnEliminar3.Size = new System.Drawing.Size(173, 26);
             this.btnEliminar3.TabIndex = 142;
             this.btnEliminar3.Text = "Eliminar";
             this.btnEliminar3.UseSelectable = true;
@@ -142,7 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 450);
+            this.ClientSize = new System.Drawing.Size(778, 422);
             this.Controls.Add(this.btnEliminar3);
             this.Controls.Add(this.btnEliminar2);
             this.Controls.Add(this.btnEliminar1);

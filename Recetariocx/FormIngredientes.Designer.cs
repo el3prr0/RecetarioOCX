@@ -48,24 +48,25 @@
             // 
             // nmCantidad
             // 
-            this.nmCantidad.Location = new System.Drawing.Point(278, 312);
+            this.nmCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmCantidad.Location = new System.Drawing.Point(244, 315);
             this.nmCantidad.Name = "nmCantidad";
-            this.nmCantidad.Size = new System.Drawing.Size(81, 20);
+            this.nmCantidad.Size = new System.Drawing.Size(62, 24);
             this.nmCantidad.TabIndex = 111;
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(120, 289);
+            this.metroLabel1.Location = new System.Drawing.Point(47, 289);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(59, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(151, 19);
             this.metroLabel1.TabIndex = 116;
-            this.metroLabel1.Text = "Nombre";
+            this.metroLabel1.Text = "Nombre del Ingrediente";
             // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(278, 289);
+            this.metroLabel2.Location = new System.Drawing.Point(241, 289);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(62, 19);
             this.metroLabel2.TabIndex = 117;
@@ -74,7 +75,7 @@
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(384, 289);
+            this.metroLabel3.Location = new System.Drawing.Point(326, 289);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(51, 19);
             this.metroLabel3.TabIndex = 118;
@@ -87,7 +88,7 @@
             // 
             // 
             this.txtIngredienteNombre.CustomButton.Image = null;
-            this.txtIngredienteNombre.CustomButton.Location = new System.Drawing.Point(113, 1);
+            this.txtIngredienteNombre.CustomButton.Location = new System.Drawing.Point(160, 1);
             this.txtIngredienteNombre.CustomButton.Name = "";
             this.txtIngredienteNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtIngredienteNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -96,7 +97,7 @@
             this.txtIngredienteNombre.CustomButton.UseSelectable = true;
             this.txtIngredienteNombre.CustomButton.Visible = false;
             this.txtIngredienteNombre.Lines = new string[0];
-            this.txtIngredienteNombre.Location = new System.Drawing.Point(120, 311);
+            this.txtIngredienteNombre.Location = new System.Drawing.Point(50, 315);
             this.txtIngredienteNombre.MaxLength = 32767;
             this.txtIngredienteNombre.Name = "txtIngredienteNombre";
             this.txtIngredienteNombre.PasswordChar = '\0';
@@ -105,7 +106,7 @@
             this.txtIngredienteNombre.SelectionLength = 0;
             this.txtIngredienteNombre.SelectionStart = 0;
             this.txtIngredienteNombre.ShortcutsEnabled = true;
-            this.txtIngredienteNombre.Size = new System.Drawing.Size(135, 23);
+            this.txtIngredienteNombre.Size = new System.Drawing.Size(182, 23);
             this.txtIngredienteNombre.TabIndex = 119;
             this.txtIngredienteNombre.UseSelectable = true;
             this.txtIngredienteNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -115,15 +116,15 @@
             // 
             this.cbUnidad.FormattingEnabled = true;
             this.cbUnidad.ItemHeight = 23;
-            this.cbUnidad.Location = new System.Drawing.Point(384, 311);
+            this.cbUnidad.Location = new System.Drawing.Point(324, 314);
             this.cbUnidad.Name = "cbUnidad";
-            this.cbUnidad.Size = new System.Drawing.Size(121, 29);
+            this.cbUnidad.Size = new System.Drawing.Size(104, 29);
             this.cbUnidad.TabIndex = 120;
             this.cbUnidad.UseSelectable = true;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(120, 371);
+            this.btnAgregar.Location = new System.Drawing.Point(50, 371);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(108, 47);
             this.btnAgregar.TabIndex = 121;
@@ -133,7 +134,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(348, 371);
+            this.btnModificar.Location = new System.Drawing.Point(186, 371);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(108, 47);
             this.btnModificar.TabIndex = 122;
@@ -143,7 +144,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(600, 371);
+            this.btnEliminar.Location = new System.Drawing.Point(321, 371);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(108, 47);
             this.btnEliminar.TabIndex = 123;
@@ -189,7 +190,7 @@
             this.dgIngredientes.EnableHeadersVisualStyles = false;
             this.dgIngredientes.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgIngredientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgIngredientes.Location = new System.Drawing.Point(24, 90);
+            this.dgIngredientes.Location = new System.Drawing.Point(47, 90);
             this.dgIngredientes.Name = "dgIngredientes";
             this.dgIngredientes.ReadOnly = true;
             this.dgIngredientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -203,7 +204,7 @@
             this.dgIngredientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgIngredientes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgIngredientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgIngredientes.Size = new System.Drawing.Size(753, 150);
+            this.dgIngredientes.Size = new System.Drawing.Size(408, 150);
             this.dgIngredientes.TabIndex = 125;
             this.dgIngredientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgIngredientes_CellClick);
             // 
@@ -211,7 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(510, 450);
             this.Controls.Add(this.dgIngredientes);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.btnEliminar);

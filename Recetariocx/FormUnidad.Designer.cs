@@ -45,9 +45,10 @@
             // 
             // numValor
             // 
-            this.numValor.Location = new System.Drawing.Point(321, 309);
+            this.numValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numValor.Location = new System.Drawing.Point(257, 304);
             this.numValor.Name = "numValor";
-            this.numValor.Size = new System.Drawing.Size(120, 20);
+            this.numValor.Size = new System.Drawing.Size(75, 24);
             this.numValor.TabIndex = 127;
             this.numValor.Value = new decimal(new int[] {
             1,
@@ -85,7 +86,7 @@
             this.dgUnidad.EnableHeadersVisualStyles = false;
             this.dgUnidad.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgUnidad.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgUnidad.Location = new System.Drawing.Point(79, 94);
+            this.dgUnidad.Location = new System.Drawing.Point(46, 78);
             this.dgUnidad.Name = "dgUnidad";
             this.dgUnidad.ReadOnly = true;
             this.dgUnidad.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -99,14 +100,14 @@
             this.dgUnidad.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgUnidad.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgUnidad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgUnidad.Size = new System.Drawing.Size(649, 150);
+            this.dgUnidad.Size = new System.Drawing.Size(407, 150);
             this.dgUnidad.TabIndex = 128;
             this.dgUnidad.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgUnidad_CellClick);
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(79, 270);
+            this.metroLabel1.Location = new System.Drawing.Point(51, 283);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(59, 19);
             this.metroLabel1.TabIndex = 129;
@@ -115,7 +116,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(321, 270);
+            this.metroLabel2.Location = new System.Drawing.Point(257, 282);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(38, 19);
             this.metroLabel2.TabIndex = 130;
@@ -136,7 +137,7 @@
             this.txtNombre.CustomButton.UseSelectable = true;
             this.txtNombre.CustomButton.Visible = false;
             this.txtNombre.Lines = new string[0];
-            this.txtNombre.Location = new System.Drawing.Point(79, 309);
+            this.txtNombre.Location = new System.Drawing.Point(51, 305);
             this.txtNombre.MaxLength = 32767;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.PasswordChar = '\0';
@@ -153,7 +154,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(620, 382);
+            this.btnEliminar.Location = new System.Drawing.Point(328, 363);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(108, 45);
             this.btnEliminar.TabIndex = 134;
@@ -163,7 +164,7 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(352, 382);
+            this.btnModificar.Location = new System.Drawing.Point(187, 363);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(108, 45);
             this.btnModificar.TabIndex = 133;
@@ -173,7 +174,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(68, 382);
+            this.btnAgregar.Location = new System.Drawing.Point(51, 363);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(108, 45);
             this.btnAgregar.TabIndex = 134;
@@ -185,7 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(510, 450);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);

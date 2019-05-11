@@ -72,5 +72,13 @@ namespace Recetariocx
                 MetroFramework.MetroMessageBox.Show(this, "Llenar los campos", "Aviso");
             }
         }
+
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                BtnIniciar_Click(null, null);
+            }
+        }
     }
 }

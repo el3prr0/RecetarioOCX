@@ -23,7 +23,7 @@ namespace Logic.Repository
             bool result = false;
             try
             {
-                string query = $@"Insert into Instrucciones(ProductoId,Paso)values('{entity.ProductoId}','{entity.Paso}')";
+                string query = $@"Insert into Instrucciones(ProductoId,Paso)values('{entity.ProductoId}','{entity.PasoDB}')";
                 result = await managerData.Execute(query);
             }
             catch (Exception ex)
@@ -81,17 +81,20 @@ namespace Logic.Repository
             var Instrucciones = new List<Instruccion>();
             try
             {
-                string query = $@"Select Id,ProductoId,Paso,Activo from  Instrucciones where Activo = 1 and ProductoId = {ProductId}";
+                string query = $@"Select Id,ProductoId,Paso,Activo from  Instrucciones where Activo = 1 and ProductoId = {ProductId} order by Id asc";
                 var dt = await managerData.getTable(query);
                 if (dt.Rows.Count > 0)
                 {
+                    int orden = 1;
                     foreach (DataRow r in dt.Rows)
                     {
+                        
                         Instrucciones.Add(new Instruccion
                         {
                             Id = Convert.ToInt32(r["Id"]),
                             ProductoId = Convert.ToInt32(r["ProductoId"]),
-                            Paso = r["Paso"].ToString()
+                            Paso = r["Paso"].ToString(),
+                            Orden = orden++
                         });
                     }
                 }
@@ -108,17 +111,19 @@ namespace Logic.Repository
             var Instrucciones = new List<Instruccion>();
             try
             {
-                string query = $@"Select Id,ProductoId,Paso,Activo from  Instrucciones where Activo = 1";
+                string query = $@"Select Id,ProductoId,Paso,Activo from  Instrucciones where Activo = 1 order by Id asc";
                 var dt = await managerData.getTable(query);
                 if (dt.Rows.Count > 0)
                 {
+                    int orden = 1;
                     foreach (DataRow r in dt.Rows)
                     {
                         Instrucciones.Add(new Instruccion
                         {
                             Id = Convert.ToInt32(r["Id"]),
                             ProductoId = Convert.ToInt32(r["ProductoId"]),
-                            Paso = r["Paso"].ToString()
+                            Paso = r["Paso"].ToString(),
+                            Orden = orden++
                         });
                     }
                 }

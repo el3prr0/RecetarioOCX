@@ -170,7 +170,7 @@ namespace Recetariocx
             {
                 ListInstrucciones.Items.Clear();
 
-                _Instrucciones.Add(new Instruccion { Paso = txtInstruccion.Text.ToUpper().Trim(), Orden = _Instrucciones.Count() + 1 });
+                _Instrucciones.Add(new Instruccion { PasoDB = txtInstruccion.Text.ToUpper().Trim(), Paso = txtInstruccion.Text.ToUpper().Trim(), Orden = _Instrucciones.Count() + 1 });
                 ListInstrucciones.DisplayMember = "Paso";
                 foreach (Instruccion instruccion in _Instrucciones)
                 {

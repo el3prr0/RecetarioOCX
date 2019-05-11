@@ -35,12 +35,15 @@ namespace Recetariocx
 
         private async Task CargarInstrucciones()
         {
+            dgInstrucciones.DataSource = null;
             var Instrucciones = await _instruccionRepository.GetWithProduct(_productoId);
             dgInstrucciones.DataSource = Instrucciones;
 
             dgInstrucciones.Columns["Id"].Visible = false;
             dgInstrucciones.Columns["ProductoId"].Visible = false;
             dgInstrucciones.Columns["Activo"].Visible = false;
+            dgInstrucciones.Columns["Orden"].Visible = false;
+            dgInstrucciones.Columns["PasoDB"].Visible = false;
 
 
             btnEliminar.Enabled = false;
@@ -60,7 +63,7 @@ namespace Recetariocx
         {
             if (txtInstruccion.Text.Trim().Length > 0)
             {
-                if (await _instruccionRepository.Add(new Instruccion { Paso = txtInstruccion.Text.Trim().ToUpper(), ProductoId = _productoId }))
+                if (await _instruccionRepository.Add(new Instruccion {PasoDB = txtInstruccion.Text.Trim().ToUpper(), Paso = txtInstruccion.Text.Trim().ToUpper(), ProductoId = _productoId }))
                 {
                     MetroFramework.MetroMessageBox.Show(this,"Se Agrego una Instrunccion");
                 }

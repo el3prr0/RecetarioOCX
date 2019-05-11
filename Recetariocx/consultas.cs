@@ -142,6 +142,10 @@ namespace Recetariocx
             {
                 await CargarProducto(txtFiltro.Text.Trim().ToUpper());
             }
+            else
+            {
+                await CargarProducto("");
+            }
         }
 
         private void BtnInstrucciones_Click(object sender, EventArgs e)
@@ -206,6 +210,11 @@ namespace Recetariocx
             altas altas = new altas();
             altas.ShowDialog();
             await CargarProductos();
+        }
+
+        private void txtFiltro_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

@@ -54,15 +54,14 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.configuracionToolStripMenuItem,
             this.catalogosToolStripMenuItem,
-            this.bartTenderToolStripMenuItem,
-            this.salirToolStripMenuItem1,
-            this.ayudaToolStripMenuItem,
             this.administradorToolStripMenuItem,
-            this.cerrarSessionToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(27, 74);
+            this.bartTenderToolStripMenuItem,
+            this.cerrarSessionToolStripMenuItem,
+            this.ayudaToolStripMenuItem,
+            this.salirToolStripMenuItem1});
+            this.menuStrip1.Location = new System.Drawing.Point(20, 60);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1502, 36);
+            this.menuStrip1.Size = new System.Drawing.Size(1127, 29);
             this.menuStrip1.TabIndex = 52;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -73,14 +72,14 @@
             this.configuracionToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.configuracionToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.configuracionToolStripMenuItem.Name = "configuracionToolStripMenuItem";
-            this.configuracionToolStripMenuItem.Size = new System.Drawing.Size(157, 32);
+            this.configuracionToolStripMenuItem.Size = new System.Drawing.Size(131, 25);
             this.configuracionToolStripMenuItem.Text = "Configuracion";
             this.configuracionToolStripMenuItem.Visible = false;
             // 
             // cREARDATOSToolStripMenuItem
             // 
             this.cREARDATOSToolStripMenuItem.Name = "cREARDATOSToolStripMenuItem";
-            this.cREARDATOSToolStripMenuItem.Size = new System.Drawing.Size(313, 32);
+            this.cREARDATOSToolStripMenuItem.Size = new System.Drawing.Size(256, 26);
             this.cREARDATOSToolStripMenuItem.Text = "REINICIAR BASE DATOS";
             this.cREARDATOSToolStripMenuItem.Click += new System.EventHandler(this.CREARDATOSToolStripMenuItem_Click);
             // 
@@ -94,43 +93,43 @@
             this.catalogosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.catalogosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.catalogosToolStripMenuItem.Name = "catalogosToolStripMenuItem";
-            this.catalogosToolStripMenuItem.Size = new System.Drawing.Size(117, 32);
+            this.catalogosToolStripMenuItem.Size = new System.Drawing.Size(98, 25);
             this.catalogosToolStripMenuItem.Text = "Catalogos";
             this.catalogosToolStripMenuItem.Visible = false;
             // 
             // consultarProductosToolStripMenuItem
             // 
             this.consultarProductosToolStripMenuItem.Name = "consultarProductosToolStripMenuItem";
-            this.consultarProductosToolStripMenuItem.Size = new System.Drawing.Size(281, 32);
+            this.consultarProductosToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.consultarProductosToolStripMenuItem.Text = "Consultar Productos";
             this.consultarProductosToolStripMenuItem.Click += new System.EventHandler(this.consultarProductosToolStripMenuItem_Click_1);
             // 
             // altaDeProductosToolStripMenuItem
             // 
             this.altaDeProductosToolStripMenuItem.Name = "altaDeProductosToolStripMenuItem";
-            this.altaDeProductosToolStripMenuItem.Size = new System.Drawing.Size(281, 32);
+            this.altaDeProductosToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.altaDeProductosToolStripMenuItem.Text = "Alta de Productos";
             this.altaDeProductosToolStripMenuItem.Click += new System.EventHandler(this.altaDeProductosToolStripMenuItem_Click_1);
             // 
             // unidadesToolStripMenuItem
             // 
             this.unidadesToolStripMenuItem.Name = "unidadesToolStripMenuItem";
-            this.unidadesToolStripMenuItem.Size = new System.Drawing.Size(281, 32);
+            this.unidadesToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.unidadesToolStripMenuItem.Text = "Unidades";
             this.unidadesToolStripMenuItem.Click += new System.EventHandler(this.UnidadesToolStripMenuItem_Click);
             // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(281, 32);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.UsuariosToolStripMenuItem_Click);
             // 
             // bartTenderToolStripMenuItem
             // 
             this.bartTenderToolStripMenuItem.Name = "bartTenderToolStripMenuItem";
-            this.bartTenderToolStripMenuItem.Size = new System.Drawing.Size(122, 32);
-            this.bartTenderToolStripMenuItem.Text = "Bart Tender";
+            this.bartTenderToolStripMenuItem.Size = new System.Drawing.Size(94, 25);
+            this.bartTenderToolStripMenuItem.Text = "BarTrainer";
             this.bartTenderToolStripMenuItem.Click += new System.EventHandler(this.BartTenderToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem1
@@ -138,7 +137,7 @@
             this.salirToolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salirToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(66, 32);
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(56, 25);
             this.salirToolStripMenuItem1.Text = "Salir";
             this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
@@ -147,35 +146,33 @@
             this.ayudaToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ayudaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(84, 32);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(71, 25);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
             // administradorToolStripMenuItem
             // 
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
-            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(150, 32);
+            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(122, 25);
             this.administradorToolStripMenuItem.Text = "Administrador";
             this.administradorToolStripMenuItem.Click += new System.EventHandler(this.AdministradorToolStripMenuItem_Click);
             // 
             // cerrarSessionToolStripMenuItem
             // 
             this.cerrarSessionToolStripMenuItem.Name = "cerrarSessionToolStripMenuItem";
-            this.cerrarSessionToolStripMenuItem.Size = new System.Drawing.Size(147, 32);
+            this.cerrarSessionToolStripMenuItem.Size = new System.Drawing.Size(123, 25);
             this.cerrarSessionToolStripMenuItem.Text = "Cerrar Session";
             this.cerrarSessionToolStripMenuItem.Visible = false;
             this.cerrarSessionToolStripMenuItem.Click += new System.EventHandler(this.CerrarSessionToolStripMenuItem_Click);
             // 
             // formmenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1556, 884);
+            this.ClientSize = new System.Drawing.Size(1167, 718);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "formmenu";
-            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Bar Trainer 1.0         Administracion";
             this.TransparencyKey = System.Drawing.Color.Empty;

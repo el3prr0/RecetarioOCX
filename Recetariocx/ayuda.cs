@@ -16,5 +16,10 @@ namespace Recetariocx
         {
             InitializeComponent();
         }
+
+        private void ayuda_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

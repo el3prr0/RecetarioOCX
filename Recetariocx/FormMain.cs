@@ -344,5 +344,10 @@ namespace Recetariocx
             }
             
         }
+
+        private void txtProducto_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
