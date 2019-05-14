@@ -77,8 +77,10 @@
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.metroToolTip1 = new MetroFramework.Components.MetroToolTip();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -118,16 +120,18 @@
             this.panel1.Controls.Add(this.btnW);
             this.panel1.Controls.Add(this.btnQ);
             this.panel1.Controls.Add(this.txtProducto);
-            this.panel1.Location = new System.Drawing.Point(23, 23);
+            this.panel1.Location = new System.Drawing.Point(31, 28);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(798, 176);
+            this.panel1.Size = new System.Drawing.Size(1066, 217);
             this.panel1.TabIndex = 70;
             // 
             // btnBorrar
             // 
-            this.btnBorrar.Location = new System.Drawing.Point(700, 51);
+            this.btnBorrar.Location = new System.Drawing.Point(933, 63);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(72, 32);
+            this.btnBorrar.Size = new System.Drawing.Size(96, 39);
             this.btnBorrar.TabIndex = 114;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseSelectable = true;
@@ -135,9 +139,10 @@
             // 
             // btnSpace
             // 
-            this.btnSpace.Location = new System.Drawing.Point(699, 131);
+            this.btnSpace.Location = new System.Drawing.Point(932, 161);
+            this.btnSpace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSpace.Name = "btnSpace";
-            this.btnSpace.Size = new System.Drawing.Size(72, 32);
+            this.btnSpace.Size = new System.Drawing.Size(96, 39);
             this.btnSpace.TabIndex = 113;
             this.btnSpace.Text = "Espacio";
             this.btnSpace.UseSelectable = true;
@@ -145,9 +150,10 @@
             // 
             // btnP
             // 
-            this.btnP.Location = new System.Drawing.Point(614, 90);
+            this.btnP.Location = new System.Drawing.Point(819, 111);
+            this.btnP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnP.Name = "btnP";
-            this.btnP.Size = new System.Drawing.Size(59, 32);
+            this.btnP.Size = new System.Drawing.Size(79, 39);
             this.btnP.TabIndex = 79;
             this.btnP.Text = "P";
             this.btnP.UseSelectable = true;
@@ -155,9 +161,10 @@
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Location = new System.Drawing.Point(700, 91);
+            this.btnLimpiar.Location = new System.Drawing.Point(933, 112);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(72, 32);
+            this.btnLimpiar.Size = new System.Drawing.Size(96, 39);
             this.btnLimpiar.TabIndex = 105;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseSelectable = true;
@@ -165,9 +172,10 @@
             // 
             // btnM
             // 
-            this.btnM.Location = new System.Drawing.Point(463, 131);
+            this.btnM.Location = new System.Drawing.Point(617, 161);
+            this.btnM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnM.Name = "btnM";
-            this.btnM.Size = new System.Drawing.Size(59, 32);
+            this.btnM.Size = new System.Drawing.Size(79, 39);
             this.btnM.TabIndex = 112;
             this.btnM.Text = "M";
             this.btnM.UseSelectable = true;
@@ -175,9 +183,10 @@
             // 
             // btnN
             // 
-            this.btnN.Location = new System.Drawing.Point(388, 131);
+            this.btnN.Location = new System.Drawing.Point(517, 161);
+            this.btnN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnN.Name = "btnN";
-            this.btnN.Size = new System.Drawing.Size(59, 32);
+            this.btnN.Size = new System.Drawing.Size(79, 39);
             this.btnN.TabIndex = 111;
             this.btnN.Text = "N";
             this.btnN.UseSelectable = true;
@@ -185,9 +194,10 @@
             // 
             // btnB
             // 
-            this.btnB.Location = new System.Drawing.Point(314, 131);
+            this.btnB.Location = new System.Drawing.Point(419, 161);
+            this.btnB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnB.Name = "btnB";
-            this.btnB.Size = new System.Drawing.Size(59, 32);
+            this.btnB.Size = new System.Drawing.Size(79, 39);
             this.btnB.TabIndex = 110;
             this.btnB.Text = "B";
             this.btnB.UseSelectable = true;
@@ -195,9 +205,10 @@
             // 
             // btnV
             // 
-            this.btnV.Location = new System.Drawing.Point(240, 131);
+            this.btnV.Location = new System.Drawing.Point(320, 161);
+            this.btnV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnV.Name = "btnV";
-            this.btnV.Size = new System.Drawing.Size(59, 32);
+            this.btnV.Size = new System.Drawing.Size(79, 39);
             this.btnV.TabIndex = 109;
             this.btnV.Text = "V";
             this.btnV.UseSelectable = true;
@@ -205,9 +216,10 @@
             // 
             // btnC
             // 
-            this.btnC.Location = new System.Drawing.Point(167, 131);
+            this.btnC.Location = new System.Drawing.Point(223, 161);
+            this.btnC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(59, 32);
+            this.btnC.Size = new System.Drawing.Size(79, 39);
             this.btnC.TabIndex = 108;
             this.btnC.Text = "C";
             this.btnC.UseSelectable = true;
@@ -215,9 +227,10 @@
             // 
             // btnX
             // 
-            this.btnX.Location = new System.Drawing.Point(92, 131);
+            this.btnX.Location = new System.Drawing.Point(123, 161);
+            this.btnX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnX.Name = "btnX";
-            this.btnX.Size = new System.Drawing.Size(59, 32);
+            this.btnX.Size = new System.Drawing.Size(79, 39);
             this.btnX.TabIndex = 107;
             this.btnX.Text = "X";
             this.btnX.UseSelectable = true;
@@ -225,9 +238,10 @@
             // 
             // btnZ
             // 
-            this.btnZ.Location = new System.Drawing.Point(16, 131);
+            this.btnZ.Location = new System.Drawing.Point(21, 161);
+            this.btnZ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnZ.Name = "btnZ";
-            this.btnZ.Size = new System.Drawing.Size(60, 32);
+            this.btnZ.Size = new System.Drawing.Size(80, 39);
             this.btnZ.TabIndex = 106;
             this.btnZ.Text = "Z";
             this.btnZ.UseSelectable = true;
@@ -235,9 +249,10 @@
             // 
             // btnÑ
             // 
-            this.btnÑ.Location = new System.Drawing.Point(538, 131);
+            this.btnÑ.Location = new System.Drawing.Point(717, 161);
+            this.btnÑ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnÑ.Name = "btnÑ";
-            this.btnÑ.Size = new System.Drawing.Size(60, 32);
+            this.btnÑ.Size = new System.Drawing.Size(80, 39);
             this.btnÑ.TabIndex = 95;
             this.btnÑ.Text = "Ñ";
             this.btnÑ.UseSelectable = true;
@@ -245,9 +260,10 @@
             // 
             // btnL
             // 
-            this.btnL.Location = new System.Drawing.Point(614, 131);
+            this.btnL.Location = new System.Drawing.Point(819, 161);
+            this.btnL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnL.Name = "btnL";
-            this.btnL.Size = new System.Drawing.Size(59, 32);
+            this.btnL.Size = new System.Drawing.Size(79, 39);
             this.btnL.TabIndex = 104;
             this.btnL.Text = "L";
             this.btnL.UseSelectable = true;
@@ -255,9 +271,10 @@
             // 
             // btnK
             // 
-            this.btnK.Location = new System.Drawing.Point(539, 91);
+            this.btnK.Location = new System.Drawing.Point(719, 112);
+            this.btnK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnK.Name = "btnK";
-            this.btnK.Size = new System.Drawing.Size(59, 32);
+            this.btnK.Size = new System.Drawing.Size(79, 39);
             this.btnK.TabIndex = 103;
             this.btnK.Text = "K";
             this.btnK.UseSelectable = true;
@@ -265,9 +282,10 @@
             // 
             // btnJ
             // 
-            this.btnJ.Location = new System.Drawing.Point(463, 91);
+            this.btnJ.Location = new System.Drawing.Point(617, 112);
+            this.btnJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnJ.Name = "btnJ";
-            this.btnJ.Size = new System.Drawing.Size(59, 32);
+            this.btnJ.Size = new System.Drawing.Size(79, 39);
             this.btnJ.TabIndex = 102;
             this.btnJ.Text = "J";
             this.btnJ.UseSelectable = true;
@@ -275,9 +293,10 @@
             // 
             // btnH
             // 
-            this.btnH.Location = new System.Drawing.Point(388, 91);
+            this.btnH.Location = new System.Drawing.Point(517, 112);
+            this.btnH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnH.Name = "btnH";
-            this.btnH.Size = new System.Drawing.Size(59, 32);
+            this.btnH.Size = new System.Drawing.Size(79, 39);
             this.btnH.TabIndex = 101;
             this.btnH.Text = "H";
             this.btnH.UseSelectable = true;
@@ -285,9 +304,10 @@
             // 
             // btnG
             // 
-            this.btnG.Location = new System.Drawing.Point(314, 91);
+            this.btnG.Location = new System.Drawing.Point(419, 112);
+            this.btnG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnG.Name = "btnG";
-            this.btnG.Size = new System.Drawing.Size(59, 32);
+            this.btnG.Size = new System.Drawing.Size(79, 39);
             this.btnG.TabIndex = 100;
             this.btnG.Text = "G";
             this.btnG.UseSelectable = true;
@@ -295,9 +315,10 @@
             // 
             // btnF
             // 
-            this.btnF.Location = new System.Drawing.Point(240, 91);
+            this.btnF.Location = new System.Drawing.Point(320, 112);
+            this.btnF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnF.Name = "btnF";
-            this.btnF.Size = new System.Drawing.Size(59, 32);
+            this.btnF.Size = new System.Drawing.Size(79, 39);
             this.btnF.TabIndex = 99;
             this.btnF.Text = "F";
             this.btnF.UseSelectable = true;
@@ -305,9 +326,10 @@
             // 
             // btnD
             // 
-            this.btnD.Location = new System.Drawing.Point(167, 91);
+            this.btnD.Location = new System.Drawing.Point(223, 112);
+            this.btnD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnD.Name = "btnD";
-            this.btnD.Size = new System.Drawing.Size(59, 32);
+            this.btnD.Size = new System.Drawing.Size(79, 39);
             this.btnD.TabIndex = 98;
             this.btnD.Text = "D";
             this.btnD.UseSelectable = true;
@@ -315,9 +337,10 @@
             // 
             // btnS
             // 
-            this.btnS.Location = new System.Drawing.Point(92, 91);
+            this.btnS.Location = new System.Drawing.Point(123, 112);
+            this.btnS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnS.Name = "btnS";
-            this.btnS.Size = new System.Drawing.Size(59, 32);
+            this.btnS.Size = new System.Drawing.Size(79, 39);
             this.btnS.TabIndex = 97;
             this.btnS.Text = "S";
             this.btnS.UseSelectable = true;
@@ -325,9 +348,10 @@
             // 
             // btnA
             // 
-            this.btnA.Location = new System.Drawing.Point(16, 91);
+            this.btnA.Location = new System.Drawing.Point(21, 112);
+            this.btnA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnA.Name = "btnA";
-            this.btnA.Size = new System.Drawing.Size(60, 32);
+            this.btnA.Size = new System.Drawing.Size(80, 39);
             this.btnA.TabIndex = 96;
             this.btnA.Text = "A";
             this.btnA.UseSelectable = true;
@@ -336,17 +360,19 @@
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(12, 17);
+            this.metroLabel6.Location = new System.Drawing.Point(16, 21);
+            this.metroLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(59, 19);
+            this.metroLabel6.Size = new System.Drawing.Size(61, 20);
             this.metroLabel6.TabIndex = 95;
             this.metroLabel6.Text = "Nombre";
             // 
             // btnO
             // 
-            this.btnO.Location = new System.Drawing.Point(614, 51);
+            this.btnO.Location = new System.Drawing.Point(819, 63);
+            this.btnO.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnO.Name = "btnO";
-            this.btnO.Size = new System.Drawing.Size(59, 32);
+            this.btnO.Size = new System.Drawing.Size(79, 39);
             this.btnO.TabIndex = 78;
             this.btnO.Text = "O";
             this.btnO.UseSelectable = true;
@@ -354,9 +380,10 @@
             // 
             // btnI
             // 
-            this.btnI.Location = new System.Drawing.Point(538, 51);
+            this.btnI.Location = new System.Drawing.Point(717, 63);
+            this.btnI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnI.Name = "btnI";
-            this.btnI.Size = new System.Drawing.Size(59, 32);
+            this.btnI.Size = new System.Drawing.Size(79, 39);
             this.btnI.TabIndex = 77;
             this.btnI.Text = "I";
             this.btnI.UseSelectable = true;
@@ -364,9 +391,10 @@
             // 
             // btnU
             // 
-            this.btnU.Location = new System.Drawing.Point(462, 51);
+            this.btnU.Location = new System.Drawing.Point(616, 63);
+            this.btnU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnU.Name = "btnU";
-            this.btnU.Size = new System.Drawing.Size(59, 32);
+            this.btnU.Size = new System.Drawing.Size(79, 39);
             this.btnU.TabIndex = 76;
             this.btnU.Text = "U";
             this.btnU.UseSelectable = true;
@@ -374,9 +402,10 @@
             // 
             // Y
             // 
-            this.Y.Location = new System.Drawing.Point(387, 51);
+            this.Y.Location = new System.Drawing.Point(516, 63);
+            this.Y.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Y.Name = "Y";
-            this.Y.Size = new System.Drawing.Size(59, 32);
+            this.Y.Size = new System.Drawing.Size(79, 39);
             this.Y.TabIndex = 75;
             this.Y.Text = "Y";
             this.Y.UseSelectable = true;
@@ -384,9 +413,10 @@
             // 
             // btnT
             // 
-            this.btnT.Location = new System.Drawing.Point(313, 51);
+            this.btnT.Location = new System.Drawing.Point(417, 63);
+            this.btnT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnT.Name = "btnT";
-            this.btnT.Size = new System.Drawing.Size(59, 32);
+            this.btnT.Size = new System.Drawing.Size(79, 39);
             this.btnT.TabIndex = 74;
             this.btnT.Text = "T";
             this.btnT.UseSelectable = true;
@@ -394,9 +424,10 @@
             // 
             // btnR
             // 
-            this.btnR.Location = new System.Drawing.Point(239, 51);
+            this.btnR.Location = new System.Drawing.Point(319, 63);
+            this.btnR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(59, 32);
+            this.btnR.Size = new System.Drawing.Size(79, 39);
             this.btnR.TabIndex = 73;
             this.btnR.Text = "R";
             this.btnR.UseSelectable = true;
@@ -404,9 +435,10 @@
             // 
             // btnE
             // 
-            this.btnE.Location = new System.Drawing.Point(166, 51);
+            this.btnE.Location = new System.Drawing.Point(221, 63);
+            this.btnE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnE.Name = "btnE";
-            this.btnE.Size = new System.Drawing.Size(59, 32);
+            this.btnE.Size = new System.Drawing.Size(79, 39);
             this.btnE.TabIndex = 72;
             this.btnE.Text = "E";
             this.btnE.UseSelectable = true;
@@ -414,9 +446,10 @@
             // 
             // btnW
             // 
-            this.btnW.Location = new System.Drawing.Point(91, 51);
+            this.btnW.Location = new System.Drawing.Point(121, 63);
+            this.btnW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnW.Name = "btnW";
-            this.btnW.Size = new System.Drawing.Size(59, 32);
+            this.btnW.Size = new System.Drawing.Size(79, 39);
             this.btnW.TabIndex = 71;
             this.btnW.Text = "W";
             this.btnW.UseSelectable = true;
@@ -424,9 +457,10 @@
             // 
             // btnQ
             // 
-            this.btnQ.Location = new System.Drawing.Point(15, 51);
+            this.btnQ.Location = new System.Drawing.Point(20, 63);
+            this.btnQ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnQ.Name = "btnQ";
-            this.btnQ.Size = new System.Drawing.Size(60, 32);
+            this.btnQ.Size = new System.Drawing.Size(80, 39);
             this.btnQ.TabIndex = 70;
             this.btnQ.Text = "Q";
             this.btnQ.UseSelectable = true;
@@ -438,16 +472,18 @@
             // 
             // 
             this.txtProducto.CustomButton.Image = null;
-            this.txtProducto.CustomButton.Location = new System.Drawing.Point(597, 1);
+            this.txtProducto.CustomButton.Location = new System.Drawing.Point(1065, 2);
+            this.txtProducto.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtProducto.CustomButton.Name = "";
-            this.txtProducto.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtProducto.CustomButton.Size = new System.Drawing.Size(31, 28);
             this.txtProducto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtProducto.CustomButton.TabIndex = 1;
             this.txtProducto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtProducto.CustomButton.UseSelectable = true;
             this.txtProducto.CustomButton.Visible = false;
             this.txtProducto.Lines = new string[0];
-            this.txtProducto.Location = new System.Drawing.Point(77, 15);
+            this.txtProducto.Location = new System.Drawing.Point(103, 18);
+            this.txtProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtProducto.MaxLength = 32767;
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.PasswordChar = '\0';
@@ -456,7 +492,7 @@
             this.txtProducto.SelectionLength = 0;
             this.txtProducto.SelectionStart = 0;
             this.txtProducto.ShortcutsEnabled = true;
-            this.txtProducto.Size = new System.Drawing.Size(619, 23);
+            this.txtProducto.Size = new System.Drawing.Size(825, 28);
             this.txtProducto.TabIndex = 69;
             this.txtProducto.UseSelectable = true;
             this.txtProducto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -467,9 +503,12 @@
             // listProductos
             // 
             this.listProductos.FormattingEnabled = true;
-            this.listProductos.Location = new System.Drawing.Point(21, 243);
+            this.listProductos.ItemHeight = 16;
+            this.listProductos.Location = new System.Drawing.Point(28, 273);
+            this.listProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listProductos.Name = "listProductos";
-            this.listProductos.Size = new System.Drawing.Size(254, 381);
+            this.listProductos.ScrollAlwaysVisible = true;
+            this.listProductos.Size = new System.Drawing.Size(337, 324);
             this.listProductos.TabIndex = 71;
             this.listProductos.SelectedIndexChanged += new System.EventHandler(this.ListProductos_SelectedIndexChanged);
             // 
@@ -477,25 +516,31 @@
             // 
             this.listInstrucciones.FormattingEnabled = true;
             this.listInstrucciones.HorizontalScrollbar = true;
-            this.listInstrucciones.Location = new System.Drawing.Point(517, 243);
+            this.listInstrucciones.ItemHeight = 16;
+            this.listInstrucciones.Location = new System.Drawing.Point(373, 524);
+            this.listInstrucciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listInstrucciones.Name = "listInstrucciones";
-            this.listInstrucciones.Size = new System.Drawing.Size(307, 381);
+            this.listInstrucciones.Size = new System.Drawing.Size(850, 244);
             this.listInstrucciones.TabIndex = 72;
             this.listInstrucciones.SelectedIndexChanged += new System.EventHandler(this.ListInstrucciones_SelectedIndexChanged);
             // 
             // listIngredientes
             // 
             this.listIngredientes.FormattingEnabled = true;
-            this.listIngredientes.Location = new System.Drawing.Point(287, 243);
+            this.listIngredientes.HorizontalScrollbar = true;
+            this.listIngredientes.ItemHeight = 16;
+            this.listIngredientes.Location = new System.Drawing.Point(373, 273);
+            this.listIngredientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listIngredientes.Name = "listIngredientes";
-            this.listIngredientes.Size = new System.Drawing.Size(218, 225);
+            this.listIngredientes.Size = new System.Drawing.Size(850, 212);
             this.listIngredientes.TabIndex = 73;
             // 
             // pbImagenes
             // 
-            this.pbImagenes.Location = new System.Drawing.Point(838, 243);
+            this.pbImagenes.Location = new System.Drawing.Point(1231, 299);
+            this.pbImagenes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbImagenes.Name = "pbImagenes";
-            this.pbImagenes.Size = new System.Drawing.Size(382, 380);
+            this.pbImagenes.Size = new System.Drawing.Size(509, 468);
             this.pbImagenes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagenes.TabIndex = 82;
             this.pbImagenes.TabStop = false;
@@ -511,16 +556,18 @@
             // 
             // 
             this.txtGuarnicion.CustomButton.Image = null;
-            this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(106, 1);
+            this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(196, 1);
+            this.txtGuarnicion.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGuarnicion.CustomButton.Name = "";
-            this.txtGuarnicion.CustomButton.Size = new System.Drawing.Size(111, 111);
+            this.txtGuarnicion.CustomButton.Size = new System.Drawing.Size(137, 137);
             this.txtGuarnicion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtGuarnicion.CustomButton.TabIndex = 1;
             this.txtGuarnicion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtGuarnicion.CustomButton.UseSelectable = true;
             this.txtGuarnicion.CustomButton.Visible = false;
             this.txtGuarnicion.Lines = new string[0];
-            this.txtGuarnicion.Location = new System.Drawing.Point(287, 508);
+            this.txtGuarnicion.Location = new System.Drawing.Point(31, 628);
+            this.txtGuarnicion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGuarnicion.MaxLength = 32767;
             this.txtGuarnicion.Multiline = true;
             this.txtGuarnicion.Name = "txtGuarnicion";
@@ -531,7 +578,7 @@
             this.txtGuarnicion.SelectionLength = 0;
             this.txtGuarnicion.SelectionStart = 0;
             this.txtGuarnicion.ShortcutsEnabled = true;
-            this.txtGuarnicion.Size = new System.Drawing.Size(218, 113);
+            this.txtGuarnicion.Size = new System.Drawing.Size(334, 139);
             this.txtGuarnicion.TabIndex = 86;
             this.txtGuarnicion.UseSelectable = true;
             this.txtGuarnicion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -540,17 +587,19 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(285, 483);
+            this.metroLabel1.Location = new System.Drawing.Point(31, 604);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(71, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(76, 20);
             this.metroLabel1.TabIndex = 87;
             this.metroLabel1.Text = "Guarnicion";
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(905, 191);
+            this.btnPrevious.Location = new System.Drawing.Point(1332, 260);
+            this.btnPrevious.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(44, 23);
+            this.btnPrevious.Size = new System.Drawing.Size(59, 28);
             this.btnPrevious.TabIndex = 88;
             this.btnPrevious.Text = "<<";
             this.btnPrevious.UseSelectable = true;
@@ -558,9 +607,10 @@
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(1125, 191);
+            this.btnNext.Location = new System.Drawing.Point(1625, 260);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(44, 23);
+            this.btnNext.Size = new System.Drawing.Size(59, 28);
             this.btnNext.TabIndex = 89;
             this.btnNext.Text = ">>";
             this.btnNext.UseSelectable = true;
@@ -568,9 +618,10 @@
             // 
             // btnTimer
             // 
-            this.btnTimer.Location = new System.Drawing.Point(956, 191);
+            this.btnTimer.Location = new System.Drawing.Point(1400, 260);
+            this.btnTimer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnTimer.Name = "btnTimer";
-            this.btnTimer.Size = new System.Drawing.Size(162, 23);
+            this.btnTimer.Size = new System.Drawing.Size(216, 28);
             this.btnTimer.TabIndex = 90;
             this.btnTimer.Text = "Detener";
             this.btnTimer.UseSelectable = true;
@@ -579,36 +630,40 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(19, 218);
+            this.metroLabel2.Location = new System.Drawing.Point(28, 249);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(68, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(71, 20);
             this.metroLabel2.TabIndex = 91;
             this.metroLabel2.Text = "Productos";
             // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(516, 221);
+            this.metroLabel3.Location = new System.Drawing.Point(373, 500);
+            this.metroLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(82, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(90, 20);
             this.metroLabel3.TabIndex = 92;
             this.metroLabel3.Text = "Instrucciones";
             // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(287, 221);
+            this.metroLabel4.Location = new System.Drawing.Point(383, 249);
+            this.metroLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(80, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(86, 20);
             this.metroLabel4.TabIndex = 93;
             this.metroLabel4.Text = "Ingredientes";
             // 
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(838, 218);
+            this.metroLabel5.Location = new System.Drawing.Point(1231, 268);
+            this.metroLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(65, 19);
+            this.metroLabel5.Size = new System.Drawing.Size(69, 20);
             this.metroLabel5.TabIndex = 94;
             this.metroLabel5.Text = "Imagenes";
             // 
@@ -618,12 +673,21 @@
             this.metroToolTip1.StyleManager = null;
             this.metroToolTip1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
+            // pbLogo
+            // 
+            this.pbLogo.Location = new System.Drawing.Point(1306, 28);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(400, 200);
+            this.pbLogo.TabIndex = 95;
+            this.pbLogo.TabStop = false;
+            // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1242, 637);
+            this.ClientSize = new System.Drawing.Size(1785, 784);
+            this.Controls.Add(this.pbLogo);
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
@@ -638,13 +702,16 @@
             this.Controls.Add(this.listInstrucciones);
             this.Controls.Add(this.listProductos);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormMain";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagenes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -699,5 +766,6 @@
         private MetroFramework.Controls.MetroTextBox txtProducto;
         private MetroFramework.Controls.MetroButton btnP;
         private MetroFramework.Components.MetroToolTip metroToolTip1;
+        private System.Windows.Forms.PictureBox pbLogo;
     }
 }

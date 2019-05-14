@@ -20,7 +20,7 @@ namespace Recetariocx
         private readonly int _productoId;
         private readonly string _nombre;
         ImagenRepository _imagenRepository;
-        int Id;
+
         private string Url = ConfigurationManager.AppSettings["UrlImagen"].ToString();
 
         public FormImagenes(int productoId,string nombre)

@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,12 +24,9 @@ namespace Recetariocx
             InitializeComponent();
             _usuarioRepository = new UsuarioRepository();
             Salt = ConfigurationManager.AppSettings["SecretKey"].ToString();
-        }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
 
         }
+
 
         private void BtnCancelar_Click(object sender, EventArgs e)
         {

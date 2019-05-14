@@ -91,18 +91,7 @@ namespace Recetariocx
             }
         }
 
-        private async void Formmenu_Load(object sender, EventArgs e)
-        {
 
-            if (!File.Exists(pathdb + nombredb + ".db"))
-            {
-                Directory.CreateDirectory(pathdb);
-                Directory.CreateDirectory(pathImagen);
-                await seed.CreaBaseDatos();
-                await seed.AgregarUsuarioAdmin();
-                await seed.CargarCatalogos();
-            }
-        }
 
         private void UnidadesToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -136,6 +125,12 @@ namespace Recetariocx
             FormUsuarios formUsuarios = new FormUsuarios();
             formUsuarios.MdiParent = this;
             formUsuarios.Show();
+        }
+
+        private void LOGOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormLogo formLogo = new FormLogo();
+            formLogo.ShowDialog();
         }
     }
 }

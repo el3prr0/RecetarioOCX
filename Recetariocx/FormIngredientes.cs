@@ -91,7 +91,7 @@ namespace Recetariocx
                 if (nmCantidad.Value > 0)
                 {
 
-                    if (await _ingredienteRepository.Save(new Ingrediente { Id = _id, Nombre = txtIngredienteNombre.Text, Unidad = cbUnidad.Text.Trim(), ProductoId = _productoId, Cantidad = Convert.ToInt32(nmCantidad.Value) }))
+                    if (await _ingredienteRepository.Save(new Ingrediente { Id = _id, Nombre = txtIngredienteNombre.Text, Unidad = cbUnidad.Text.Trim(), ProductoId = _productoId, Cantidad = nmCantidad.Value }))
                     {
                         MetroFramework.MetroMessageBox.Show(this,"Se Modifico Ingrediente");
                     }
@@ -129,7 +129,7 @@ namespace Recetariocx
                     }
                     else
                     {
-                        if (await _ingredienteRepository.Add(new Ingrediente { Nombre = txtIngredienteNombre.Text, Unidad = cbUnidad.Text.Trim(), ProductoId = _productoId, Cantidad = Convert.ToInt32(nmCantidad.Value) }))
+                        if (await _ingredienteRepository.Add(new Ingrediente { Nombre = txtIngredienteNombre.Text, Unidad = cbUnidad.Text.Trim(), ProductoId = _productoId, Cantidad = nmCantidad.Value }))
                         {
                             MetroFramework.MetroMessageBox.Show(this,"Se Agrego Ingrediente");
                         }
@@ -161,7 +161,7 @@ namespace Recetariocx
 
                 txtIngredienteNombre.Text = dgIngredientes.Rows[e.RowIndex].Cells["Nombre"].FormattedValue.ToString();
 
-                nmCantidad.Value = Convert.ToInt32(dgIngredientes.Rows[e.RowIndex].Cells["Cantidad"].FormattedValue);
+                nmCantidad.Value = Convert.ToDecimal(dgIngredientes.Rows[e.RowIndex].Cells["Cantidad"].FormattedValue);
 
                 cbUnidad.Text = dgIngredientes.Rows[e.RowIndex].Cells["Unidad"].FormattedValue.ToString();
 

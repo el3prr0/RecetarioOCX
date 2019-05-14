@@ -52,13 +52,6 @@ namespace Recetariocx
         }
 
 
-
-
-
-
-
-
-
         private async void BtnAgregar_Click(object sender, EventArgs e)
         {
             if (txtInstruccion.Text.Trim().Length > 0)

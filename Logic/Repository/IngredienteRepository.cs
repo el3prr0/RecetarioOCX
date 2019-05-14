@@ -65,7 +65,7 @@ namespace Logic.Repository
                             ProductoId = Convert.ToInt32(r["ProductoId"]),
                             Nombre = r["Nombre"].ToString(),
                             Unidad = r["Unidad"].ToString(),
-                            Cantidad = Convert.ToInt32(r["Cantidad"])
+                            Cantidad = Convert.ToDecimal(r["Cantidad"])
 
                         });
                     }
@@ -96,7 +96,7 @@ namespace Logic.Repository
                             ProductoId = Convert.ToInt32(r["ProductoId"]),
                             Nombre = r["Nombre"].ToString(),
                             Unidad = r["Unidad"].ToString(),
-                            Cantidad = Convert.ToInt32(r["Cantidad"])
+                            Cantidad = Convert.ToDecimal(r["Cantidad"])
 
                         });
                     }
@@ -127,7 +127,7 @@ namespace Logic.Repository
                             ProductoId = Convert.ToInt32(r["ProductoId"]),
                             Nombre = r["Nombre"].ToString(),
                             Unidad = r["Unidad"].ToString(),
-                            Cantidad = Convert.ToInt32(r["Cantidad"])
+                            Cantidad = Convert.ToDecimal(r["Cantidad"])
 
                         });
                     }

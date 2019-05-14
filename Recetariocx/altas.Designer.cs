@@ -75,25 +75,28 @@
             // 
             // pbImagen3
             // 
-            this.pbImagen3.Location = new System.Drawing.Point(392, 70);
+            this.pbImagen3.Location = new System.Drawing.Point(523, 86);
+            this.pbImagen3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbImagen3.Name = "pbImagen3";
-            this.pbImagen3.Size = new System.Drawing.Size(149, 106);
+            this.pbImagen3.Size = new System.Drawing.Size(199, 130);
             this.pbImagen3.TabIndex = 101;
             this.pbImagen3.TabStop = false;
             // 
             // pbImagen2
             // 
-            this.pbImagen2.Location = new System.Drawing.Point(201, 70);
+            this.pbImagen2.Location = new System.Drawing.Point(268, 86);
+            this.pbImagen2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbImagen2.Name = "pbImagen2";
-            this.pbImagen2.Size = new System.Drawing.Size(149, 106);
+            this.pbImagen2.Size = new System.Drawing.Size(199, 130);
             this.pbImagen2.TabIndex = 100;
             this.pbImagen2.TabStop = false;
             // 
             // pbImagen1
             // 
-            this.pbImagen1.Location = new System.Drawing.Point(15, 70);
+            this.pbImagen1.Location = new System.Drawing.Point(20, 86);
+            this.pbImagen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbImagen1.Name = "pbImagen1";
-            this.pbImagen1.Size = new System.Drawing.Size(149, 106);
+            this.pbImagen1.Size = new System.Drawing.Size(199, 130);
             this.pbImagen1.TabIndex = 99;
             this.pbImagen1.TabStop = false;
             // 
@@ -102,18 +105,25 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(580, 96);
+            this.label3.Location = new System.Drawing.Point(773, 118);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 16);
+            this.label3.Size = new System.Drawing.Size(109, 20);
             this.label3.TabIndex = 21;
             this.label3.Text = "Instrucciones";
             // 
             // nmCantidad
             // 
             this.nmCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmCantidad.Location = new System.Drawing.Point(213, 43);
+            this.nmCantidad.Location = new System.Drawing.Point(284, 53);
+            this.nmCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmCantidad.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.nmCantidad.Name = "nmCantidad";
-            this.nmCantidad.Size = new System.Drawing.Size(58, 24);
+            this.nmCantidad.Size = new System.Drawing.Size(77, 29);
             this.nmCantidad.TabIndex = 8;
             // 
             // metroPanel1
@@ -124,14 +134,15 @@
             this.metroPanel1.Controls.Add(this.txtNombre);
             this.metroPanel1.HorizontalScrollbarBarColor = true;
             this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(23, 83);
+            this.metroPanel1.HorizontalScrollbarSize = 12;
+            this.metroPanel1.Location = new System.Drawing.Point(31, 102);
+            this.metroPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(476, 167);
+            this.metroPanel1.Size = new System.Drawing.Size(635, 206);
             this.metroPanel1.TabIndex = 102;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.metroPanel1.VerticalScrollbarSize = 13;
             // 
             // txtGuarnicion
             // 
@@ -140,16 +151,18 @@
             // 
             // 
             this.txtGuarnicion.CustomButton.Image = null;
-            this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(390, 2);
+            this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(700, 1);
+            this.txtGuarnicion.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGuarnicion.CustomButton.Name = "";
-            this.txtGuarnicion.CustomButton.Size = new System.Drawing.Size(53, 53);
+            this.txtGuarnicion.CustomButton.Size = new System.Drawing.Size(92, 85);
             this.txtGuarnicion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtGuarnicion.CustomButton.TabIndex = 1;
             this.txtGuarnicion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtGuarnicion.CustomButton.UseSelectable = true;
             this.txtGuarnicion.CustomButton.Visible = false;
             this.txtGuarnicion.Lines = new string[0];
-            this.txtGuarnicion.Location = new System.Drawing.Point(14, 88);
+            this.txtGuarnicion.Location = new System.Drawing.Point(19, 108);
+            this.txtGuarnicion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGuarnicion.MaxLength = 32767;
             this.txtGuarnicion.Multiline = true;
             this.txtGuarnicion.Name = "txtGuarnicion";
@@ -159,7 +172,7 @@
             this.txtGuarnicion.SelectionLength = 0;
             this.txtGuarnicion.SelectionStart = 0;
             this.txtGuarnicion.ShortcutsEnabled = true;
-            this.txtGuarnicion.Size = new System.Drawing.Size(446, 58);
+            this.txtGuarnicion.Size = new System.Drawing.Size(595, 71);
             this.txtGuarnicion.TabIndex = 5;
             this.txtGuarnicion.UseSelectable = true;
             this.txtGuarnicion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -168,18 +181,20 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(15, 66);
+            this.metroLabel2.Location = new System.Drawing.Point(20, 81);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(71, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(76, 20);
             this.metroLabel2.TabIndex = 4;
             this.metroLabel2.Text = "Guarnicion";
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(15, 10);
+            this.metroLabel1.Location = new System.Drawing.Point(20, 12);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(59, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(61, 20);
             this.metroLabel1.TabIndex = 3;
             this.metroLabel1.Text = "Nombre";
             // 
@@ -190,16 +205,18 @@
             // 
             // 
             this.txtNombre.CustomButton.Image = null;
-            this.txtNombre.CustomButton.Location = new System.Drawing.Point(424, 1);
+            this.txtNombre.CustomButton.Location = new System.Drawing.Point(759, 2);
+            this.txtNombre.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.CustomButton.Name = "";
-            this.txtNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtNombre.CustomButton.Size = new System.Drawing.Size(31, 28);
             this.txtNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtNombre.CustomButton.TabIndex = 1;
             this.txtNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtNombre.CustomButton.UseSelectable = true;
             this.txtNombre.CustomButton.Visible = false;
             this.txtNombre.Lines = new string[0];
-            this.txtNombre.Location = new System.Drawing.Point(16, 35);
+            this.txtNombre.Location = new System.Drawing.Point(21, 43);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.MaxLength = 32767;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.PasswordChar = '\0';
@@ -208,7 +225,7 @@
             this.txtNombre.SelectionLength = 0;
             this.txtNombre.SelectionStart = 0;
             this.txtNombre.ShortcutsEnabled = true;
-            this.txtNombre.Size = new System.Drawing.Size(446, 23);
+            this.txtNombre.Size = new System.Drawing.Size(595, 28);
             this.txtNombre.TabIndex = 2;
             this.txtNombre.UseSelectable = true;
             this.txtNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -221,16 +238,18 @@
             // 
             // 
             this.txtIngredienteNombre.CustomButton.Image = null;
-            this.txtIngredienteNombre.CustomButton.Location = new System.Drawing.Point(167, 1);
+            this.txtIngredienteNombre.CustomButton.Location = new System.Drawing.Point(301, 2);
+            this.txtIngredienteNombre.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIngredienteNombre.CustomButton.Name = "";
-            this.txtIngredienteNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtIngredienteNombre.CustomButton.Size = new System.Drawing.Size(31, 28);
             this.txtIngredienteNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtIngredienteNombre.CustomButton.TabIndex = 1;
             this.txtIngredienteNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtIngredienteNombre.CustomButton.UseSelectable = true;
             this.txtIngredienteNombre.CustomButton.Visible = false;
             this.txtIngredienteNombre.Lines = new string[0];
-            this.txtIngredienteNombre.Location = new System.Drawing.Point(15, 44);
+            this.txtIngredienteNombre.Location = new System.Drawing.Point(20, 54);
+            this.txtIngredienteNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIngredienteNombre.MaxLength = 32767;
             this.txtIngredienteNombre.Name = "txtIngredienteNombre";
             this.txtIngredienteNombre.PasswordChar = '\0';
@@ -239,7 +258,7 @@
             this.txtIngredienteNombre.SelectionLength = 0;
             this.txtIngredienteNombre.SelectionStart = 0;
             this.txtIngredienteNombre.ShortcutsEnabled = true;
-            this.txtIngredienteNombre.Size = new System.Drawing.Size(189, 23);
+            this.txtIngredienteNombre.Size = new System.Drawing.Size(252, 28);
             this.txtIngredienteNombre.TabIndex = 113;
             this.txtIngredienteNombre.UseSelectable = true;
             this.txtIngredienteNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -248,10 +267,11 @@
             // cbUnidad
             // 
             this.cbUnidad.FormattingEnabled = true;
-            this.cbUnidad.ItemHeight = 23;
-            this.cbUnidad.Location = new System.Drawing.Point(288, 39);
+            this.cbUnidad.ItemHeight = 24;
+            this.cbUnidad.Location = new System.Drawing.Point(384, 48);
+            this.cbUnidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbUnidad.Name = "cbUnidad";
-            this.cbUnidad.Size = new System.Drawing.Size(92, 29);
+            this.cbUnidad.Size = new System.Drawing.Size(121, 30);
             this.cbUnidad.TabIndex = 114;
             this.cbUnidad.UseSelectable = true;
             // 
@@ -268,30 +288,34 @@
             this.metroPanel2.Controls.Add(this.txtIngredienteNombre);
             this.metroPanel2.HorizontalScrollbarBarColor = true;
             this.metroPanel2.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.HorizontalScrollbarSize = 10;
-            this.metroPanel2.Location = new System.Drawing.Point(23, 272);
+            this.metroPanel2.HorizontalScrollbarSize = 12;
+            this.metroPanel2.Location = new System.Drawing.Point(31, 335);
+            this.metroPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel2.Name = "metroPanel2";
-            this.metroPanel2.Size = new System.Drawing.Size(477, 347);
+            this.metroPanel2.Size = new System.Drawing.Size(636, 427);
             this.metroPanel2.TabIndex = 115;
             this.metroPanel2.VerticalScrollbarBarColor = true;
             this.metroPanel2.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel2.VerticalScrollbarSize = 10;
+            this.metroPanel2.VerticalScrollbarSize = 13;
             // 
             // listIngredientes
             // 
             this.listIngredientes.FormattingEnabled = true;
-            this.listIngredientes.Location = new System.Drawing.Point(15, 78);
+            this.listIngredientes.ItemHeight = 16;
+            this.listIngredientes.Location = new System.Drawing.Point(20, 96);
+            this.listIngredientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.listIngredientes.Name = "listIngredientes";
-            this.listIngredientes.Size = new System.Drawing.Size(443, 225);
+            this.listIngredientes.Size = new System.Drawing.Size(589, 276);
             this.listIngredientes.TabIndex = 121;
             this.listIngredientes.SelectedIndexChanged += new System.EventHandler(this.ListIngredientes_SelectedIndexChanged);
             // 
             // btnLimpiarIngredientes
             // 
             this.btnLimpiarIngredientes.Enabled = false;
-            this.btnLimpiarIngredientes.Location = new System.Drawing.Point(17, 313);
+            this.btnLimpiarIngredientes.Location = new System.Drawing.Point(23, 385);
+            this.btnLimpiarIngredientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLimpiarIngredientes.Name = "btnLimpiarIngredientes";
-            this.btnLimpiarIngredientes.Size = new System.Drawing.Size(440, 23);
+            this.btnLimpiarIngredientes.Size = new System.Drawing.Size(587, 28);
             this.btnLimpiarIngredientes.TabIndex = 120;
             this.btnLimpiarIngredientes.Text = "Eliminar Ingrediente";
             this.btnLimpiarIngredientes.UseSelectable = true;
@@ -299,9 +323,10 @@
             // 
             // btnAgregarIngrediente
             // 
-            this.btnAgregarIngrediente.Location = new System.Drawing.Point(391, 40);
+            this.btnAgregarIngrediente.Location = new System.Drawing.Point(521, 49);
+            this.btnAgregarIngrediente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregarIngrediente.Name = "btnAgregarIngrediente";
-            this.btnAgregarIngrediente.Size = new System.Drawing.Size(67, 26);
+            this.btnAgregarIngrediente.Size = new System.Drawing.Size(89, 32);
             this.btnAgregarIngrediente.TabIndex = 119;
             this.btnAgregarIngrediente.Text = "Agregar";
             this.btnAgregarIngrediente.UseSelectable = true;
@@ -310,35 +335,39 @@
             // metroLabel5
             // 
             this.metroLabel5.AutoSize = true;
-            this.metroLabel5.Location = new System.Drawing.Point(288, 14);
+            this.metroLabel5.Location = new System.Drawing.Point(384, 17);
+            this.metroLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(51, 19);
+            this.metroLabel5.Size = new System.Drawing.Size(53, 20);
             this.metroLabel5.TabIndex = 118;
             this.metroLabel5.Text = "Unidad";
             // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
-            this.metroLabel4.Location = new System.Drawing.Point(210, 19);
+            this.metroLabel4.Location = new System.Drawing.Point(280, 23);
+            this.metroLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel4.Size = new System.Drawing.Size(63, 20);
             this.metroLabel4.TabIndex = 117;
             this.metroLabel4.Text = "Cantidad";
             // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(12, 19);
+            this.metroLabel3.Location = new System.Drawing.Point(16, 23);
+            this.metroLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(129, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(136, 20);
             this.metroLabel3.TabIndex = 116;
             this.metroLabel3.Text = "Nombre Ingrediente";
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(864, 32);
+            this.btnGuardar.Location = new System.Drawing.Point(1152, 39);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(114, 35);
+            this.btnGuardar.Size = new System.Drawing.Size(152, 43);
             this.btnGuardar.TabIndex = 121;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseSelectable = true;
@@ -347,9 +376,10 @@
             // btnRegresar
             // 
             this.btnRegresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnRegresar.Location = new System.Drawing.Point(1017, 32);
+            this.btnRegresar.Location = new System.Drawing.Point(1356, 39);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(114, 35);
+            this.btnRegresar.Size = new System.Drawing.Size(152, 43);
             this.btnRegresar.TabIndex = 122;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseSelectable = true;
@@ -369,29 +399,32 @@
             this.metroPanel3.Controls.Add(this.pbImagen1);
             this.metroPanel3.HorizontalScrollbarBarColor = true;
             this.metroPanel3.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.HorizontalScrollbarSize = 10;
-            this.metroPanel3.Location = new System.Drawing.Point(568, 401);
+            this.metroPanel3.HorizontalScrollbarSize = 12;
+            this.metroPanel3.Location = new System.Drawing.Point(757, 494);
+            this.metroPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel3.Name = "metroPanel3";
-            this.metroPanel3.Size = new System.Drawing.Size(563, 218);
+            this.metroPanel3.Size = new System.Drawing.Size(751, 268);
             this.metroPanel3.TabIndex = 123;
             this.metroPanel3.VerticalScrollbarBarColor = true;
             this.metroPanel3.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel3.VerticalScrollbarSize = 10;
+            this.metroPanel3.VerticalScrollbarSize = 13;
             // 
             // metroLabel7
             // 
             this.metroLabel7.AutoSize = true;
-            this.metroLabel7.Location = new System.Drawing.Point(12, 5);
+            this.metroLabel7.Location = new System.Drawing.Point(16, 6);
+            this.metroLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel7.Name = "metroLabel7";
-            this.metroLabel7.Size = new System.Drawing.Size(133, 19);
+            this.metroLabel7.Size = new System.Drawing.Size(138, 20);
             this.metroLabel7.TabIndex = 122;
             this.metroLabel7.Text = "Imagen del Producto";
             // 
             // btnSubirFoto3
             // 
-            this.btnSubirFoto3.Location = new System.Drawing.Point(392, 38);
+            this.btnSubirFoto3.Location = new System.Drawing.Point(523, 47);
+            this.btnSubirFoto3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSubirFoto3.Name = "btnSubirFoto3";
-            this.btnSubirFoto3.Size = new System.Drawing.Size(149, 23);
+            this.btnSubirFoto3.Size = new System.Drawing.Size(199, 28);
             this.btnSubirFoto3.TabIndex = 107;
             this.btnSubirFoto3.Text = "Cargar";
             this.btnSubirFoto3.UseSelectable = true;
@@ -399,9 +432,10 @@
             // 
             // btnSubirFoto2
             // 
-            this.btnSubirFoto2.Location = new System.Drawing.Point(201, 38);
+            this.btnSubirFoto2.Location = new System.Drawing.Point(268, 47);
+            this.btnSubirFoto2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSubirFoto2.Name = "btnSubirFoto2";
-            this.btnSubirFoto2.Size = new System.Drawing.Size(149, 23);
+            this.btnSubirFoto2.Size = new System.Drawing.Size(199, 28);
             this.btnSubirFoto2.TabIndex = 106;
             this.btnSubirFoto2.Text = "Cargar";
             this.btnSubirFoto2.UseSelectable = true;
@@ -409,9 +443,10 @@
             // 
             // btnSubirFoto1
             // 
-            this.btnSubirFoto1.Location = new System.Drawing.Point(15, 38);
+            this.btnSubirFoto1.Location = new System.Drawing.Point(20, 47);
+            this.btnSubirFoto1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSubirFoto1.Name = "btnSubirFoto1";
-            this.btnSubirFoto1.Size = new System.Drawing.Size(149, 23);
+            this.btnSubirFoto1.Size = new System.Drawing.Size(199, 28);
             this.btnSubirFoto1.TabIndex = 105;
             this.btnSubirFoto1.Text = "Cargar";
             this.btnSubirFoto1.UseSelectable = true;
@@ -420,9 +455,10 @@
             // BtnRemoverImagen3
             // 
             this.BtnRemoverImagen3.Enabled = false;
-            this.BtnRemoverImagen3.Location = new System.Drawing.Point(392, 183);
+            this.BtnRemoverImagen3.Location = new System.Drawing.Point(523, 225);
+            this.BtnRemoverImagen3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnRemoverImagen3.Name = "BtnRemoverImagen3";
-            this.BtnRemoverImagen3.Size = new System.Drawing.Size(149, 23);
+            this.BtnRemoverImagen3.Size = new System.Drawing.Size(199, 28);
             this.BtnRemoverImagen3.TabIndex = 104;
             this.BtnRemoverImagen3.Text = "Remover";
             this.BtnRemoverImagen3.UseSelectable = true;
@@ -431,9 +467,10 @@
             // BtnRemoverImagen2
             // 
             this.BtnRemoverImagen2.Enabled = false;
-            this.BtnRemoverImagen2.Location = new System.Drawing.Point(201, 183);
+            this.BtnRemoverImagen2.Location = new System.Drawing.Point(268, 225);
+            this.BtnRemoverImagen2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnRemoverImagen2.Name = "BtnRemoverImagen2";
-            this.BtnRemoverImagen2.Size = new System.Drawing.Size(149, 23);
+            this.BtnRemoverImagen2.Size = new System.Drawing.Size(199, 28);
             this.BtnRemoverImagen2.TabIndex = 103;
             this.BtnRemoverImagen2.Text = "Remover";
             this.BtnRemoverImagen2.UseSelectable = true;
@@ -442,9 +479,10 @@
             // BtnRemoverImagen1
             // 
             this.BtnRemoverImagen1.Enabled = false;
-            this.BtnRemoverImagen1.Location = new System.Drawing.Point(15, 183);
+            this.BtnRemoverImagen1.Location = new System.Drawing.Point(20, 225);
+            this.BtnRemoverImagen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnRemoverImagen1.Name = "BtnRemoverImagen1";
-            this.BtnRemoverImagen1.Size = new System.Drawing.Size(149, 23);
+            this.BtnRemoverImagen1.Size = new System.Drawing.Size(199, 28);
             this.BtnRemoverImagen1.TabIndex = 102;
             this.BtnRemoverImagen1.Text = "Remover";
             this.BtnRemoverImagen1.UseSelectable = true;
@@ -457,16 +495,18 @@
             // 
             // 
             this.txtInstruccion.CustomButton.Image = null;
-            this.txtInstruccion.CustomButton.Location = new System.Drawing.Point(349, 1);
+            this.txtInstruccion.CustomButton.Location = new System.Drawing.Point(625, 2);
+            this.txtInstruccion.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtInstruccion.CustomButton.Name = "";
-            this.txtInstruccion.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtInstruccion.CustomButton.Size = new System.Drawing.Size(31, 28);
             this.txtInstruccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtInstruccion.CustomButton.TabIndex = 1;
             this.txtInstruccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtInstruccion.CustomButton.UseSelectable = true;
             this.txtInstruccion.CustomButton.Visible = false;
             this.txtInstruccion.Lines = new string[0];
-            this.txtInstruccion.Location = new System.Drawing.Point(91, 19);
+            this.txtInstruccion.Location = new System.Drawing.Point(121, 23);
+            this.txtInstruccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtInstruccion.MaxLength = 32767;
             this.txtInstruccion.Name = "txtInstruccion";
             this.txtInstruccion.PasswordChar = '\0';
@@ -475,7 +515,7 @@
             this.txtInstruccion.SelectionLength = 0;
             this.txtInstruccion.SelectionStart = 0;
             this.txtInstruccion.ShortcutsEnabled = true;
-            this.txtInstruccion.Size = new System.Drawing.Size(371, 23);
+            this.txtInstruccion.Size = new System.Drawing.Size(495, 28);
             this.txtInstruccion.TabIndex = 124;
             this.txtInstruccion.UseSelectable = true;
             this.txtInstruccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -483,9 +523,10 @@
             // 
             // btnAgregarInstruccion
             // 
-            this.btnAgregarInstruccion.Location = new System.Drawing.Point(474, 19);
+            this.btnAgregarInstruccion.Location = new System.Drawing.Point(632, 23);
+            this.btnAgregarInstruccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregarInstruccion.Name = "btnAgregarInstruccion";
-            this.btnAgregarInstruccion.Size = new System.Drawing.Size(67, 24);
+            this.btnAgregarInstruccion.Size = new System.Drawing.Size(89, 30);
             this.btnAgregarInstruccion.TabIndex = 125;
             this.btnAgregarInstruccion.Text = "Agregar";
             this.btnAgregarInstruccion.UseSelectable = true;
@@ -500,39 +541,44 @@
             this.metroPanel4.Controls.Add(this.txtInstruccion);
             this.metroPanel4.HorizontalScrollbarBarColor = true;
             this.metroPanel4.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel4.HorizontalScrollbarSize = 10;
-            this.metroPanel4.Location = new System.Drawing.Point(568, 83);
+            this.metroPanel4.HorizontalScrollbarSize = 12;
+            this.metroPanel4.Location = new System.Drawing.Point(757, 102);
+            this.metroPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroPanel4.Name = "metroPanel4";
-            this.metroPanel4.Size = new System.Drawing.Size(563, 299);
+            this.metroPanel4.Size = new System.Drawing.Size(751, 368);
             this.metroPanel4.TabIndex = 126;
             this.metroPanel4.VerticalScrollbarBarColor = true;
             this.metroPanel4.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel4.VerticalScrollbarSize = 10;
+            this.metroPanel4.VerticalScrollbarSize = 13;
             // 
             // ListInstrucciones
             // 
             this.ListInstrucciones.FormattingEnabled = true;
-            this.ListInstrucciones.Location = new System.Drawing.Point(15, 56);
+            this.ListInstrucciones.ItemHeight = 16;
+            this.ListInstrucciones.Location = new System.Drawing.Point(20, 69);
+            this.ListInstrucciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ListInstrucciones.Name = "ListInstrucciones";
-            this.ListInstrucciones.Size = new System.Drawing.Size(529, 199);
+            this.ListInstrucciones.Size = new System.Drawing.Size(704, 244);
             this.ListInstrucciones.TabIndex = 129;
             this.ListInstrucciones.SelectedIndexChanged += new System.EventHandler(this.ListInstrucciones_SelectedIndexChanged);
             // 
             // metroLabel6
             // 
             this.metroLabel6.AutoSize = true;
-            this.metroLabel6.Location = new System.Drawing.Point(13, 19);
+            this.metroLabel6.Location = new System.Drawing.Point(17, 23);
+            this.metroLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(73, 19);
+            this.metroLabel6.Size = new System.Drawing.Size(79, 20);
             this.metroLabel6.TabIndex = 128;
             this.metroLabel6.Text = "Instruccion:";
             // 
             // btnLimpiarInstrucciones
             // 
             this.btnLimpiarInstrucciones.Enabled = false;
-            this.btnLimpiarInstrucciones.Location = new System.Drawing.Point(15, 264);
+            this.btnLimpiarInstrucciones.Location = new System.Drawing.Point(20, 325);
+            this.btnLimpiarInstrucciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLimpiarInstrucciones.Name = "btnLimpiarInstrucciones";
-            this.btnLimpiarInstrucciones.Size = new System.Drawing.Size(529, 23);
+            this.btnLimpiarInstrucciones.Size = new System.Drawing.Size(705, 28);
             this.btnLimpiarInstrucciones.TabIndex = 127;
             this.btnLimpiarInstrucciones.Text = "Eliminar Instruccion";
             this.btnLimpiarInstrucciones.UseSelectable = true;
@@ -540,9 +586,9 @@
             // 
             // altas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1171, 636);
+            this.ClientSize = new System.Drawing.Size(1561, 783);
             this.ControlBox = false;
             this.Controls.Add(this.metroPanel4);
             this.Controls.Add(this.metroPanel3);
@@ -551,7 +597,9 @@
             this.Controls.Add(this.metroPanel2);
             this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "altas";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Alta de Productos";
             this.Load += new System.EventHandler(this.altas_Load);

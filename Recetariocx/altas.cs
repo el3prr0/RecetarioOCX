@@ -191,7 +191,7 @@ namespace Recetariocx
                     _Ingredientes.Add(new Ingrediente
                     {
                         Nombre = txtIngredienteNombre.Text.ToUpper().Trim(),
-                        Cantidad = Convert.ToInt32(nmCantidad.Value),
+                        Cantidad = nmCantidad.Value,
                         Unidad = cbUnidad.Text.Trim()
                     });
                     listIngredientes.DisplayMember = "Reglon";

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Recetariocx
 {
-    public partial class ayuda : Form
+    public partial class ayuda : MetroFramework.Forms.MetroForm
     {
         public ayuda()
         {

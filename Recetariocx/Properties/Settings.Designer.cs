@@ -22,27 +22,5 @@ namespace Recetariocx.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=192.168.25.10\\NATIONALSOFT;Initial Catalog=recetario;Integrated Secur" +
-            "ity=True")]
-        public string recetarioConnectionString {
-            get {
-                return ((string)(this["recetarioConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\BDrecetario.m" +
-            "df;Integrated Security=True;Connect Timeout=30")]
-        public string Conectar {
-            get {
-                return ((string)(this["Conectar"]));
-            }
-        }
     }
 }

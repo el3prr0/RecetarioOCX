@@ -39,7 +39,7 @@ namespace Logic.Repository
     ProductoId    INTEGER NOT NULL,
     Nombre    TEXT NOT NULL,
     Unidad    TEXT NOT NULL,
-    Cantidad  INTEGER NOT NULL,
+    Cantidad  NUMERIC NOT NULL,
     Activo    INTEGER DEFAULT 1)");
             await con.Execute(@"CREATE TABLE Instrucciones (
     Id    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,

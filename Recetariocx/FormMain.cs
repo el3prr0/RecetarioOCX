@@ -3,8 +3,10 @@ using Logic.Repository;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +22,7 @@ namespace Recetariocx
         ImagenRepository _ImagenRepository;
         private int selected = 0;
         private string[] folderFile = null;
+        private readonly string imagenpath;
         public FormMain()
         {
             InitializeComponent();
@@ -27,6 +30,7 @@ namespace Recetariocx
             _IngredienteRepository = new IngredienteRepository();
             _InstruccionRepository = new InstruccionRepository();
             _ImagenRepository = new ImagenRepository();
+            imagenpath = ConfigurationManager.AppSettings["LogoPath"].ToString();
         }
 
 
@@ -144,6 +148,15 @@ namespace Recetariocx
         private async void FormMain_Load(object sender, EventArgs e)
         {
             await BuscarProductos("");
+             CargarLogo();
+        }
+
+        private void CargarLogo()
+        {
+            if (File.Exists(imagenpath))
+            {
+                pbLogo.Image = Image.FromFile(imagenpath);
+            }
         }
 
         private async void TxtProducto_TextChanged(object sender, EventArgs e)
