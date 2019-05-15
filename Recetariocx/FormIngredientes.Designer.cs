@@ -49,35 +49,44 @@
             // nmCantidad
             // 
             this.nmCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmCantidad.Location = new System.Drawing.Point(244, 315);
+            this.nmCantidad.Location = new System.Drawing.Point(325, 388);
+            this.nmCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nmCantidad.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.nmCantidad.Name = "nmCantidad";
-            this.nmCantidad.Size = new System.Drawing.Size(62, 24);
+            this.nmCantidad.Size = new System.Drawing.Size(83, 29);
             this.nmCantidad.TabIndex = 111;
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(47, 289);
+            this.metroLabel1.Location = new System.Drawing.Point(63, 356);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(151, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(159, 20);
             this.metroLabel1.TabIndex = 116;
             this.metroLabel1.Text = "Nombre del Ingrediente";
             // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(241, 289);
+            this.metroLabel2.Location = new System.Drawing.Point(321, 356);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(62, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(63, 20);
             this.metroLabel2.TabIndex = 117;
             this.metroLabel2.Text = "Cantidad";
             // 
             // metroLabel3
             // 
             this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(326, 289);
+            this.metroLabel3.Location = new System.Drawing.Point(435, 356);
+            this.metroLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(51, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(53, 20);
             this.metroLabel3.TabIndex = 118;
             this.metroLabel3.Text = "Unidad";
             // 
@@ -88,16 +97,18 @@
             // 
             // 
             this.txtIngredienteNombre.CustomButton.Image = null;
-            this.txtIngredienteNombre.CustomButton.Location = new System.Drawing.Point(160, 1);
+            this.txtIngredienteNombre.CustomButton.Location = new System.Drawing.Point(289, 2);
+            this.txtIngredienteNombre.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIngredienteNombre.CustomButton.Name = "";
-            this.txtIngredienteNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtIngredienteNombre.CustomButton.Size = new System.Drawing.Size(31, 28);
             this.txtIngredienteNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtIngredienteNombre.CustomButton.TabIndex = 1;
             this.txtIngredienteNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtIngredienteNombre.CustomButton.UseSelectable = true;
             this.txtIngredienteNombre.CustomButton.Visible = false;
             this.txtIngredienteNombre.Lines = new string[0];
-            this.txtIngredienteNombre.Location = new System.Drawing.Point(50, 315);
+            this.txtIngredienteNombre.Location = new System.Drawing.Point(67, 388);
+            this.txtIngredienteNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtIngredienteNombre.MaxLength = 32767;
             this.txtIngredienteNombre.Name = "txtIngredienteNombre";
             this.txtIngredienteNombre.PasswordChar = '\0';
@@ -106,7 +117,7 @@
             this.txtIngredienteNombre.SelectionLength = 0;
             this.txtIngredienteNombre.SelectionStart = 0;
             this.txtIngredienteNombre.ShortcutsEnabled = true;
-            this.txtIngredienteNombre.Size = new System.Drawing.Size(182, 23);
+            this.txtIngredienteNombre.Size = new System.Drawing.Size(243, 28);
             this.txtIngredienteNombre.TabIndex = 119;
             this.txtIngredienteNombre.UseSelectable = true;
             this.txtIngredienteNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -115,18 +126,20 @@
             // cbUnidad
             // 
             this.cbUnidad.FormattingEnabled = true;
-            this.cbUnidad.ItemHeight = 23;
-            this.cbUnidad.Location = new System.Drawing.Point(324, 314);
+            this.cbUnidad.ItemHeight = 24;
+            this.cbUnidad.Location = new System.Drawing.Point(432, 386);
+            this.cbUnidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbUnidad.Name = "cbUnidad";
-            this.cbUnidad.Size = new System.Drawing.Size(104, 29);
+            this.cbUnidad.Size = new System.Drawing.Size(137, 30);
             this.cbUnidad.TabIndex = 120;
             this.cbUnidad.UseSelectable = true;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(50, 371);
+            this.btnAgregar.Location = new System.Drawing.Point(67, 457);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(108, 47);
+            this.btnAgregar.Size = new System.Drawing.Size(144, 58);
             this.btnAgregar.TabIndex = 121;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseSelectable = true;
@@ -134,9 +147,10 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(186, 371);
+            this.btnModificar.Location = new System.Drawing.Point(248, 457);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(108, 47);
+            this.btnModificar.Size = new System.Drawing.Size(144, 58);
             this.btnModificar.TabIndex = 122;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseSelectable = true;
@@ -144,9 +158,10 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(321, 371);
+            this.btnEliminar.Location = new System.Drawing.Point(428, 457);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(108, 47);
+            this.btnEliminar.Size = new System.Drawing.Size(144, 58);
             this.btnEliminar.TabIndex = 123;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseSelectable = true;
@@ -155,7 +170,8 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(296, 31);
+            this.lblNombre.Location = new System.Drawing.Point(395, 38);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(0, 0);
             this.lblNombre.TabIndex = 124;
@@ -190,7 +206,8 @@
             this.dgIngredientes.EnableHeadersVisualStyles = false;
             this.dgIngredientes.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgIngredientes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgIngredientes.Location = new System.Drawing.Point(47, 90);
+            this.dgIngredientes.Location = new System.Drawing.Point(63, 111);
+            this.dgIngredientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgIngredientes.Name = "dgIngredientes";
             this.dgIngredientes.ReadOnly = true;
             this.dgIngredientes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -204,15 +221,15 @@
             this.dgIngredientes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgIngredientes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgIngredientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgIngredientes.Size = new System.Drawing.Size(408, 150);
+            this.dgIngredientes.Size = new System.Drawing.Size(544, 185);
             this.dgIngredientes.TabIndex = 125;
             this.dgIngredientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgIngredientes_CellClick);
             // 
             // FormIngredientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 450);
+            this.ClientSize = new System.Drawing.Size(680, 554);
             this.Controls.Add(this.dgIngredientes);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.btnEliminar);
@@ -224,7 +241,9 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.nmCantidad);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormIngredientes";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Text = "Ingredientes";
             this.Load += new System.EventHandler(this.FormIngredientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.nmCantidad)).EndInit();
