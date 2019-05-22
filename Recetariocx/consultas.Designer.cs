@@ -55,7 +55,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Location = new System.Drawing.Point(1213, 107);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(167, 50);
             this.btnEliminar.TabIndex = 94;
@@ -66,7 +66,7 @@
             // btnIngredientes
             // 
             this.btnIngredientes.Location = new System.Drawing.Point(1213, 320);
-            this.btnIngredientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIngredientes.Margin = new System.Windows.Forms.Padding(4);
             this.btnIngredientes.Name = "btnIngredientes";
             this.btnIngredientes.Size = new System.Drawing.Size(167, 50);
             this.btnIngredientes.TabIndex = 95;
@@ -77,7 +77,7 @@
             // btnInstrucciones
             // 
             this.btnInstrucciones.Location = new System.Drawing.Point(1213, 419);
-            this.btnInstrucciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnInstrucciones.Margin = new System.Windows.Forms.Padding(4);
             this.btnInstrucciones.Name = "btnInstrucciones";
             this.btnInstrucciones.Size = new System.Drawing.Size(167, 50);
             this.btnInstrucciones.TabIndex = 96;
@@ -88,7 +88,7 @@
             // btnImagenes
             // 
             this.btnImagenes.Location = new System.Drawing.Point(1213, 514);
-            this.btnImagenes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnImagenes.Margin = new System.Windows.Forms.Padding(4);
             this.btnImagenes.Name = "btnImagenes";
             this.btnImagenes.Size = new System.Drawing.Size(167, 50);
             this.btnImagenes.TabIndex = 97;
@@ -99,7 +99,7 @@
             // btnCerrar
             // 
             this.btnCerrar.Location = new System.Drawing.Point(1213, 191);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(167, 50);
             this.btnCerrar.TabIndex = 98;
@@ -110,7 +110,7 @@
             // btnmodificar
             // 
             this.btnmodificar.Location = new System.Drawing.Point(29, 572);
-            this.btnmodificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnmodificar.Margin = new System.Windows.Forms.Padding(4);
             this.btnmodificar.Name = "btnmodificar";
             this.btnmodificar.Size = new System.Drawing.Size(167, 50);
             this.btnmodificar.TabIndex = 99;
@@ -121,7 +121,7 @@
             // btnAgregar
             // 
             this.btnAgregar.Location = new System.Drawing.Point(1213, 28);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(167, 50);
             this.btnAgregar.TabIndex = 100;
@@ -135,10 +135,10 @@
             // 
             // 
             this.txtNombre.CustomButton.Image = null;
-            this.txtNombre.CustomButton.Location = new System.Drawing.Point(660, 2);
-            this.txtNombre.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.CustomButton.Location = new System.Drawing.Point(495, 2);
+            this.txtNombre.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.CustomButton.Name = "";
-            this.txtNombre.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtNombre.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtNombre.CustomButton.TabIndex = 1;
             this.txtNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -146,7 +146,7 @@
             this.txtNombre.CustomButton.Visible = false;
             this.txtNombre.Lines = new string[0];
             this.txtNombre.Location = new System.Drawing.Point(29, 374);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.MaxLength = 32767;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.PasswordChar = '\0';
@@ -168,7 +168,7 @@
             // 
             this.txtGuarnicion.CustomButton.Image = null;
             this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(401, 1);
-            this.txtGuarnicion.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGuarnicion.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtGuarnicion.CustomButton.Name = "";
             this.txtGuarnicion.CustomButton.Size = new System.Drawing.Size(119, 119);
             this.txtGuarnicion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
@@ -178,7 +178,7 @@
             this.txtGuarnicion.CustomButton.Visible = false;
             this.txtGuarnicion.Lines = new string[0];
             this.txtGuarnicion.Location = new System.Drawing.Point(29, 443);
-            this.txtGuarnicion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGuarnicion.Margin = new System.Windows.Forms.Padding(4);
             this.txtGuarnicion.MaxLength = 32767;
             this.txtGuarnicion.Multiline = true;
             this.txtGuarnicion.Name = "txtGuarnicion";
@@ -200,10 +200,10 @@
             // 
             // 
             this.txtFiltro.CustomButton.Image = null;
-            this.txtFiltro.CustomButton.Location = new System.Drawing.Point(772, 2);
-            this.txtFiltro.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFiltro.CustomButton.Location = new System.Drawing.Point(579, 2);
+            this.txtFiltro.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtFiltro.CustomButton.Name = "";
-            this.txtFiltro.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtFiltro.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtFiltro.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtFiltro.CustomButton.TabIndex = 1;
             this.txtFiltro.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -211,7 +211,7 @@
             this.txtFiltro.CustomButton.Visible = false;
             this.txtFiltro.Lines = new string[0];
             this.txtFiltro.Location = new System.Drawing.Point(571, 39);
-            this.txtFiltro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtFiltro.Margin = new System.Windows.Forms.Padding(4);
             this.txtFiltro.MaxLength = 32767;
             this.txtFiltro.Name = "txtFiltro";
             this.txtFiltro.PasswordChar = '\0';
@@ -226,7 +226,6 @@
             this.txtFiltro.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtFiltro.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.txtFiltro.TextChanged += new System.EventHandler(this.TxtFiltro_TextChanged);
-
             // 
             // dtProductos
             // 
@@ -256,7 +255,7 @@
             this.dtProductos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dtProductos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dtProductos.Location = new System.Drawing.Point(31, 107);
-            this.dtProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtProductos.Margin = new System.Windows.Forms.Padding(4);
             this.dtProductos.Name = "dtProductos";
             this.dtProductos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -308,10 +307,22 @@
             // 
             // nmPrecio
             // 
+            this.nmPrecio.DecimalPlaces = 3;
+            this.nmPrecio.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.nmPrecio.Location = new System.Drawing.Point(584, 374);
+            this.nmPrecio.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            196608});
             this.nmPrecio.Name = "nmPrecio";
             this.nmPrecio.Size = new System.Drawing.Size(247, 22);
             this.nmPrecio.TabIndex = 107;
+            this.nmPrecio.ThousandsSeparator = true;
             // 
             // metroLabel1
             // 
@@ -372,7 +383,7 @@
             this.Controls.Add(this.btnInstrucciones);
             this.Controls.Add(this.btnIngredientes);
             this.Controls.Add(this.btnEliminar);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "consultas";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

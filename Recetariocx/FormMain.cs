@@ -71,7 +71,7 @@ namespace Recetariocx
         private async Task CargarListas(int productoId)
         {
             var ingredientes = await _IngredienteRepository.GetWithProduct(productoId);
-
+            timer1.Enabled = false;
             listIngredientes.Items.Clear();
 
             foreach (Ingrediente ingrediente in ingredientes)
@@ -95,6 +95,7 @@ namespace Recetariocx
                 folderFile[i] = imagen.Url;
                 i++;
             }
+            selected = 0;
             showImage(folderFile[selected]);
             timer1.Enabled = true;
 

@@ -34,6 +34,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.nmCantidad = new System.Windows.Forms.NumericUpDown();
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
+            this.txtDescripcion = new MetroFramework.Controls.MetroTextBox();
+            this.nmPrecio = new System.Windows.Forms.NumericUpDown();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
             this.txtGuarnicion = new MetroFramework.Controls.MetroTextBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -63,19 +67,15 @@
             this.ListInstrucciones = new System.Windows.Forms.ListBox();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.btnLimpiarInstrucciones = new MetroFramework.Controls.MetroButton();
-            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
-            this.nmPrecio = new System.Windows.Forms.NumericUpDown();
-            this.txtDescripcion = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbImagen1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nmCantidad)).BeginInit();
             this.metroPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmPrecio)).BeginInit();
             this.metroPanel2.SuspendLayout();
             this.metroPanel3.SuspendLayout();
             this.metroPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmPrecio)).BeginInit();
             this.SuspendLayout();
             // 
             // pbImagen3
@@ -119,14 +119,20 @@
             // 
             // nmCantidad
             // 
+            this.nmCantidad.DecimalPlaces = 3;
             this.nmCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmCantidad.Location = new System.Drawing.Point(284, 53);
-            this.nmCantidad.Margin = new System.Windows.Forms.Padding(4);
-            this.nmCantidad.Maximum = new decimal(new int[] {
-            9999,
+            this.nmCantidad.Increment = new decimal(new int[] {
+            0,
             0,
             0,
             0});
+            this.nmCantidad.Location = new System.Drawing.Point(284, 53);
+            this.nmCantidad.Margin = new System.Windows.Forms.Padding(4);
+            this.nmCantidad.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            196608});
             this.nmCantidad.Name = "nmCantidad";
             this.nmCantidad.Size = new System.Drawing.Size(77, 29);
             this.nmCantidad.TabIndex = 8;
@@ -152,6 +158,81 @@
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 13;
+            // 
+            // metroLabel9
+            // 
+            this.metroLabel9.AutoSize = true;
+            this.metroLabel9.Location = new System.Drawing.Point(152, 79);
+            this.metroLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(82, 20);
+            this.metroLabel9.TabIndex = 124;
+            this.metroLabel9.Text = "Descripcion";
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            // 
+            // 
+            // 
+            this.txtDescripcion.CustomButton.Image = null;
+            this.txtDescripcion.CustomButton.Location = new System.Drawing.Point(397, 2);
+            this.txtDescripcion.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescripcion.CustomButton.Name = "";
+            this.txtDescripcion.CustomButton.Size = new System.Drawing.Size(63, 63);
+            this.txtDescripcion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.txtDescripcion.CustomButton.TabIndex = 1;
+            this.txtDescripcion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.txtDescripcion.CustomButton.UseSelectable = true;
+            this.txtDescripcion.CustomButton.Visible = false;
+            this.txtDescripcion.Lines = new string[0];
+            this.txtDescripcion.Location = new System.Drawing.Point(152, 103);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescripcion.MaxLength = 32767;
+            this.txtDescripcion.Multiline = true;
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.PasswordChar = '\0';
+            this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtDescripcion.SelectedText = "";
+            this.txtDescripcion.SelectionLength = 0;
+            this.txtDescripcion.SelectionStart = 0;
+            this.txtDescripcion.ShortcutsEnabled = true;
+            this.txtDescripcion.Size = new System.Drawing.Size(463, 68);
+            this.txtDescripcion.TabIndex = 123;
+            this.txtDescripcion.UseSelectable = true;
+            this.txtDescripcion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.txtDescripcion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // nmPrecio
+            // 
+            this.nmPrecio.DecimalPlaces = 3;
+            this.nmPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nmPrecio.Increment = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.nmPrecio.Location = new System.Drawing.Point(23, 103);
+            this.nmPrecio.Margin = new System.Windows.Forms.Padding(4);
+            this.nmPrecio.Maximum = new decimal(new int[] {
+            99999999,
+            0,
+            0,
+            196608});
+            this.nmPrecio.Name = "nmPrecio";
+            this.nmPrecio.Size = new System.Drawing.Size(121, 29);
+            this.nmPrecio.TabIndex = 122;
+            this.nmPrecio.ThousandsSeparator = true;
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.AutoSize = true;
+            this.metroLabel8.Location = new System.Drawing.Point(23, 79);
+            this.metroLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(48, 20);
+            this.metroLabel8.TabIndex = 118;
+            this.metroLabel8.Text = "Precio";
             // 
             // txtGuarnicion
             // 
@@ -593,74 +674,6 @@
             this.btnLimpiarInstrucciones.UseSelectable = true;
             this.btnLimpiarInstrucciones.Click += new System.EventHandler(this.BtnLimpiarInstrucciones_Click);
             // 
-            // metroLabel8
-            // 
-            this.metroLabel8.AutoSize = true;
-            this.metroLabel8.Location = new System.Drawing.Point(23, 79);
-            this.metroLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(48, 20);
-            this.metroLabel8.TabIndex = 118;
-            this.metroLabel8.Text = "Precio";
-            // 
-            // nmPrecio
-            // 
-            this.nmPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nmPrecio.Location = new System.Drawing.Point(23, 103);
-            this.nmPrecio.Margin = new System.Windows.Forms.Padding(4);
-            this.nmPrecio.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.nmPrecio.Name = "nmPrecio";
-            this.nmPrecio.Size = new System.Drawing.Size(121, 29);
-            this.nmPrecio.TabIndex = 122;
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            // 
-            // 
-            // 
-            this.txtDescripcion.CustomButton.Image = null;
-            this.txtDescripcion.CustomButton.Location = new System.Drawing.Point(397, 2);
-            this.txtDescripcion.CustomButton.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDescripcion.CustomButton.Name = "";
-            this.txtDescripcion.CustomButton.Size = new System.Drawing.Size(63, 63);
-            this.txtDescripcion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.txtDescripcion.CustomButton.TabIndex = 1;
-            this.txtDescripcion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.txtDescripcion.CustomButton.UseSelectable = true;
-            this.txtDescripcion.CustomButton.Visible = false;
-            this.txtDescripcion.Lines = new string[0];
-            this.txtDescripcion.Location = new System.Drawing.Point(152, 103);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
-            this.txtDescripcion.MaxLength = 32767;
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.PasswordChar = '\0';
-            this.txtDescripcion.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtDescripcion.SelectedText = "";
-            this.txtDescripcion.SelectionLength = 0;
-            this.txtDescripcion.SelectionStart = 0;
-            this.txtDescripcion.ShortcutsEnabled = true;
-            this.txtDescripcion.Size = new System.Drawing.Size(463, 68);
-            this.txtDescripcion.TabIndex = 123;
-            this.txtDescripcion.UseSelectable = true;
-            this.txtDescripcion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.txtDescripcion.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel9
-            // 
-            this.metroLabel9.AutoSize = true;
-            this.metroLabel9.Location = new System.Drawing.Point(152, 79);
-            this.metroLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(82, 20);
-            this.metroLabel9.TabIndex = 124;
-            this.metroLabel9.Text = "Descripcion";
-            // 
             // altas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -686,13 +699,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmCantidad)).EndInit();
             this.metroPanel1.ResumeLayout(false);
             this.metroPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmPrecio)).EndInit();
             this.metroPanel2.ResumeLayout(false);
             this.metroPanel2.PerformLayout();
             this.metroPanel3.ResumeLayout(false);
             this.metroPanel3.PerformLayout();
             this.metroPanel4.ResumeLayout(false);
             this.metroPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nmPrecio)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

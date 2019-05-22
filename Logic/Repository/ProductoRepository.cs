@@ -69,6 +69,8 @@ values('{entity.Nombre}','{entity.Guarnicion}','{entity.ImagenPrincipal}','{enti
                             FechaCreacion = Convert.ToDateTime(r["FechaCreacion"]),
                             Clave = Convert.ToInt32(r["Clave"]),
                             Grupo = Convert.ToInt32(r["Grupo"]),
+                            Descripcion = r["Descripcion"].ToString(),
+                            Precio = Convert.ToDecimal(r["Precio"]),
                             SubGrupo = Convert.ToInt32(r["SubGrupo"])
                         });
                     }
@@ -102,6 +104,8 @@ values('{entity.Nombre}','{entity.Guarnicion}','{entity.ImagenPrincipal}','{enti
                             FechaCreacion = Convert.ToDateTime(r["FechaCreacion"]),
                             Clave = Convert.ToInt32(r["Clave"]),
                             Grupo = Convert.ToInt32(r["Grupo"]),
+                            Descripcion = r["Descripcion"].ToString(),
+                            Precio = Convert.ToDecimal(r["Precio"]),
                             SubGrupo = Convert.ToInt32(r["SubGrupo"])
                         });
                     }

@@ -34,9 +34,11 @@ namespace Recetariocx
         private void BtnModificar_Click(object sender, EventArgs e)
         {
             OpenFileDialog BuscarImagen = new OpenFileDialog();
-            BuscarImagen.Filter = "Archivo JPG|*.jpg";
+            BuscarImagen.Filter = "Archivos Imagenes (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
+
             if (BuscarImagen.ShowDialog() == DialogResult.OK)
             {
+                pbLogo.Image = null;
                 var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 400, 200);
                 pbLogo.Image = imagenBit;
 

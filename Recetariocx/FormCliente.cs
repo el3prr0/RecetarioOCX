@@ -65,6 +65,7 @@ namespace Recetariocx
                 txtGuarnicion.Text = producto.Guarnicion;
                 txtPrecio.Text = producto.Precio.ToString();
                 txtDescripcion.Text = producto.Descripcion;
+                
             }
             
         }
@@ -72,6 +73,7 @@ namespace Recetariocx
 
         private async Task CargarListas(int productoId)
         {
+            timer1.Enabled = false;
             var ingredientes = await _IngredienteRepository.GetWithProduct(productoId);
 
             listIngredientes.Items.Clear();
@@ -81,9 +83,6 @@ namespace Recetariocx
                 listIngredientes.Items.Add(ingrediente.Nombre);
             }
 
-
-            
-
             var Imagenes = await _ImagenRepository.GetWithProduct(productoId);
             folderFile = new string[Imagenes.Count()];
             int i = 0;
@@ -92,6 +91,7 @@ namespace Recetariocx
                 folderFile[i] = imagen.Url;
                 i++;
             }
+            selected = 0;
             showImage(folderFile[selected]);
             timer1.Enabled = true;
 
@@ -99,6 +99,7 @@ namespace Recetariocx
             btnNext.Enabled = true;
             btnTimer.Enabled = true;
             btnTimer.Text = "Detener";
+            
         }
 
         private void showImage(string path)
@@ -138,9 +139,6 @@ namespace Recetariocx
         {
             nextImage();
         }
-
-
-
 
         private async void FormMain_Load(object sender, EventArgs e)
         {

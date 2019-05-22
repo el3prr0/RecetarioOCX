@@ -93,7 +93,7 @@ namespace Recetariocx
         {
             if (txtInstruccion.Text.Trim().Length > 0)
             {
-                if (await _instruccionRepository.Save(new Instruccion { Paso = txtInstruccion.Text.Trim().ToUpper(), ProductoId = _productoId, Id = _id }))
+                if (await _instruccionRepository.Save(new Instruccion { Paso = txtInstruccion.Text.Trim().ToUpper(),PasoDB=txtInstruccion.Text.Trim(), ProductoId = _productoId, Id = _id }))
                 {
                     MetroFramework.MetroMessageBox.Show(this,"Se modifico una Instrunccion");
                 }
@@ -114,7 +114,7 @@ namespace Recetariocx
             if(e.RowIndex >= 0)
             {
                 _id = Convert.ToInt32(dgInstrucciones.Rows[e.RowIndex].Cells["Id"].FormattedValue);
-                txtInstruccion.Text = dgInstrucciones.Rows[e.RowIndex].Cells["Paso"].FormattedValue.ToString();
+                txtInstruccion.Text = dgInstrucciones.Rows[e.RowIndex].Cells["PasoDB"].FormattedValue.ToString();
 
                 btnEliminar.Enabled = true;
                 btnModificar.Enabled = true;

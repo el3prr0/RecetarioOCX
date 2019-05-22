@@ -57,13 +57,16 @@ namespace Logic.Repository
                 var dt = await managerData.getTable(query);
                 if (dt.Rows.Count > 0)
                 {
+                    int orden = 1;
                     foreach (DataRow r in dt.Rows)
                     {
                         Instrucciones.Add(new Instruccion
                         {
                             Id = Convert.ToInt32(r["Id"]),
                             ProductoId = Convert.ToInt32(r["ProductoId"]),
-                            Paso = r["Paso"].ToString()
+                            Paso = r["Paso"].ToString(),
+                            PasoDB = r["Paso"].ToString(),
+                            Orden = orden++
                         });
                     }
 
@@ -94,6 +97,7 @@ namespace Logic.Repository
                             Id = Convert.ToInt32(r["Id"]),
                             ProductoId = Convert.ToInt32(r["ProductoId"]),
                             Paso = r["Paso"].ToString(),
+                            PasoDB = r["Paso"].ToString(),
                             Orden = orden++
                         });
                     }
@@ -123,6 +127,7 @@ namespace Logic.Repository
                             Id = Convert.ToInt32(r["Id"]),
                             ProductoId = Convert.ToInt32(r["ProductoId"]),
                             Paso = r["Paso"].ToString(),
+                            PasoDB = r["Paso"].ToString(),
                             Orden = orden++
                         });
                     }
@@ -140,7 +145,7 @@ namespace Logic.Repository
             bool result = false;
             try
             {
-                string query = $@"Update Instrucciones set ProductoId = '{entity.ProductoId}',Paso= '{entity.Paso}' where Id = {entity.Id}";
+                string query = $@"Update Instrucciones set ProductoId = '{entity.ProductoId}',Paso= '{entity.PasoDB}' where Id = {entity.Id}";
                 result = await managerData.Execute(query);
             }
             catch (Exception ex)
