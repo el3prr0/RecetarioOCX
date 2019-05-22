@@ -31,6 +31,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.configuracionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cREARDATOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lOGOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.catalogosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.altaDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,7 +42,7 @@
             this.cerrarSessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.lOGOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vistaPreviaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,7 +60,8 @@
             this.bartTenderToolStripMenuItem,
             this.cerrarSessionToolStripMenuItem,
             this.ayudaToolStripMenuItem,
-            this.salirToolStripMenuItem1});
+            this.salirToolStripMenuItem1,
+            this.vistaPreviaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(27, 74);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -85,6 +87,13 @@
             this.cREARDATOSToolStripMenuItem.Size = new System.Drawing.Size(313, 32);
             this.cREARDATOSToolStripMenuItem.Text = "REINICIAR BASE DATOS";
             this.cREARDATOSToolStripMenuItem.Click += new System.EventHandler(this.CREARDATOSToolStripMenuItem_Click);
+            // 
+            // lOGOToolStripMenuItem
+            // 
+            this.lOGOToolStripMenuItem.Name = "lOGOToolStripMenuItem";
+            this.lOGOToolStripMenuItem.Size = new System.Drawing.Size(313, 32);
+            this.lOGOToolStripMenuItem.Text = "LOGO";
+            this.lOGOToolStripMenuItem.Click += new System.EventHandler(this.LOGOToolStripMenuItem_Click);
             // 
             // catalogosToolStripMenuItem
             // 
@@ -131,8 +140,8 @@
             // administradorToolStripMenuItem
             // 
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
-            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(150, 32);
-            this.administradorToolStripMenuItem.Text = "Administrador";
+            this.administradorToolStripMenuItem.Size = new System.Drawing.Size(73, 32);
+            this.administradorToolStripMenuItem.Text = "Login";
             this.administradorToolStripMenuItem.Click += new System.EventHandler(this.AdministradorToolStripMenuItem_Click);
             // 
             // bartTenderToolStripMenuItem
@@ -140,6 +149,7 @@
             this.bartTenderToolStripMenuItem.Name = "bartTenderToolStripMenuItem";
             this.bartTenderToolStripMenuItem.Size = new System.Drawing.Size(110, 32);
             this.bartTenderToolStripMenuItem.Text = "BarTrainer";
+            this.bartTenderToolStripMenuItem.Visible = false;
             this.bartTenderToolStripMenuItem.Click += new System.EventHandler(this.BartTenderToolStripMenuItem_Click);
             // 
             // cerrarSessionToolStripMenuItem
@@ -168,12 +178,12 @@
             this.salirToolStripMenuItem1.Text = "Salir";
             this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
-            // lOGOToolStripMenuItem
+            // vistaPreviaToolStripMenuItem
             // 
-            this.lOGOToolStripMenuItem.Name = "lOGOToolStripMenuItem";
-            this.lOGOToolStripMenuItem.Size = new System.Drawing.Size(313, 32);
-            this.lOGOToolStripMenuItem.Text = "LOGO";
-            this.lOGOToolStripMenuItem.Click += new System.EventHandler(this.LOGOToolStripMenuItem_Click);
+            this.vistaPreviaToolStripMenuItem.Name = "vistaPreviaToolStripMenuItem";
+            this.vistaPreviaToolStripMenuItem.Size = new System.Drawing.Size(124, 32);
+            this.vistaPreviaToolStripMenuItem.Text = "Vista Previa";
+            this.vistaPreviaToolStripMenuItem.Click += new System.EventHandler(this.VistaPreviaToolStripMenuItem_Click);
             // 
             // formmenu
             // 
@@ -182,13 +192,14 @@
             this.ClientSize = new System.Drawing.Size(1556, 884);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formmenu";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Bar Trainer 1.0         Administracion";
             this.TransparencyKey = System.Drawing.Color.Empty;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Formmenu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -212,5 +223,6 @@
         private System.Windows.Forms.ToolStripMenuItem cerrarSessionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lOGOToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vistaPreviaToolStripMenuItem;
     }
 }

@@ -17,6 +17,7 @@ namespace Recetariocx
     public partial class FormLogin : MetroFramework.Forms.MetroForm
     {
         public  bool IsLogin { get; private set; }
+        public string Nivel { get; private set; }
         UsuarioRepository _usuarioRepository;
         private readonly string Salt;
         public FormLogin()
@@ -51,6 +52,7 @@ namespace Recetariocx
 
                     if (IsLogin)
                     {
+                        Nivel = usuario.Nivel;
                         this.Close();
                     }
                     else

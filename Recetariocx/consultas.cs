@@ -102,6 +102,8 @@ namespace Recetariocx
 
             txtNombre.Text = string.Empty;
             txtGuarnicion.Text = string.Empty;
+            txtDescripcion.Text = string.Empty;
+            nmPrecio.Value = 0;
 
             btnEliminar.Enabled = false;
             btnmodificar.Enabled = false;
@@ -115,7 +117,7 @@ namespace Recetariocx
         {
             if (txtNombre.Text.Trim().Length > 0)
             {
-                await _productoRepository.Save(new Producto { Id = _productoId, Nombre = txtNombre.Text.Trim().ToUpper(), Guarnicion = txtGuarnicion.Text.Trim().ToUpper() });
+                await _productoRepository.Save(new Producto { Id = _productoId, Nombre = txtNombre.Text.Trim().ToUpper(), Guarnicion = txtGuarnicion.Text.Trim().ToUpper(),Precio = nmPrecio.Value,Descripcion=txtDescripcion.Text.Trim().ToUpper() });
                 DesabilitarBotones();
                 await CargarProductos();
             }
@@ -194,6 +196,8 @@ namespace Recetariocx
 
                 txtNombre.Text = _nombre;
                 txtGuarnicion.Text = dtProductos.Rows[e.RowIndex].Cells["Guarnicion"].FormattedValue.ToString();
+                txtDescripcion.Text = dtProductos.Rows[e.RowIndex].Cells["Descripcion"].FormattedValue.ToString();
+                nmPrecio.Value = Convert.ToDecimal(dtProductos.Rows[e.RowIndex].Cells["Precio"].FormattedValue);
 
                 btnmodificar.Enabled = true;
                 btnEliminar.Enabled = true;
@@ -212,10 +216,7 @@ namespace Recetariocx
             await CargarProductos();
         }
 
-        private void txtFiltro_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 
 }

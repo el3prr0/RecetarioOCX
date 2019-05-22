@@ -105,19 +105,46 @@ namespace Recetariocx
             FormLogin formLogin = new FormLogin();
             formLogin.ShowDialog();
             CanAccess = formLogin.IsLogin;
+            if (CanAccess)
+            {
 
-            catalogosToolStripMenuItem.Visible = CanAccess;
-            configuracionToolStripMenuItem.Visible = CanAccess;
-            cerrarSessionToolStripMenuItem.Visible = CanAccess;
-            administradorToolStripMenuItem.Visible = !CanAccess;
+                switch (formLogin.Nivel)
+                {
+                    case "Administrador":
+                        catalogosToolStripMenuItem.Visible = CanAccess;
+                        configuracionToolStripMenuItem.Visible = CanAccess;
+                        cerrarSessionToolStripMenuItem.Visible = CanAccess;
+                        bartTenderToolStripMenuItem.Visible = CanAccess;
+                        administradorToolStripMenuItem.Visible = !CanAccess;
+                        break;
+                    case "Cliente":
+                        cerrarSessionToolStripMenuItem.Visible = CanAccess;
+                        administradorToolStripMenuItem.Visible = !CanAccess;
+                        break;
+                    case "Empleado":
+                        bartTenderToolStripMenuItem.Visible = CanAccess;
+                        cerrarSessionToolStripMenuItem.Visible = CanAccess;
+                        administradorToolStripMenuItem.Visible = !CanAccess;
+                        break;
+                    default:
+                        CerrarSession();
+                        break;
+                }
+            }
+        }
+
+        private void CerrarSession()
+        {
+            catalogosToolStripMenuItem.Visible = !CanAccess;
+            bartTenderToolStripMenuItem.Visible = !CanAccess;
+            configuracionToolStripMenuItem.Visible = !CanAccess;
+            cerrarSessionToolStripMenuItem.Visible = !CanAccess;
+            administradorToolStripMenuItem.Visible = CanAccess;
         }
 
         private void CerrarSessionToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            catalogosToolStripMenuItem.Visible = !CanAccess;
-            configuracionToolStripMenuItem.Visible = !CanAccess;
-            cerrarSessionToolStripMenuItem.Visible = !CanAccess;
-            administradorToolStripMenuItem.Visible = CanAccess;
+            CerrarSession();
         }
 
         private void UsuariosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -131,6 +158,18 @@ namespace Recetariocx
         {
             FormLogo formLogo = new FormLogo();
             formLogo.ShowDialog();
+        }
+
+        private void Formmenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void VistaPreviaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCliente formCliente = new FormCliente();
+            formCliente.MdiParent = this;
+            formCliente.Show();
         }
     }
 }

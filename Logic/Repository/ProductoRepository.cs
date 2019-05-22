@@ -23,8 +23,8 @@ namespace Logic.Repository
             bool result = false;
             try
             {
-                string query = $@"Insert into Productos(Nombre,Guarnicion,ImagenPrincipal,Clave,Grupo,SubGrupo)
-values('{entity.Nombre}','{entity.Guarnicion}','{entity.ImagenPrincipal}','{entity.Clave}','{entity.Grupo}','{entity.SubGrupo}')";
+                string query = $@"Insert into Productos(Nombre,Guarnicion,ImagenPrincipal,Clave,Grupo,SubGrupo,Precio,Descripcion)
+values('{entity.Nombre}','{entity.Guarnicion}','{entity.ImagenPrincipal}','{entity.Clave}','{entity.Grupo}','{entity.SubGrupo}','{entity.Precio}','{entity.Descripcion}')";
                 result = await managerData.Execute(query); 
             }
             catch (Exception ex)
@@ -54,7 +54,7 @@ values('{entity.Nombre}','{entity.Guarnicion}','{entity.ImagenPrincipal}','{enti
             var productos = new List<Producto>();
             try
             {
-                string query = $@"Select Id,Nombre,FechaCreacion, Guarnicion,ImagenPrincipal,Clave,Grupo,SubGrupo from Productos where Activo = 1 and Id={Id}";
+                string query = $@"Select Id,Nombre,FechaCreacion, Guarnicion,ImagenPrincipal,Clave,Grupo,SubGrupo,Precio,Descripcion from Productos where Activo = 1 and Id={Id}";
                 var dt  = await managerData.getTable(query);
                 if(dt.Rows.Count > 0)
                 {
@@ -87,7 +87,7 @@ values('{entity.Nombre}','{entity.Guarnicion}','{entity.ImagenPrincipal}','{enti
             var productos = new List<Producto>();
             try
             {
-                string query = $@"Select Id,Nombre,FechaCreacion, Guarnicion,ImagenPrincipal,Clave,Grupo,SubGrupo from Productos where Activo = 1 and Nombre like '{Nombre}%'";
+                string query = $@"Select Id,Nombre,FechaCreacion, Guarnicion,ImagenPrincipal,Clave,Grupo,SubGrupo,Precio,Descripcion from Productos where Activo = 1 and Nombre like '{Nombre}%'";
                 var dt = await managerData.getTable(query);
                 if (dt.Rows.Count > 0)
                 {
@@ -120,7 +120,7 @@ values('{entity.Nombre}','{entity.Guarnicion}','{entity.ImagenPrincipal}','{enti
             var productos = new List<Producto>();
             try
             {
-                string query = $@"Select Id,Nombre,FechaCreacion, Guarnicion,ImagenPrincipal,Clave,Grupo,SubGrupo from Productos where Activo = 1 order by Nombre asc";
+                string query = $@"Select Id,Nombre,FechaCreacion, Guarnicion,ImagenPrincipal,Clave,Grupo,SubGrupo,Precio,Descripcion from Productos where Activo = 1 order by Nombre asc";
                 var dt = await managerData.getTable(query);
                 if (dt.Rows.Count > 0)
                 {
@@ -135,6 +135,8 @@ values('{entity.Nombre}','{entity.Guarnicion}','{entity.ImagenPrincipal}','{enti
                             FechaCreacion = Convert.ToDateTime(r["FechaCreacion"]),
                             Clave = Convert.ToInt32(r["Clave"]),
                             Grupo = Convert.ToInt32(r["Grupo"]),
+                            Descripcion = r["Descripcion"].ToString(),
+                            Precio = Convert.ToDecimal(r["Precio"]),
                             SubGrupo = Convert.ToInt32(r["SubGrupo"])
                         });
                     }
@@ -153,7 +155,7 @@ values('{entity.Nombre}','{entity.Guarnicion}','{entity.ImagenPrincipal}','{enti
             bool result = false;
             try
             {
-                string query = $@"update Productos set Nombre = '{entity.Nombre}',Guarnicion='{entity.Guarnicion}',ImagenPrincipal='{entity.ImagenPrincipal}',Clave='{entity.Clave}',Grupo='{entity.Grupo}',SubGrupo='{entity.SubGrupo}' where Id= {entity.Id}";
+                string query = $@"update Productos set Nombre = '{entity.Nombre}',Guarnicion='{entity.Guarnicion}',ImagenPrincipal='{entity.ImagenPrincipal}',Clave='{entity.Clave}',Grupo='{entity.Grupo}',SubGrupo='{entity.SubGrupo}',Precio = '{entity.Precio}',Descripcion = '{entity.Descripcion}' where Id= {entity.Id}";
                 result = await managerData.Execute(query);
             }
             catch (Exception ex)

@@ -51,6 +51,8 @@ namespace Logic.Repository
     Nombre    TEXT NOT NULL,
     FechaCreacion TEXT NOT NULL DEFAULT CURRENT_DATE,
     ImagenPrincipal   TEXT,
+    Descripcion TEXT,
+    Precio NUMERIC DEFAULT 0,
     Clave INTEGER DEFAULT 0,
     SubGrupo  INTEGER DEFAULT 0,
     Activo    INTEGER DEFAULT 1,
@@ -68,6 +70,7 @@ namespace Logic.Repository
     'Id' INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     'Usuario'   TEXT NOT NULL,
     'Password'  TEXT NOT NULL,
+    'Nivel'     TEXT NOT NULL,
     'Nombre'    TEXT,
     'Correo'    TEXT,
     'Telefono'  TEXT)");
@@ -83,7 +86,7 @@ namespace Logic.Repository
             var ContraArray = PasswordHelper.GenerateSaltedHash(passArray, saltArray);
             var ContraString = Convert.ToBase64String(ContraArray);
 
-            await con.Execute($@"Insert into Usuarios (Usuario,Password) values('ADMIN','{ContraString}')");
+            await con.Execute($@"Insert into Usuarios (Usuario,Password,Nivel) values('ADMIN','{ContraString}','Administrador')");
         }
 
         public async Task CargarCatalogos()

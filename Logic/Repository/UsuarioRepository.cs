@@ -35,7 +35,7 @@ namespace Logic.Repository
                 var Password = Convert.ToBase64String(ContraArray);
 
 
-                string query = $@"Insert into Usuarios (Usuario,Password,Nombre,Correo,Telefono)values('{entity.Usuario}','{Password}','{entity.Nombre}','{entity.Correo}','{entity.Telefono}')";
+                string query = $@"Insert into Usuarios (Usuario,Password,Nombre,Correo,Telefono,Nivel)values('{entity.Usuario}','{Password}','{entity.Nombre}','{entity.Correo}','{entity.Telefono}','{entity.Nivel}')";
                 result = await managerData.Execute(query);
             }
             catch (Exception ex)
@@ -65,7 +65,7 @@ namespace Logic.Repository
             var Usuarios = new List<Login>();
             try
             {
-                string query = $@"Select Usuario,Nombre,Password,Correo,Telefono from Usuarios where Id > 1 and Id = {Id}";
+                string query = $@"Select Usuario,Nombre,Password,Correo,Telefono,Nivel from Usuarios where Id > 1 and Id = {Id}";
                 var dt = await managerData.getTable(query);
                 if (dt.Rows.Count > 0)
                 {
@@ -78,7 +78,8 @@ namespace Logic.Repository
                             Usuario = r["Usuario"].ToString(),
                             Password = r["Password"].ToString(),
                             Correo = r["Correo"].ToString(),
-                            Telefono = r["Telefono"].ToString()
+                            Telefono = r["Telefono"].ToString(),
+                            Nivel = r["Nivel"].ToString()
                         });
                     }
 
@@ -96,7 +97,7 @@ namespace Logic.Repository
             var usuario = new Login();
             try
             {
-                string query = $@"Select Id,Usuario,Nombre,Password,Correo,Telefono from Usuarios where Usuario = '{Usuario}'";
+                string query = $@"Select Id,Usuario,Nombre,Password,Correo,Telefono,Nivel from Usuarios where Usuario = '{Usuario}'";
                 var dt = await managerData.getTable(query);
                 if (dt.Rows.Count > 0)
                 {
@@ -106,6 +107,7 @@ namespace Logic.Repository
                     usuario.Password = dt.Rows[0]["Password"].ToString();
                     usuario.Correo = dt.Rows[0]["Correo"].ToString();
                     usuario.Telefono = dt.Rows[0]["Telefono"].ToString();
+                    usuario.Nivel = dt.Rows[0]["Nivel"].ToString();
                 }
             }
             catch (Exception ex)
@@ -120,7 +122,7 @@ namespace Logic.Repository
             var Usuarios = new List<Login>();
             try
             {
-                string query = $@"Select Id,Usuario,Nombre,Password,Correo,Telefono from Usuarios where Id > 1";
+                string query = $@"Select Id,Usuario,Nombre,Password,Correo,Telefono,Nivel from Usuarios where Id > 1";
                 var dt = await managerData.getTable(query);
                 if (dt.Rows.Count > 0)
                 {
@@ -133,7 +135,8 @@ namespace Logic.Repository
                             Usuario = r["Usuario"].ToString(),
                             Password = r["Password"].ToString(),
                             Correo = r["Correo"].ToString(),
-                            Telefono = r["Telefono"].ToString()
+                            Telefono = r["Telefono"].ToString(),
+                            Nivel = r["Nivel"].ToString()
                         });
                     }
 
@@ -158,7 +161,7 @@ namespace Logic.Repository
 
 
                 var Password = Convert.ToBase64String(ContraArray);
-                string query = $@"Update Usuarios set Usuario = '{entity.Usuario}',Password='{Password}',Nombre='{entity.Nombre}',Correo='{entity.Correo}',Telefono='{entity.Telefono}' where Id = {entity.Id}";
+                string query = $@"Update Usuarios set Usuario = '{entity.Usuario}',Password='{Password}',Nombre='{entity.Nombre}',Correo='{entity.Correo}',Telefono='{entity.Telefono}',Nivel ='{entity.Nivel}' where Id = {entity.Id}";
                 result = await managerData.Execute(query);
             }
             catch (Exception ex)

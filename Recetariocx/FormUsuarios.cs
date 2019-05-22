@@ -36,7 +36,7 @@ namespace Recetariocx
             if (txtUsuario.Text.Trim().Length > 0 && txtPassword.Text.Trim().Length > 0)
             {
 
-                if (await _usuarioRepository.Add(new Login { Nombre = txtNombre.Text.Trim(), Telefono = txtTelefono.Text.Trim(), Correo = txtCorreo.Text.Trim(), Password = txtPassword.Text.Trim(), Usuario = txtUsuario.Text.Trim() }))
+                if (await _usuarioRepository.Add(new Login { Nombre = txtNombre.Text.Trim(), Telefono = txtTelefono.Text.Trim(), Correo = txtCorreo.Text.Trim(), Password = txtPassword.Text.Trim(), Usuario = txtUsuario.Text.Trim(),Nivel = cbNivel.Text }))
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Se Agrego Usuario");
                 }
@@ -61,7 +61,7 @@ namespace Recetariocx
 
 
 
-                if (await _usuarioRepository.Save(new Login { Nombre = txtNombre.Text.Trim(), Telefono = txtTelefono.Text.Trim(), Id = _id, Correo = txtCorreo.Text.Trim(),Password = txtPassword.Text.Trim(),Usuario = txtUsuario.Text.Trim() }))
+                if (await _usuarioRepository.Save(new Login { Nombre = txtNombre.Text.Trim(), Telefono = txtTelefono.Text.Trim(), Id = _id, Correo = txtCorreo.Text.Trim(),Password = txtPassword.Text.Trim(),Usuario = txtUsuario.Text.Trim(),Nivel = cbNivel.Text }))
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Se Modifico Usuario");
                 }
@@ -125,6 +125,7 @@ namespace Recetariocx
                 txtCorreo.Text = dgUsuarios.Rows[e.RowIndex].Cells["Correo"].FormattedValue.ToString();
                 txtTelefono.Text = dgUsuarios.Rows[e.RowIndex].Cells["Telefono"].FormattedValue.ToString();
                 txtUsuario.Text  = dgUsuarios.Rows[e.RowIndex].Cells["Usuario"].FormattedValue.ToString();
+                cbNivel.Text = dgUsuarios.Rows[e.RowIndex].Cells["Nivel"].FormattedValue.ToString();
 
 
 

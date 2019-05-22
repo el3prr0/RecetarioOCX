@@ -12,6 +12,10 @@ namespace Logic.Models
         public string Nombre { get; set; }
         public DateTime FechaCreacion { get; set; }
         public string Guarnicion { get; set; }
+
+        public decimal Precio { get; set; }
+
+        public string Descripcion { get; set; }
         public int Grupo { get; set; }
         public string ImagenPrincipal { get; set; }
         public int Clave { get; set; }

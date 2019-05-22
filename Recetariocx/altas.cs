@@ -157,6 +157,9 @@ namespace Recetariocx
                 SePuedeAgregar = false;
             }
 
+            _producto.Descripcion = txtDescripcion.Text.Trim().ToUpper();
+            _producto.Precio = nmPrecio.Value;
+
             if (SePuedeAgregar)
             {
                 await GuardarProducto();
