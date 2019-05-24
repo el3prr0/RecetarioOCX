@@ -20,11 +20,11 @@ namespace Logic.Helpers
 
             using (var graphics = Graphics.FromImage(destImage))
             {
-                graphics.CompositingMode = CompositingMode.SourceCopy;
-                graphics.CompositingQuality = CompositingQuality.HighQuality;
-                graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
-                graphics.SmoothingMode = SmoothingMode.HighQuality;
-                graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
+                //graphics.CompositingMode = CompositingMode.SourceCopy;
+                //graphics.CompositingQuality = CompositingQuality.HighQuality;
+                //graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+                //graphics.SmoothingMode = SmoothingMode.HighQuality;
+                //graphics.PixelOffsetMode = PixelOffsetMode.HighQuality;
 
                 using (var wrapMode = new ImageAttributes())
                 {

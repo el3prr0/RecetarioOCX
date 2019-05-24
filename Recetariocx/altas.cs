@@ -226,7 +226,7 @@ namespace Recetariocx
             if (BuscarImagen.ShowDialog() == DialogResult.OK)
             {
 
-                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 800);
+                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 600);
 
                 pbImagen1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pbImagen1.Image = imagenBit;
@@ -248,7 +248,7 @@ namespace Recetariocx
 
             if (BuscarImagen.ShowDialog() == DialogResult.OK)
             {
-                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 800);
+                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 600);
                 pbImagen2.SizeMode = PictureBoxSizeMode.StretchImage;
                 pbImagen2.Image = imagenBit;
                 _Imagenes.Add(new Imagen { Nombre = "2", Img = imagenBit });
@@ -269,7 +269,7 @@ namespace Recetariocx
 
             if (BuscarImagen.ShowDialog() == DialogResult.OK)
             {
-                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 800);
+                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 600);
                 pbImagen3.SizeMode = PictureBoxSizeMode.StretchImage;
                 pbImagen3.Image = imagenBit;
                 _Imagenes.Add(new Imagen { Nombre = "3", Img = imagenBit });
@@ -376,6 +376,11 @@ namespace Recetariocx
             txtIngredienteNombre.AutoCompleteMode = AutoCompleteMode.Suggest;
             txtIngredienteNombre.AutoCompleteSource = AutoCompleteSource.CustomSource;
             txtIngredienteNombre.AutoCompleteCustomSource = coll;
+        }
+
+        private void metroLabel7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

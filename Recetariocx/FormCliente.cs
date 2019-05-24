@@ -63,7 +63,7 @@ namespace Recetariocx
             {
                 await CargarListas(producto.Id);
                 txtGuarnicion.Text = producto.Guarnicion;
-                txtPrecio.Text = producto.Precio.ToString();
+                txtPrecio.Text = producto.Precio.ToString("C2");
                 txtDescripcion.Text = producto.Descripcion;
                 
             }
@@ -144,6 +144,11 @@ namespace Recetariocx
         {
             await BuscarProductos("");
              CargarLogo();
+            //prueba imagen fondo
+            //panel1.BackgroundImage = Properties.Resources.fondoppal;
+            //panel1.BackgroundImageLayout = ImageLayout.Stretch;
+            //metroLabel1.BackColor = Color.Transparent;
+            //metroLabel2.BackColor = Color.Transparent;
         }
 
         private void CargarLogo()

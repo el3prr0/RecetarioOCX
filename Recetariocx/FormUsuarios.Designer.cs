@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuarios));
             this.dgUsuarios = new MetroFramework.Controls.MetroGrid();
             this.btnModificar = new MetroFramework.Controls.MetroButton();
             this.btnEliminar = new MetroFramework.Controls.MetroButton();
@@ -101,34 +102,40 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(279, 558);
+            this.btnModificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnModificar.BackgroundImage")));
+            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnModificar.Location = new System.Drawing.Point(291, 569);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(140, 58);
+            this.btnModificar.Size = new System.Drawing.Size(140, 50);
             this.btnModificar.TabIndex = 132;
-            this.btnModificar.Text = "Modificar";
+            this.btnModificar.Text = "       Modificar";
             this.btnModificar.UseSelectable = true;
             this.btnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(511, 558);
+            this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEliminar.Location = new System.Drawing.Point(523, 569);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(140, 58);
+            this.btnEliminar.Size = new System.Drawing.Size(140, 50);
             this.btnEliminar.TabIndex = 131;
-            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Text = "     Eliminar";
             this.btnEliminar.UseSelectable = true;
             this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(60, 558);
+            this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAgregar.Location = new System.Drawing.Point(72, 569);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(140, 58);
+            this.btnAgregar.Size = new System.Drawing.Size(140, 50);
             this.btnAgregar.TabIndex = 130;
-            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.Text = "     Agregar";
             this.btnAgregar.UseSelectable = true;
             this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
@@ -160,6 +167,7 @@
             this.txtUsuario.SelectionStart = 0;
             this.txtUsuario.ShortcutsEnabled = true;
             this.txtUsuario.Size = new System.Drawing.Size(357, 28);
+            this.txtUsuario.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtUsuario.TabIndex = 136;
             this.txtUsuario.UseSelectable = true;
             this.txtUsuario.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -192,6 +200,7 @@
             this.txtPassword.SelectionStart = 0;
             this.txtPassword.ShortcutsEnabled = true;
             this.txtPassword.Size = new System.Drawing.Size(272, 28);
+            this.txtPassword.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPassword.TabIndex = 137;
             this.txtPassword.UseSelectable = true;
             this.txtPassword.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -360,7 +369,8 @@
             "Administrador",
             "Empleado",
             "Cliente"});
-            this.cbNivel.Location = new System.Drawing.Point(44, 499);
+            this.cbNivel.Location = new System.Drawing.Point(44, 498);
+            this.cbNivel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbNivel.Name = "cbNivel";
             this.cbNivel.Size = new System.Drawing.Size(357, 30);
             this.cbNivel.TabIndex = 147;
@@ -387,6 +397,7 @@
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnAgregar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormUsuarios";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);

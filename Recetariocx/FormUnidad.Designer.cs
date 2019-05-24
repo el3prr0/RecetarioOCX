@@ -31,6 +31,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUnidad));
             this.numValor = new System.Windows.Forms.NumericUpDown();
             this.dgUnidad = new MetroFramework.Controls.MetroGrid();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -46,9 +47,10 @@
             // numValor
             // 
             this.numValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numValor.Location = new System.Drawing.Point(257, 304);
+            this.numValor.Location = new System.Drawing.Point(343, 374);
+            this.numValor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numValor.Name = "numValor";
-            this.numValor.Size = new System.Drawing.Size(75, 24);
+            this.numValor.Size = new System.Drawing.Size(100, 29);
             this.numValor.TabIndex = 127;
             this.numValor.Value = new decimal(new int[] {
             1,
@@ -86,7 +88,8 @@
             this.dgUnidad.EnableHeadersVisualStyles = false;
             this.dgUnidad.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgUnidad.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgUnidad.Location = new System.Drawing.Point(46, 78);
+            this.dgUnidad.Location = new System.Drawing.Point(61, 96);
+            this.dgUnidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgUnidad.Name = "dgUnidad";
             this.dgUnidad.ReadOnly = true;
             this.dgUnidad.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -100,25 +103,27 @@
             this.dgUnidad.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgUnidad.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgUnidad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgUnidad.Size = new System.Drawing.Size(407, 150);
+            this.dgUnidad.Size = new System.Drawing.Size(543, 185);
             this.dgUnidad.TabIndex = 128;
             this.dgUnidad.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgUnidad_CellClick);
             // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(51, 283);
+            this.metroLabel1.Location = new System.Drawing.Point(68, 348);
+            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(59, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(61, 20);
             this.metroLabel1.TabIndex = 129;
             this.metroLabel1.Text = "Nombre";
             // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(257, 282);
+            this.metroLabel2.Location = new System.Drawing.Point(343, 347);
+            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(38, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(39, 20);
             this.metroLabel2.TabIndex = 130;
             this.metroLabel2.Text = "Valor";
             // 
@@ -128,16 +133,18 @@
             // 
             // 
             this.txtNombre.CustomButton.Image = null;
-            this.txtNombre.CustomButton.Location = new System.Drawing.Point(164, 1);
+            this.txtNombre.CustomButton.Location = new System.Drawing.Point(296, 2);
+            this.txtNombre.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.CustomButton.Name = "";
-            this.txtNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.txtNombre.CustomButton.Size = new System.Drawing.Size(31, 28);
             this.txtNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtNombre.CustomButton.TabIndex = 1;
             this.txtNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtNombre.CustomButton.UseSelectable = true;
             this.txtNombre.CustomButton.Visible = false;
             this.txtNombre.Lines = new string[0];
-            this.txtNombre.Location = new System.Drawing.Point(51, 305);
+            this.txtNombre.Location = new System.Drawing.Point(68, 375);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.MaxLength = 32767;
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.PasswordChar = '\0';
@@ -146,7 +153,7 @@
             this.txtNombre.SelectionLength = 0;
             this.txtNombre.SelectionStart = 0;
             this.txtNombre.ShortcutsEnabled = true;
-            this.txtNombre.Size = new System.Drawing.Size(186, 23);
+            this.txtNombre.Size = new System.Drawing.Size(248, 28);
             this.txtNombre.TabIndex = 131;
             this.txtNombre.UseSelectable = true;
             this.txtNombre.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -154,39 +161,48 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(328, 363);
+            this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEliminar.Location = new System.Drawing.Point(437, 447);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(108, 45);
+            this.btnEliminar.Size = new System.Drawing.Size(144, 55);
             this.btnEliminar.TabIndex = 134;
-            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Text = "     Eliminar";
             this.btnEliminar.UseSelectable = true;
             this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(187, 363);
+            this.btnModificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnModificar.BackgroundImage")));
+            this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnModificar.Location = new System.Drawing.Point(249, 447);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(108, 45);
+            this.btnModificar.Size = new System.Drawing.Size(144, 55);
             this.btnModificar.TabIndex = 133;
-            this.btnModificar.Text = "Modificar";
+            this.btnModificar.Text = "       Modificar";
             this.btnModificar.UseSelectable = true;
             this.btnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(51, 363);
+            this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAgregar.Location = new System.Drawing.Point(68, 447);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(108, 45);
+            this.btnAgregar.Size = new System.Drawing.Size(144, 55);
             this.btnAgregar.TabIndex = 134;
-            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.Text = "      Agregar";
             this.btnAgregar.UseSelectable = true;
             this.btnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // FormUnidad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(510, 450);
+            this.ClientSize = new System.Drawing.Size(680, 554);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnEliminar);
@@ -195,7 +211,10 @@
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.dgUnidad);
             this.Controls.Add(this.numValor);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormUnidad";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Text = "Unidad";
             this.Load += new System.EventHandler(this.FormUnidad_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numValor)).EndInit();

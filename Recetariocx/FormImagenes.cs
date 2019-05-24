@@ -81,8 +81,9 @@ namespace Recetariocx
 
             if (BuscarImagen.ShowDialog() == DialogResult.OK)
             {
-                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 800);
-                pbImagen1.Image = imagenBit;
+               
+                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 600);
+               
 
                 var Guardo = await _imagenRepository.Add(new Imagen
                 {
@@ -92,11 +93,12 @@ namespace Recetariocx
                 });
                 if (Guardo)
                 {
+                    pbImagen1.Image = null;
                     if (File.Exists(Url + _nombre + "_1.jpg"))
                     {
                         File.Delete(Url + _nombre + "_1.jpg");
                     }
-
+                    pbImagen1.Image = imagenBit;
                     pbImagen1.Image.Save(Url + _nombre + "_1.jpg");
                     btnEliminar1.Enabled = true;
                     btnAgregar1.Enabled = false;
@@ -111,8 +113,8 @@ namespace Recetariocx
 
             if (BuscarImagen.ShowDialog() == DialogResult.OK)
             {
-                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 800);
-                pbImagen2.Image = imagenBit;
+                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 600);
+                
 
 
                 var Guardo = await _imagenRepository.Add(new Imagen
@@ -123,11 +125,12 @@ namespace Recetariocx
                 });
                 if (Guardo)
                 {
+                    pbImagen2.Image = null;
                     if (File.Exists(Url + _nombre + "_2.jpg"))
                     {
                         File.Delete(Url + _nombre + "_2.jpg");
                     }
-
+                    pbImagen2.Image = imagenBit;
                     pbImagen2.Image.Save(Url + _nombre + "_2.jpg");
                     btnEliminar2.Enabled = true;
                     btnAgregar2.Enabled = false;
@@ -142,12 +145,8 @@ namespace Recetariocx
 
             if (BuscarImagen.ShowDialog() == DialogResult.OK)
             {
-                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 800);
-                pbImagen3.Image = imagenBit;
-
-
-
-
+                var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 600);
+                
                 var Guardo = await _imagenRepository.Add(new Imagen
                 {
                     ProductoId = _productoId,
@@ -156,11 +155,12 @@ namespace Recetariocx
                 });
                 if (Guardo)
                 {
+                    pbImagen3.Image = null;
                     if (File.Exists(Url + _nombre + "_3.jpg"))
                     {
                         File.Delete(Url + _nombre + "_3.jpg");
                     }
-
+                    pbImagen3.Image = imagenBit;
                     pbImagen3.Image.Save(Url + _nombre + "_3.jpg");
                     btnEliminar3.Enabled = true;
                     btnAgregar3.Enabled = false;

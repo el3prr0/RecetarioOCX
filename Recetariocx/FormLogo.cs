@@ -38,17 +38,18 @@ namespace Recetariocx
 
             if (BuscarImagen.ShowDialog() == DialogResult.OK)
             {
-                pbLogo.Image = null;
+                
                 var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 400, 200);
-                pbLogo.Image = imagenBit;
+                pbLogo.Image = null;
 
                 if (File.Exists(imagenpath))
                 {
                     File.Delete(imagenpath);
                 }
-
+                pbLogo.Image = imagenBit;
                 pbLogo.Image.Save(imagenpath);
             }
         }
+        
     }
 }
