@@ -45,10 +45,9 @@
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(415, 30);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombre.Location = new System.Drawing.Point(311, 24);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(84, 20);
+            this.lblNombre.Size = new System.Drawing.Size(81, 19);
             this.lblNombre.TabIndex = 123;
             this.lblNombre.Text = "metroLabel1";
             // 
@@ -56,10 +55,9 @@
             // 
             this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
             this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAgregar.Location = new System.Drawing.Point(423, 452);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Location = new System.Drawing.Point(40, 359);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(140, 52);
+            this.btnAgregar.Size = new System.Drawing.Size(127, 42);
             this.btnAgregar.TabIndex = 124;
             this.btnAgregar.Text = "        Agregar";
             this.btnAgregar.UseSelectable = true;
@@ -69,10 +67,9 @@
             // 
             this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
             this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEliminar.Location = new System.Drawing.Point(784, 452);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEliminar.Location = new System.Drawing.Point(345, 359);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(140, 52);
+            this.btnEliminar.Size = new System.Drawing.Size(127, 42);
             this.btnEliminar.TabIndex = 125;
             this.btnEliminar.Text = "    Eliminar";
             this.btnEliminar.UseSelectable = true;
@@ -82,10 +79,9 @@
             // 
             this.btnModificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnModificar.BackgroundImage")));
             this.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnModificar.Location = new System.Drawing.Point(604, 452);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnModificar.Location = new System.Drawing.Point(189, 359);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(140, 52);
+            this.btnModificar.Size = new System.Drawing.Size(127, 42);
             this.btnModificar.TabIndex = 126;
             this.btnModificar.Text = "      Modificar";
             this.btnModificar.UseSelectable = true;
@@ -94,10 +90,9 @@
             // lblInstruccion
             // 
             this.lblInstruccion.AutoSize = true;
-            this.lblInstruccion.Location = new System.Drawing.Point(67, 330);
-            this.lblInstruccion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblInstruccion.Location = new System.Drawing.Point(23, 269);
             this.lblInstruccion.Name = "lblInstruccion";
-            this.lblInstruccion.Size = new System.Drawing.Size(132, 20);
+            this.lblInstruccion.Size = new System.Drawing.Size(130, 19);
             this.lblInstruccion.TabIndex = 127;
             this.lblInstruccion.Text = "Agregar o Modificar";
             // 
@@ -108,18 +103,16 @@
             // 
             // 
             this.txtInstruccion.CustomButton.Image = null;
-            this.txtInstruccion.CustomButton.Location = new System.Drawing.Point(1113, 2);
-            this.txtInstruccion.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtInstruccion.CustomButton.Location = new System.Drawing.Point(466, 1);
             this.txtInstruccion.CustomButton.Name = "";
-            this.txtInstruccion.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtInstruccion.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtInstruccion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtInstruccion.CustomButton.TabIndex = 1;
             this.txtInstruccion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtInstruccion.CustomButton.UseSelectable = true;
             this.txtInstruccion.CustomButton.Visible = false;
             this.txtInstruccion.Lines = new string[0];
-            this.txtInstruccion.Location = new System.Drawing.Point(67, 358);
-            this.txtInstruccion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtInstruccion.Location = new System.Drawing.Point(23, 292);
             this.txtInstruccion.MaxLength = 32767;
             this.txtInstruccion.Name = "txtInstruccion";
             this.txtInstruccion.PasswordChar = '\0';
@@ -128,7 +121,7 @@
             this.txtInstruccion.SelectionLength = 0;
             this.txtInstruccion.SelectionStart = 0;
             this.txtInstruccion.ShortcutsEnabled = true;
-            this.txtInstruccion.Size = new System.Drawing.Size(861, 28);
+            this.txtInstruccion.Size = new System.Drawing.Size(488, 23);
             this.txtInstruccion.TabIndex = 128;
             this.txtInstruccion.UseSelectable = true;
             this.txtInstruccion.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
@@ -164,8 +157,7 @@
             this.dgInstrucciones.EnableHeadersVisualStyles = false;
             this.dgInstrucciones.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.dgInstrucciones.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dgInstrucciones.Location = new System.Drawing.Point(67, 105);
-            this.dgInstrucciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgInstrucciones.Location = new System.Drawing.Point(23, 80);
             this.dgInstrucciones.Name = "dgInstrucciones";
             this.dgInstrucciones.ReadOnly = true;
             this.dgInstrucciones.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -179,15 +171,15 @@
             this.dgInstrucciones.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgInstrucciones.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgInstrucciones.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgInstrucciones.Size = new System.Drawing.Size(857, 185);
+            this.dgInstrucciones.Size = new System.Drawing.Size(488, 150);
             this.dgInstrucciones.TabIndex = 129;
             this.dgInstrucciones.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgInstrucciones_CellClick);
             // 
             // FormInstrucciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(987, 554);
+            this.ClientSize = new System.Drawing.Size(558, 450);
             this.Controls.Add(this.dgInstrucciones);
             this.Controls.Add(this.txtInstruccion);
             this.Controls.Add(this.lblInstruccion);
@@ -196,9 +188,7 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.lblNombre);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormInstrucciones";
-            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Text = "Instrucciones";
             this.Load += new System.EventHandler(this.FormInstrucciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgInstrucciones)).EndInit();

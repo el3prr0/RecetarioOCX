@@ -23,7 +23,7 @@ namespace Logic.Repository
             bool result = false;
             try
             {
-                string query = $@"Insert into Imagenes(ProductoId,Url,Principal,Nombre)values('{entity.ProductoId}','{entity.Url}','{entity.Principal}','{entity.Nombre}')";
+                string query = $@"Insert into Imagenes(ProductoId,Url,Principal,Nombre,Orden)values('{entity.ProductoId}','{entity.Url}','{entity.Principal}','{entity.Nombre}','{entity.Orden}')";
                 result = await managerData.Execute(query);
             }
             catch (Exception ex)
@@ -53,7 +53,7 @@ namespace Logic.Repository
             var Imagenes = new List<Imagen>();
             try
             {
-                string query = $@"Select Id,ProductoId,Url,FechaCreacion,Principal from  Imagenes where Activo = 1 and Id = {Id}";
+                string query = $@"Select Id,ProductoId,Url,FechaCreacion,Principal,Orden from  Imagenes where Activo = 1 and Id = {Id}";
                 var dt = await managerData.getTable(query);
                 if(dt.Rows.Count > 0)
                 {
@@ -66,7 +66,8 @@ namespace Logic.Repository
                             Url = r["Url"].ToString(),
                             fechaCreacion = Convert.ToDateTime(r["FechaCreacion"]),
                             Principal = Convert.ToBoolean(r["Principal"]),
-                            Nombre = r["Nombre"].ToString()
+                            Nombre = r["Nombre"].ToString(),
+                            Orden = Convert.ToInt32(r["Orden"])
                         });
                     }
                 }
@@ -83,7 +84,7 @@ namespace Logic.Repository
             var Imagenes = new List<Imagen>();
             try
             {
-                string query = $@"Select Id,ProductoId,Url,Nombre,FechaCreacion,Principal from Imagenes where Activo = 1 and ProductoId = {ProductoId}";
+                string query = $@"Select Id,ProductoId,Url,Nombre,FechaCreacion,Principal,Orden from Imagenes where Activo = 1 and ProductoId = {ProductoId}";
                 var dt = await managerData.getTable(query);
                 if (dt.Rows.Count > 0)
                 {
@@ -96,7 +97,8 @@ namespace Logic.Repository
                             Url = r["Url"].ToString(),
                             fechaCreacion  = Convert.ToDateTime(r["FechaCreacion"]),
                             Principal = Convert.ToBoolean(r["Principal"]),
-                            Nombre = r["Nombre"].ToString()
+                            Nombre = r["Nombre"].ToString(),
+                            Orden = Convert.ToInt32(r["Orden"])
                         });
                     }
                 }
@@ -113,7 +115,7 @@ namespace Logic.Repository
             var Imagenes = new List<Imagen>();
             try
             {
-                string query = $@"Select Id,ProductoId,Url,FechaCreacion,Principal from Imagenes where Activo = 1";
+                string query = $@"Select Id,ProductoId,Url,FechaCreacion,Principal,Orden from Imagenes where Activo = 1";
                 var dt = await managerData.getTable(query);
                 if (dt.Rows.Count > 0)
                 {
@@ -126,7 +128,8 @@ namespace Logic.Repository
                             Url = r["Url"].ToString(),
                             fechaCreacion = Convert.ToDateTime(r["FechaCreacion"]),
                             Principal = Convert.ToBoolean(r["Principal"]),
-                            Nombre = r["Nombre"].ToString()
+                            Nombre = r["Nombre"].ToString(),
+                            Orden = Convert.ToInt32(r["Orden"])
                         });
                     }
                 }

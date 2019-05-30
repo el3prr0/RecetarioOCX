@@ -35,30 +35,32 @@ namespace Recetariocx
         {
             
             var Imagenes = await _imagenRepository.GetWithProduct(_productoId);
-            int i = 0;
+            
             foreach(Imagen imagen in Imagenes)
             {
-                if (i == 0)
+                if (imagen.Orden == 1)
                 {
                     pbImagen1.Image = Image.FromFile(Url+imagen.Nombre);
+                    
                     btnEliminar1.Enabled = true;
                     btnAgregar1.Enabled = false;
                 }
 
-                if(i == 1)
+                if(imagen.Orden == 2)
                 {
                     pbImagen2.Image = Image.FromFile(Url+imagen.Nombre);
                     btnEliminar2.Enabled = true;
+                    
                     btnAgregar2.Enabled = false;
                 }
 
-                if(i == 2)
+                if(imagen.Orden == 3)
                 {
                     pbImagen3.Image = Image.FromFile(Url+imagen.Nombre);
                     btnEliminar3.Enabled = true;
                     btnAgregar3.Enabled = false;
                 }
-                i++;
+                
             }
            
             
@@ -89,7 +91,8 @@ namespace Recetariocx
                 {
                     ProductoId = _productoId,
                     Nombre = _nombre + "_1.jpg",
-                    Url = Url + _nombre + "_1.jpg"
+                    Url = Url + _nombre + "_1.jpg",
+                    Orden = 1
                 });
                 if (Guardo)
                 {
@@ -100,6 +103,7 @@ namespace Recetariocx
                     }
                     pbImagen1.Image = imagenBit;
                     pbImagen1.Image.Save(Url + _nombre + "_1.jpg");
+                    imagenBit.Dispose();
                     btnEliminar1.Enabled = true;
                     btnAgregar1.Enabled = false;
                 }
@@ -121,7 +125,8 @@ namespace Recetariocx
                 {
                     ProductoId = _productoId,
                     Nombre = _nombre + "_2.jpg",
-                    Url = Url + _nombre + "_2.jpg"
+                    Url = Url + _nombre + "_2.jpg",
+                    Orden = 2
                 });
                 if (Guardo)
                 {
@@ -132,6 +137,7 @@ namespace Recetariocx
                     }
                     pbImagen2.Image = imagenBit;
                     pbImagen2.Image.Save(Url + _nombre + "_2.jpg");
+                    imagenBit.Dispose();
                     btnEliminar2.Enabled = true;
                     btnAgregar2.Enabled = false;
                 }
@@ -151,7 +157,8 @@ namespace Recetariocx
                 {
                     ProductoId = _productoId,
                     Nombre = _nombre + "_3.jpg",
-                    Url = Url + _nombre + "_3.jpg"
+                    Url = Url + _nombre + "_3.jpg",
+                    Orden = 3
                 });
                 if (Guardo)
                 {
@@ -162,6 +169,7 @@ namespace Recetariocx
                     }
                     pbImagen3.Image = imagenBit;
                     pbImagen3.Image.Save(Url + _nombre + "_3.jpg");
+                    imagenBit.Dispose();
                     btnEliminar3.Enabled = true;
                     btnAgregar3.Enabled = false;
                 }
@@ -178,14 +186,24 @@ namespace Recetariocx
 
             if (Id > 0)
             {
+                
+                
                 pbImagen1.Image.Dispose();
-                pbImagen1.Image = null;
-                if (await _imagenRepository.Delete(Id))
+                try
                 {
-                    if (File.Exists(Url + _nombre + "_1.jpg"))
+                    if (await _imagenRepository.Delete(Id))
                     {
-                        File.Delete(Url + _nombre + "_1.jpg");
+                        if (File.Exists(Url + _nombre + "_1.jpg"))
+                        {
+                            File.Delete(Url + _nombre + "_1.jpg");
+                        }
+                        pbImagen1.Image = null;
                     }
+
+                }
+                catch (IOException ioExp)
+                {
+                    Console.WriteLine(ioExp.Message);
                 }
             }
             btnAgregar1.Enabled = true;
@@ -199,14 +217,24 @@ namespace Recetariocx
 
             if (Id > 0)
             {
+                
+                
                 pbImagen2.Image.Dispose();
-                pbImagen2.Image = null;
-                if (await _imagenRepository.Delete(Id))
+                try
                 {
-                    if (File.Exists(Url + _nombre + "_2.jpg"))
+                    if (await _imagenRepository.Delete(Id))
                     {
-                        File.Delete(Url + _nombre + "_2.jpg");
+                        if (File.Exists(Url + _nombre + "_2.jpg"))
+                        {
+                            File.Delete(Url + _nombre + "_2.jpg");
+                        }
+                        pbImagen2.Image = null;
                     }
+
+                }
+                catch (IOException ioExp)
+                {
+                    Console.WriteLine(ioExp.Message);
                 }
             }
             btnAgregar2.Enabled = true;
@@ -220,15 +248,27 @@ namespace Recetariocx
 
             if (Id > 0)
             {
+                //pbImagen3.Image = null;
                 pbImagen3.Image.Dispose();
-                pbImagen3.Image = null;
-                if (await _imagenRepository.Delete(Id))
-                {
-                    if (File.Exists(Url + _nombre + "_3.jpg"))
+                try {
+                    if (await _imagenRepository.Delete(Id))
                     {
-                        File.Delete(Url + _nombre + "_3.jpg");
+
+                        if (File.Exists(Url + _nombre + "_3.jpg"))
+                        {
+                            File.Delete(Url + _nombre + "_3.jpg");
+                        }
+
+                        pbImagen3.Image = null;
                     }
+
                 }
+                catch (IOException ioExp)
+                {
+                    Console.WriteLine(ioExp.Message);
+                }
+                
+                
             }
             btnAgregar3.Enabled = true;
             btnEliminar3.Enabled = false;

@@ -47,30 +47,30 @@
             // 
             // pbImagen1
             // 
-            this.pbImagen1.Location = new System.Drawing.Point(48, 181);
+            this.pbImagen1.Location = new System.Drawing.Point(48, 167);
             this.pbImagen1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbImagen1.Name = "pbImagen1";
-            this.pbImagen1.Size = new System.Drawing.Size(237, 180);
+            this.pbImagen1.Size = new System.Drawing.Size(211, 175);
             this.pbImagen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen1.TabIndex = 128;
             this.pbImagen1.TabStop = false;
             // 
             // pbImagen2
             // 
-            this.pbImagen2.Location = new System.Drawing.Point(383, 181);
+            this.pbImagen2.Location = new System.Drawing.Point(300, 169);
             this.pbImagen2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbImagen2.Name = "pbImagen2";
-            this.pbImagen2.Size = new System.Drawing.Size(237, 180);
+            this.pbImagen2.Size = new System.Drawing.Size(211, 175);
             this.pbImagen2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen2.TabIndex = 129;
             this.pbImagen2.TabStop = false;
             // 
             // pbImagen3
             // 
-            this.pbImagen3.Location = new System.Drawing.Point(732, 181);
+            this.pbImagen3.Location = new System.Drawing.Point(548, 169);
             this.pbImagen3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbImagen3.Name = "pbImagen3";
-            this.pbImagen3.Size = new System.Drawing.Size(237, 180);
+            this.pbImagen3.Size = new System.Drawing.Size(211, 175);
             this.pbImagen3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagen3.TabIndex = 130;
             this.pbImagen3.TabStop = false;
@@ -91,7 +91,7 @@
             this.btnAgregar1.Location = new System.Drawing.Point(52, 129);
             this.btnAgregar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar1.Name = "btnAgregar1";
-            this.btnAgregar1.Size = new System.Drawing.Size(231, 31);
+            this.btnAgregar1.Size = new System.Drawing.Size(204, 26);
             this.btnAgregar1.TabIndex = 137;
             this.btnAgregar1.Text = "Agregar";
             this.btnAgregar1.UseSelectable = true;
@@ -101,10 +101,10 @@
             // 
             this.btnAgregar2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar2.BackgroundImage")));
             this.btnAgregar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAgregar2.Location = new System.Drawing.Point(388, 129);
+            this.btnAgregar2.Location = new System.Drawing.Point(301, 129);
             this.btnAgregar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar2.Name = "btnAgregar2";
-            this.btnAgregar2.Size = new System.Drawing.Size(231, 32);
+            this.btnAgregar2.Size = new System.Drawing.Size(205, 27);
             this.btnAgregar2.TabIndex = 138;
             this.btnAgregar2.Text = "Agregar";
             this.btnAgregar2.UseSelectable = true;
@@ -114,10 +114,10 @@
             // 
             this.btnAgregar3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar3.BackgroundImage")));
             this.btnAgregar3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAgregar3.Location = new System.Drawing.Point(736, 129);
+            this.btnAgregar3.Location = new System.Drawing.Point(548, 129);
             this.btnAgregar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar3.Name = "btnAgregar3";
-            this.btnAgregar3.Size = new System.Drawing.Size(231, 32);
+            this.btnAgregar3.Size = new System.Drawing.Size(205, 27);
             this.btnAgregar3.TabIndex = 139;
             this.btnAgregar3.Text = "Agregar";
             this.btnAgregar3.UseSelectable = true;
@@ -127,10 +127,11 @@
             // 
             this.btnEliminar1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar1.BackgroundImage")));
             this.btnEliminar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEliminar1.Location = new System.Drawing.Point(52, 383);
+            this.btnEliminar1.Enabled = false;
+            this.btnEliminar1.Location = new System.Drawing.Point(52, 361);
             this.btnEliminar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar1.Name = "btnEliminar1";
-            this.btnEliminar1.Size = new System.Drawing.Size(229, 30);
+            this.btnEliminar1.Size = new System.Drawing.Size(203, 25);
             this.btnEliminar1.TabIndex = 140;
             this.btnEliminar1.Text = "Eliminar";
             this.btnEliminar1.UseSelectable = true;
@@ -140,10 +141,11 @@
             // 
             this.btnEliminar2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar2.BackgroundImage")));
             this.btnEliminar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEliminar2.Location = new System.Drawing.Point(387, 383);
+            this.btnEliminar2.Enabled = false;
+            this.btnEliminar2.Location = new System.Drawing.Point(303, 361);
             this.btnEliminar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar2.Name = "btnEliminar2";
-            this.btnEliminar2.Size = new System.Drawing.Size(229, 31);
+            this.btnEliminar2.Size = new System.Drawing.Size(204, 26);
             this.btnEliminar2.TabIndex = 141;
             this.btnEliminar2.Text = "Eliminar";
             this.btnEliminar2.UseSelectable = true;
@@ -153,10 +155,11 @@
             // 
             this.btnEliminar3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar3.BackgroundImage")));
             this.btnEliminar3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEliminar3.Location = new System.Drawing.Point(736, 383);
+            this.btnEliminar3.Enabled = false;
+            this.btnEliminar3.Location = new System.Drawing.Point(551, 361);
             this.btnEliminar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEliminar3.Name = "btnEliminar3";
-            this.btnEliminar3.Size = new System.Drawing.Size(231, 31);
+            this.btnEliminar3.Size = new System.Drawing.Size(205, 26);
             this.btnEliminar3.TabIndex = 142;
             this.btnEliminar3.Text = "Eliminar";
             this.btnEliminar3.UseSelectable = true;
@@ -177,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1037, 519);
+            this.ClientSize = new System.Drawing.Size(820, 458);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnEliminar3);
             this.Controls.Add(this.btnEliminar2);

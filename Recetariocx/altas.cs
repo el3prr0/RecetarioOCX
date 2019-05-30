@@ -230,7 +230,7 @@ namespace Recetariocx
 
                 pbImagen1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pbImagen1.Image = imagenBit;
-                _Imagenes.Add(new Imagen { Nombre = "1", Img = imagenBit });
+                _Imagenes.Add(new Imagen { Nombre = "1", Img = imagenBit,Orden = 1 });
 
                 btnSubirFoto1.Enabled = false;
                 BtnRemoverImagen1.Enabled = true;
@@ -251,7 +251,7 @@ namespace Recetariocx
                 var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 600);
                 pbImagen2.SizeMode = PictureBoxSizeMode.StretchImage;
                 pbImagen2.Image = imagenBit;
-                _Imagenes.Add(new Imagen { Nombre = "2", Img = imagenBit });
+                _Imagenes.Add(new Imagen { Nombre = "2", Img = imagenBit, Orden = 2});
 
                 btnSubirFoto2.Enabled = false;
                 BtnRemoverImagen2.Enabled = true;
@@ -272,7 +272,7 @@ namespace Recetariocx
                 var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 600, 600);
                 pbImagen3.SizeMode = PictureBoxSizeMode.StretchImage;
                 pbImagen3.Image = imagenBit;
-                _Imagenes.Add(new Imagen { Nombre = "3", Img = imagenBit });
+                _Imagenes.Add(new Imagen { Nombre = "3", Img = imagenBit, Orden = 3 });
 
                 btnSubirFoto3.Enabled = false;
                 BtnRemoverImagen3.Enabled = true;

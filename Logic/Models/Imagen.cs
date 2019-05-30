@@ -17,6 +17,8 @@ namespace Logic.Models
         public bool Principal { get; set; }
         public bool Activo { get; set; }
 
+        public int Orden { get; set; }
+
         public Bitmap Img { get; set; }
     }
 }

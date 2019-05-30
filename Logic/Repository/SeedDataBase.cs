@@ -30,6 +30,7 @@ namespace Logic.Repository
     Id    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     ProductoId INTEGER not null,
     Nombre    TEXT NOT NULL,
+    Orden INTEGER NOT NULL DEFAULT 0,
     Url TExt NOT null,
     FechaCreacion TEXT NOT NULL DEFAULT CURRENT_DATE,
     Principal INTEGER DEFAULT 0,
