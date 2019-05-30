@@ -103,7 +103,7 @@ namespace Recetariocx
                     }
                     pbImagen1.Image = imagenBit;
                     pbImagen1.Image.Save(Url + _nombre + "_1.jpg");
-                    imagenBit.Dispose();
+                    //imagenBit.Dispose();
                     btnEliminar1.Enabled = true;
                     btnAgregar1.Enabled = false;
                 }
@@ -137,7 +137,7 @@ namespace Recetariocx
                     }
                     pbImagen2.Image = imagenBit;
                     pbImagen2.Image.Save(Url + _nombre + "_2.jpg");
-                    imagenBit.Dispose();
+                    
                     btnEliminar2.Enabled = true;
                     btnAgregar2.Enabled = false;
                 }
@@ -169,7 +169,7 @@ namespace Recetariocx
                     }
                     pbImagen3.Image = imagenBit;
                     pbImagen3.Image.Save(Url + _nombre + "_3.jpg");
-                    imagenBit.Dispose();
+                    
                     btnEliminar3.Enabled = true;
                     btnAgregar3.Enabled = false;
                 }

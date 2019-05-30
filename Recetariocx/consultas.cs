@@ -133,9 +133,20 @@ namespace Recetariocx
 
         private void BtnImagenes_Click(object sender, EventArgs e)
         {
-            FormImagenes formImagenes = new FormImagenes(_productoId, _nombre);
-            formImagenes.ShowDialog();
-            DesabilitarBotones();
+            try
+            {
+                FormImagenes formImagenes = new FormImagenes(_productoId, _nombre);
+                formImagenes.ShowDialog();
+                
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            finally
+            {
+                DesabilitarBotones();
+            }
         }
 
         private async void TxtFiltro_TextChanged(object sender, EventArgs e)
