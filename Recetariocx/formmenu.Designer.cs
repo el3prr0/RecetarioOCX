@@ -140,9 +140,11 @@
             // 
             // administradorToolStripMenuItem
             // 
+            this.administradorToolStripMenuItem.Enabled = false;
             this.administradorToolStripMenuItem.Name = "administradorToolStripMenuItem";
             this.administradorToolStripMenuItem.Size = new System.Drawing.Size(73, 32);
             this.administradorToolStripMenuItem.Text = "Login";
+            this.administradorToolStripMenuItem.Visible = false;
             this.administradorToolStripMenuItem.Click += new System.EventHandler(this.AdministradorToolStripMenuItem_Click);
             // 
             // bartTenderToolStripMenuItem
@@ -194,7 +196,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "formmenu";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

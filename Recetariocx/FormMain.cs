@@ -23,6 +23,7 @@ namespace Recetariocx
         private int selected = 0;
         private string[] folderFile = null;
         private readonly string imagenpath;
+        private string Url = ConfigurationManager.AppSettings["UrlImagen"].ToString();
         public FormMain()
         {
             InitializeComponent();
@@ -32,8 +33,6 @@ namespace Recetariocx
             _ImagenRepository = new ImagenRepository();
             imagenpath = ConfigurationManager.AppSettings["LogoPath"].ToString();
         }
-
-
 
 
         private async Task BuscarProductos(string filtro)
@@ -92,7 +91,7 @@ namespace Recetariocx
             int i = 0;
             foreach (Imagen imagen in Imagenes)
             {
-                folderFile[i] = imagen.Url;
+                folderFile[i] = Url+imagen.Nombre;
                 i++;
             }
             selected = 0;

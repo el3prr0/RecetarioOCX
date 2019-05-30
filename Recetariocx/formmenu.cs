@@ -21,6 +21,7 @@ namespace Recetariocx
         private readonly string pathImagen;
 
         private bool CanAccess = false;
+        private bool IsAdmin = false;
         public formmenu()
         {
             InitializeComponent();
@@ -29,6 +30,7 @@ namespace Recetariocx
             nombredb = ConfigurationManager.AppSettings["BaseDatosNombre"].ToString();
             pathdb = ConfigurationManager.AppSettings["UrlBaseDAtos"].ToString();
             pathImagen =ConfigurationManager.AppSettings["UrlImagen"].ToString();
+            IsAdmin = Convert.ToBoolean(ConfigurationManager.AppSettings["IA"].ToString());
 
 
         }
@@ -160,9 +162,18 @@ namespace Recetariocx
             formLogo.ShowDialog();
         }
 
-        private void Formmenu_Load(object sender, EventArgs e)
+        private async void Formmenu_Load(object sender, EventArgs e)
         {
-
+            if (!File.Exists(pathdb + nombredb + ".db"))
+            {
+                Directory.CreateDirectory(pathdb);
+                Directory.CreateDirectory(pathImagen);
+                await seed.CreaBaseDatos();
+                await seed.AgregarUsuarioAdmin();
+                await seed.CargarCatalogos();
+            }
+            administradorToolStripMenuItem.Enabled = IsAdmin;
+            administradorToolStripMenuItem.Visible = IsAdmin;
         }
 
         private void VistaPreviaToolStripMenuItem_Click(object sender, EventArgs e)

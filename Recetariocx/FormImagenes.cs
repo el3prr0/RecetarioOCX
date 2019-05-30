@@ -40,21 +40,21 @@ namespace Recetariocx
             {
                 if (i == 0)
                 {
-                    pbImagen1.Image = Image.FromFile(imagen.Url);
+                    pbImagen1.Image = Image.FromFile(Url+imagen.Nombre);
                     btnEliminar1.Enabled = true;
                     btnAgregar1.Enabled = false;
                 }
 
                 if(i == 1)
                 {
-                    pbImagen2.Image = Image.FromFile(imagen.Url);
+                    pbImagen2.Image = Image.FromFile(Url+imagen.Nombre);
                     btnEliminar2.Enabled = true;
                     btnAgregar2.Enabled = false;
                 }
 
                 if(i == 2)
                 {
-                    pbImagen3.Image = Image.FromFile(imagen.Url);
+                    pbImagen3.Image = Image.FromFile(Url+imagen.Nombre);
                     btnEliminar3.Enabled = true;
                     btnAgregar3.Enabled = false;
                 }
