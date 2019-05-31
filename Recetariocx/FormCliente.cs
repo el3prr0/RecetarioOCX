@@ -355,5 +355,11 @@ namespace Recetariocx
         {
 
         }
+
+        private void FormCliente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            pbLogo.Image.Dispose();
+            pbLogo.Image = null;
+        }
     }
 }

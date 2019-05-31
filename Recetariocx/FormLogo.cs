@@ -27,6 +27,7 @@ namespace Recetariocx
             if (File.Exists(imagenpath))
             {
                 pbLogo.Image = Image.FromFile(imagenpath);
+                
             }
             
         }
@@ -41,7 +42,7 @@ namespace Recetariocx
                 
                 var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 400, 200);
                 pbLogo.Image.Dispose();
-
+                pbLogo.Image = null;
                 if (File.Exists(imagenpath))
                 {
                     File.Delete(imagenpath);
