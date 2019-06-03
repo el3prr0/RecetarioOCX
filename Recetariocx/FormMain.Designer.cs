@@ -86,8 +86,7 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btnBorrar);
             this.panel1.Controls.Add(this.btnSpace);
@@ -122,7 +121,7 @@
             this.panel1.Controls.Add(this.btnQ);
             this.panel1.Controls.Add(this.txtProducto);
             this.panel1.Location = new System.Drawing.Point(12, 16);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(969, 224);
             this.panel1.TabIndex = 70;
@@ -133,7 +132,7 @@
             this.btnBorrar.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnBorrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnBorrar.Location = new System.Drawing.Point(837, 63);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnBorrar.Name = "btnBorrar";
             this.btnBorrar.Size = new System.Drawing.Size(96, 39);
             this.btnBorrar.TabIndex = 114;
@@ -149,7 +148,7 @@
             this.btnSpace.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnSpace.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnSpace.Location = new System.Drawing.Point(836, 161);
-            this.btnSpace.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSpace.Margin = new System.Windows.Forms.Padding(4);
             this.btnSpace.Name = "btnSpace";
             this.btnSpace.Size = new System.Drawing.Size(96, 39);
             this.btnSpace.TabIndex = 113;
@@ -165,7 +164,7 @@
             this.btnP.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnP.Location = new System.Drawing.Point(745, 111);
-            this.btnP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnP.Margin = new System.Windows.Forms.Padding(4);
             this.btnP.Name = "btnP";
             this.btnP.Size = new System.Drawing.Size(79, 39);
             this.btnP.TabIndex = 79;
@@ -181,7 +180,7 @@
             this.btnLimpiar.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnLimpiar.Location = new System.Drawing.Point(836, 112);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(96, 39);
             this.btnLimpiar.TabIndex = 105;
@@ -197,7 +196,7 @@
             this.btnM.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnM.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnM.Location = new System.Drawing.Point(567, 161);
-            this.btnM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnM.Margin = new System.Windows.Forms.Padding(4);
             this.btnM.Name = "btnM";
             this.btnM.Size = new System.Drawing.Size(79, 39);
             this.btnM.TabIndex = 112;
@@ -213,7 +212,7 @@
             this.btnN.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnN.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnN.Location = new System.Drawing.Point(476, 161);
-            this.btnN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnN.Margin = new System.Windows.Forms.Padding(4);
             this.btnN.Name = "btnN";
             this.btnN.Size = new System.Drawing.Size(79, 39);
             this.btnN.TabIndex = 111;
@@ -229,7 +228,7 @@
             this.btnB.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnB.Location = new System.Drawing.Point(385, 161);
-            this.btnB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnB.Margin = new System.Windows.Forms.Padding(4);
             this.btnB.Name = "btnB";
             this.btnB.Size = new System.Drawing.Size(79, 39);
             this.btnB.TabIndex = 110;
@@ -245,7 +244,7 @@
             this.btnV.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnV.Location = new System.Drawing.Point(295, 161);
-            this.btnV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnV.Margin = new System.Windows.Forms.Padding(4);
             this.btnV.Name = "btnV";
             this.btnV.Size = new System.Drawing.Size(79, 39);
             this.btnV.TabIndex = 109;
@@ -261,7 +260,7 @@
             this.btnC.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnC.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnC.Location = new System.Drawing.Point(204, 161);
-            this.btnC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnC.Margin = new System.Windows.Forms.Padding(4);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(79, 39);
             this.btnC.TabIndex = 108;
@@ -277,7 +276,7 @@
             this.btnX.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnX.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnX.Location = new System.Drawing.Point(113, 161);
-            this.btnX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnX.Margin = new System.Windows.Forms.Padding(4);
             this.btnX.Name = "btnX";
             this.btnX.Size = new System.Drawing.Size(79, 39);
             this.btnX.TabIndex = 107;
@@ -293,7 +292,7 @@
             this.btnZ.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnZ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnZ.Location = new System.Drawing.Point(21, 161);
-            this.btnZ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnZ.Margin = new System.Windows.Forms.Padding(4);
             this.btnZ.Name = "btnZ";
             this.btnZ.Size = new System.Drawing.Size(80, 39);
             this.btnZ.TabIndex = 106;
@@ -309,7 +308,7 @@
             this.btnÑ.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnÑ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnÑ.Location = new System.Drawing.Point(656, 161);
-            this.btnÑ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnÑ.Margin = new System.Windows.Forms.Padding(4);
             this.btnÑ.Name = "btnÑ";
             this.btnÑ.Size = new System.Drawing.Size(80, 39);
             this.btnÑ.TabIndex = 95;
@@ -325,7 +324,7 @@
             this.btnL.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnL.Location = new System.Drawing.Point(747, 161);
-            this.btnL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnL.Margin = new System.Windows.Forms.Padding(4);
             this.btnL.Name = "btnL";
             this.btnL.Size = new System.Drawing.Size(79, 39);
             this.btnL.TabIndex = 104;
@@ -341,7 +340,7 @@
             this.btnK.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnK.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnK.Location = new System.Drawing.Point(656, 112);
-            this.btnK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnK.Margin = new System.Windows.Forms.Padding(4);
             this.btnK.Name = "btnK";
             this.btnK.Size = new System.Drawing.Size(79, 39);
             this.btnK.TabIndex = 103;
@@ -357,7 +356,7 @@
             this.btnJ.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnJ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnJ.Location = new System.Drawing.Point(565, 112);
-            this.btnJ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnJ.Margin = new System.Windows.Forms.Padding(4);
             this.btnJ.Name = "btnJ";
             this.btnJ.Size = new System.Drawing.Size(79, 39);
             this.btnJ.TabIndex = 102;
@@ -373,7 +372,7 @@
             this.btnH.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnH.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnH.Location = new System.Drawing.Point(475, 112);
-            this.btnH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnH.Margin = new System.Windows.Forms.Padding(4);
             this.btnH.Name = "btnH";
             this.btnH.Size = new System.Drawing.Size(79, 39);
             this.btnH.TabIndex = 101;
@@ -389,7 +388,7 @@
             this.btnG.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnG.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnG.Location = new System.Drawing.Point(384, 112);
-            this.btnG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnG.Margin = new System.Windows.Forms.Padding(4);
             this.btnG.Name = "btnG";
             this.btnG.Size = new System.Drawing.Size(79, 39);
             this.btnG.TabIndex = 100;
@@ -405,7 +404,7 @@
             this.btnF.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnF.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnF.Location = new System.Drawing.Point(293, 112);
-            this.btnF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnF.Margin = new System.Windows.Forms.Padding(4);
             this.btnF.Name = "btnF";
             this.btnF.Size = new System.Drawing.Size(79, 39);
             this.btnF.TabIndex = 99;
@@ -421,7 +420,7 @@
             this.btnD.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnD.Location = new System.Drawing.Point(203, 112);
-            this.btnD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnD.Margin = new System.Windows.Forms.Padding(4);
             this.btnD.Name = "btnD";
             this.btnD.Size = new System.Drawing.Size(79, 39);
             this.btnD.TabIndex = 98;
@@ -437,7 +436,7 @@
             this.btnS.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnS.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnS.Location = new System.Drawing.Point(112, 112);
-            this.btnS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnS.Margin = new System.Windows.Forms.Padding(4);
             this.btnS.Name = "btnS";
             this.btnS.Size = new System.Drawing.Size(79, 39);
             this.btnS.TabIndex = 97;
@@ -453,7 +452,7 @@
             this.btnA.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnA.Location = new System.Drawing.Point(20, 112);
-            this.btnA.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnA.Margin = new System.Windows.Forms.Padding(4);
             this.btnA.Name = "btnA";
             this.btnA.Size = new System.Drawing.Size(80, 39);
             this.btnA.TabIndex = 96;
@@ -482,7 +481,7 @@
             this.btnO.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnO.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnO.Location = new System.Drawing.Point(747, 63);
-            this.btnO.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnO.Margin = new System.Windows.Forms.Padding(4);
             this.btnO.Name = "btnO";
             this.btnO.Size = new System.Drawing.Size(79, 39);
             this.btnO.TabIndex = 78;
@@ -498,7 +497,7 @@
             this.btnI.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnI.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnI.Location = new System.Drawing.Point(656, 63);
-            this.btnI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnI.Margin = new System.Windows.Forms.Padding(4);
             this.btnI.Name = "btnI";
             this.btnI.Size = new System.Drawing.Size(79, 39);
             this.btnI.TabIndex = 77;
@@ -514,7 +513,7 @@
             this.btnU.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnU.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnU.Location = new System.Drawing.Point(565, 63);
-            this.btnU.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnU.Margin = new System.Windows.Forms.Padding(4);
             this.btnU.Name = "btnU";
             this.btnU.Size = new System.Drawing.Size(79, 39);
             this.btnU.TabIndex = 76;
@@ -530,7 +529,7 @@
             this.Y.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.Y.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.Y.Location = new System.Drawing.Point(475, 63);
-            this.Y.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Y.Margin = new System.Windows.Forms.Padding(4);
             this.Y.Name = "Y";
             this.Y.Size = new System.Drawing.Size(79, 39);
             this.Y.TabIndex = 75;
@@ -546,7 +545,7 @@
             this.btnT.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnT.Location = new System.Drawing.Point(384, 63);
-            this.btnT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnT.Margin = new System.Windows.Forms.Padding(4);
             this.btnT.Name = "btnT";
             this.btnT.Size = new System.Drawing.Size(79, 39);
             this.btnT.TabIndex = 74;
@@ -562,7 +561,7 @@
             this.btnR.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnR.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnR.Location = new System.Drawing.Point(293, 63);
-            this.btnR.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnR.Margin = new System.Windows.Forms.Padding(4);
             this.btnR.Name = "btnR";
             this.btnR.Size = new System.Drawing.Size(79, 39);
             this.btnR.TabIndex = 73;
@@ -578,7 +577,7 @@
             this.btnE.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnE.Location = new System.Drawing.Point(203, 63);
-            this.btnE.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnE.Margin = new System.Windows.Forms.Padding(4);
             this.btnE.Name = "btnE";
             this.btnE.Size = new System.Drawing.Size(79, 39);
             this.btnE.TabIndex = 72;
@@ -594,7 +593,7 @@
             this.btnW.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnW.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnW.Location = new System.Drawing.Point(112, 63);
-            this.btnW.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnW.Margin = new System.Windows.Forms.Padding(4);
             this.btnW.Name = "btnW";
             this.btnW.Size = new System.Drawing.Size(79, 39);
             this.btnW.TabIndex = 71;
@@ -610,7 +609,7 @@
             this.btnQ.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnQ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnQ.Location = new System.Drawing.Point(20, 63);
-            this.btnQ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnQ.Margin = new System.Windows.Forms.Padding(4);
             this.btnQ.Name = "btnQ";
             this.btnQ.Size = new System.Drawing.Size(80, 39);
             this.btnQ.TabIndex = 70;
@@ -622,15 +621,17 @@
             // 
             // txtProducto
             // 
+            this.txtProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProducto.BackColor = System.Drawing.Color.WhiteSmoke;
             // 
             // 
             // 
             this.txtProducto.CustomButton.Image = null;
-            this.txtProducto.CustomButton.Location = new System.Drawing.Point(999, 2);
-            this.txtProducto.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProducto.CustomButton.Location = new System.Drawing.Point(749, 2);
+            this.txtProducto.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtProducto.CustomButton.Name = "";
-            this.txtProducto.CustomButton.Size = new System.Drawing.Size(31, 28);
+            this.txtProducto.CustomButton.Size = new System.Drawing.Size(23, 23);
             this.txtProducto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtProducto.CustomButton.TabIndex = 1;
             this.txtProducto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -639,7 +640,7 @@
             this.txtProducto.ForeColor = System.Drawing.Color.Black;
             this.txtProducto.Lines = new string[0];
             this.txtProducto.Location = new System.Drawing.Point(121, 17);
-            this.txtProducto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProducto.Margin = new System.Windows.Forms.Padding(4);
             this.txtProducto.MaxLength = 32767;
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.PasswordChar = '\0';
@@ -666,7 +667,7 @@
             this.listProductos.FormattingEnabled = true;
             this.listProductos.ItemHeight = 24;
             this.listProductos.Location = new System.Drawing.Point(12, 276);
-            this.listProductos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listProductos.Margin = new System.Windows.Forms.Padding(4);
             this.listProductos.Name = "listProductos";
             this.listProductos.ScrollAlwaysVisible = true;
             this.listProductos.Size = new System.Drawing.Size(643, 124);
@@ -682,7 +683,7 @@
             this.listInstrucciones.HorizontalScrollbar = true;
             this.listInstrucciones.ItemHeight = 20;
             this.listInstrucciones.Location = new System.Drawing.Point(12, 624);
-            this.listInstrucciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listInstrucciones.Margin = new System.Windows.Forms.Padding(4);
             this.listInstrucciones.Name = "listInstrucciones";
             this.listInstrucciones.Size = new System.Drawing.Size(644, 124);
             this.listInstrucciones.TabIndex = 72;
@@ -697,17 +698,20 @@
             this.listIngredientes.HorizontalScrollbar = true;
             this.listIngredientes.ItemHeight = 20;
             this.listIngredientes.Location = new System.Drawing.Point(11, 450);
-            this.listIngredientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listIngredientes.Margin = new System.Windows.Forms.Padding(4);
             this.listIngredientes.Name = "listIngredientes";
             this.listIngredientes.Size = new System.Drawing.Size(333, 124);
             this.listIngredientes.TabIndex = 73;
             // 
             // pbImagenes
             // 
+            this.pbImagenes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbImagenes.Location = new System.Drawing.Point(679, 305);
-            this.pbImagenes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pbImagenes.Margin = new System.Windows.Forms.Padding(4);
             this.pbImagenes.Name = "pbImagenes";
-            this.pbImagenes.Size = new System.Drawing.Size(612, 439);
+            this.pbImagenes.Size = new System.Drawing.Size(548, 333);
             this.pbImagenes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagenes.TabIndex = 82;
             this.pbImagenes.TabStop = false;
@@ -724,10 +728,10 @@
             // 
             // 
             this.txtGuarnicion.CustomButton.Image = null;
-            this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(188, 1);
-            this.txtGuarnicion.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(141, 1);
+            this.txtGuarnicion.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtGuarnicion.CustomButton.Name = "";
-            this.txtGuarnicion.CustomButton.Size = new System.Drawing.Size(188, 174);
+            this.txtGuarnicion.CustomButton.Size = new System.Drawing.Size(141, 141);
             this.txtGuarnicion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtGuarnicion.CustomButton.TabIndex = 1;
             this.txtGuarnicion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -736,7 +740,7 @@
             this.txtGuarnicion.ForeColor = System.Drawing.SystemColors.ControlText;
             this.txtGuarnicion.Lines = new string[0];
             this.txtGuarnicion.Location = new System.Drawing.Point(375, 450);
-            this.txtGuarnicion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGuarnicion.Margin = new System.Windows.Forms.Padding(4);
             this.txtGuarnicion.MaxLength = 32767;
             this.txtGuarnicion.Multiline = true;
             this.txtGuarnicion.Name = "txtGuarnicion";
@@ -769,10 +773,12 @@
             // 
             // btnPrevious
             // 
+            this.btnPrevious.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPrevious.BackColor = System.Drawing.Color.Olive;
             this.btnPrevious.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnPrevious.Location = new System.Drawing.Point(807, 263);
-            this.btnPrevious.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrevious.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(59, 28);
             this.btnPrevious.TabIndex = 88;
@@ -784,10 +790,12 @@
             // 
             // btnNext
             // 
+            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNext.BackColor = System.Drawing.Color.Olive;
             this.btnNext.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnNext.Location = new System.Drawing.Point(1100, 263);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(59, 28);
             this.btnNext.TabIndex = 89;
@@ -799,10 +807,12 @@
             // 
             // btnTimer
             // 
+            this.btnTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTimer.BackColor = System.Drawing.Color.Olive;
             this.btnTimer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnTimer.Location = new System.Drawing.Point(875, 263);
-            this.btnTimer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTimer.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimer.Name = "btnTimer";
             this.btnTimer.Size = new System.Drawing.Size(216, 28);
             this.btnTimer.TabIndex = 90;
@@ -869,6 +879,7 @@
             // 
             // pbLogo
             // 
+            this.pbLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbLogo.Location = new System.Drawing.Point(1045, 33);
             this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbLogo.Name = "pbLogo";
@@ -881,6 +892,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1307, 757);
             this.Controls.Add(this.pbLogo);
@@ -899,7 +912,7 @@
             this.Controls.Add(this.listProductos);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormMain";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
