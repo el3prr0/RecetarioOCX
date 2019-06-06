@@ -204,6 +204,14 @@ namespace Recetariocx
             }
         }
 
+        private void FormCliente_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            pbLogo.Image.Dispose();
+            pbLogo.Image = null;
+        }
+
+
+
         private void BtnQ_Click(object sender, EventArgs e)
         {
             txtProducto.Text += "Q";
@@ -347,19 +355,6 @@ namespace Recetariocx
         private void BtnSpace_Click(object sender, EventArgs e)
         {
             txtProducto.Text += " ";
-        }
-
-
-
-        private void txtProducto_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormCliente_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            pbLogo.Image.Dispose();
-            pbLogo.Image = null;
         }
     }
 }

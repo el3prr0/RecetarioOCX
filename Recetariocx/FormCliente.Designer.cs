@@ -92,11 +92,11 @@
             this.listProductos.ForeColor = System.Drawing.Color.MidnightBlue;
             this.listProductos.FormattingEnabled = true;
             this.listProductos.ItemHeight = 24;
-            this.listProductos.Location = new System.Drawing.Point(7, 273);
+            this.listProductos.Location = new System.Drawing.Point(626, 266);
             this.listProductos.Margin = new System.Windows.Forms.Padding(4);
             this.listProductos.Name = "listProductos";
             this.listProductos.ScrollAlwaysVisible = true;
-            this.listProductos.Size = new System.Drawing.Size(616, 148);
+            this.listProductos.Size = new System.Drawing.Size(603, 148);
             this.listProductos.TabIndex = 71;
             this.listProductos.SelectedIndexChanged += new System.EventHandler(this.ListProductos_SelectedIndexChanged);
             // 
@@ -107,11 +107,9 @@
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnPrevious.BackColor = System.Drawing.Color.DarkOrange;
             this.btnPrevious.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPrevious.Location = new System.Drawing.Point(800, 270);
+            this.btnPrevious.Location = new System.Drawing.Point(112, 306);
             this.btnPrevious.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(59, 28);
@@ -124,11 +122,9 @@
             // 
             // btnNext
             // 
-            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNext.BackColor = System.Drawing.Color.DarkOrange;
             this.btnNext.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnNext.Location = new System.Drawing.Point(1093, 270);
+            this.btnNext.Location = new System.Drawing.Point(405, 306);
             this.btnNext.Margin = new System.Windows.Forms.Padding(4);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(59, 28);
@@ -141,11 +137,9 @@
             // 
             // btnTimer
             // 
-            this.btnTimer.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTimer.BackColor = System.Drawing.Color.DarkOrange;
             this.btnTimer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTimer.Location = new System.Drawing.Point(868, 270);
+            this.btnTimer.Location = new System.Drawing.Point(180, 306);
             this.btnTimer.Margin = new System.Windows.Forms.Padding(4);
             this.btnTimer.Name = "btnTimer";
             this.btnTimer.Size = new System.Drawing.Size(216, 28);
@@ -158,13 +152,11 @@
             // 
             // metroLabel2
             // 
-            this.metroLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel2.Location = new System.Drawing.Point(4, 241);
+            this.metroLabel2.Location = new System.Drawing.Point(623, 234);
             this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(92, 25);
@@ -185,7 +177,7 @@
             // 
             this.pbLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbLogo.BackColor = System.Drawing.Color.Khaki;
-            this.pbLogo.Location = new System.Drawing.Point(1037, 57);
+            this.pbLogo.Location = new System.Drawing.Point(989, 42);
             this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pbLogo.Name = "pbLogo";
             this.pbLogo.Size = new System.Drawing.Size(201, 186);
@@ -195,11 +187,8 @@
             // 
             // pbImagenes
             // 
-            this.pbImagenes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pbImagenes.BackColor = System.Drawing.Color.Khaki;
-            this.pbImagenes.Location = new System.Drawing.Point(675, 310);
+            this.pbImagenes.Location = new System.Drawing.Point(31, 347);
             this.pbImagenes.Margin = new System.Windows.Forms.Padding(4);
             this.pbImagenes.Name = "pbImagenes";
             this.pbImagenes.Size = new System.Drawing.Size(563, 363);
@@ -209,13 +198,11 @@
             // 
             // metroLabel3
             // 
-            this.metroLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel3.Location = new System.Drawing.Point(10, 624);
+            this.metroLabel3.Location = new System.Drawing.Point(619, 606);
             this.metroLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(104, 25);
@@ -228,13 +215,11 @@
             // 
             // metroLabel4
             // 
-            this.metroLabel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel4.Location = new System.Drawing.Point(10, 433);
+            this.metroLabel4.Location = new System.Drawing.Point(626, 418);
             this.metroLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(111, 25);
@@ -252,7 +237,7 @@
             // 
             // 
             this.txtPrecio.CustomButton.Image = null;
-            this.txtPrecio.CustomButton.Location = new System.Drawing.Point(112, 1);
+            this.txtPrecio.CustomButton.Location = new System.Drawing.Point(99, 1);
             this.txtPrecio.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrecio.CustomButton.Name = "";
             this.txtPrecio.CustomButton.Size = new System.Drawing.Size(35, 35);
@@ -265,7 +250,7 @@
             this.txtPrecio.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.txtPrecio.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtPrecio.Lines = new string[0];
-            this.txtPrecio.Location = new System.Drawing.Point(479, 569);
+            this.txtPrecio.Location = new System.Drawing.Point(1089, 545);
             this.txtPrecio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrecio.MaxLength = 32767;
             this.txtPrecio.Name = "txtPrecio";
@@ -276,7 +261,7 @@
             this.txtPrecio.SelectionLength = 0;
             this.txtPrecio.SelectionStart = 0;
             this.txtPrecio.ShortcutsEnabled = true;
-            this.txtPrecio.Size = new System.Drawing.Size(148, 37);
+            this.txtPrecio.Size = new System.Drawing.Size(135, 37);
             this.txtPrecio.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPrecio.TabIndex = 137;
             this.txtPrecio.UseCustomBackColor = true;
@@ -294,7 +279,7 @@
             // 
             // 
             this.txtDescripcion.CustomButton.Image = null;
-            this.txtDescripcion.CustomButton.Location = new System.Drawing.Point(541, 2);
+            this.txtDescripcion.CustomButton.Location = new System.Drawing.Point(528, 2);
             this.txtDescripcion.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.CustomButton.Name = "";
             this.txtDescripcion.CustomButton.Size = new System.Drawing.Size(71, 71);
@@ -305,7 +290,7 @@
             this.txtDescripcion.CustomButton.Visible = false;
             this.txtDescripcion.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtDescripcion.Lines = new string[0];
-            this.txtDescripcion.Location = new System.Drawing.Point(12, 659);
+            this.txtDescripcion.Location = new System.Drawing.Point(622, 635);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.MaxLength = 32767;
             this.txtDescripcion.Multiline = true;
@@ -317,7 +302,7 @@
             this.txtDescripcion.SelectionLength = 0;
             this.txtDescripcion.SelectionStart = 0;
             this.txtDescripcion.ShortcutsEnabled = true;
-            this.txtDescripcion.Size = new System.Drawing.Size(615, 76);
+            this.txtDescripcion.Size = new System.Drawing.Size(602, 76);
             this.txtDescripcion.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtDescripcion.TabIndex = 133;
             this.txtDescripcion.UseCustomBackColor = true;
@@ -348,13 +333,11 @@
             // 
             // metroLabel5
             // 
-            this.metroLabel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel5.Location = new System.Drawing.Point(379, 570);
+            this.metroLabel5.Location = new System.Drawing.Point(989, 546);
             this.metroLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(76, 25);
@@ -373,7 +356,7 @@
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel8.Location = new System.Drawing.Point(674, 273);
+            this.metroLabel8.Location = new System.Drawing.Point(31, 306);
             this.metroLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel8.Name = "metroLabel8";
             this.metroLabel8.Size = new System.Drawing.Size(69, 20);
@@ -389,7 +372,7 @@
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.BackColor = System.Drawing.Color.DarkMagenta;
             this.metroLabel7.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.metroLabel7.Location = new System.Drawing.Point(840, 262);
+            this.metroLabel7.Location = new System.Drawing.Point(1023, 262);
             this.metroLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(0, 0);
@@ -406,10 +389,10 @@
             this.listIngredientes.FormattingEnabled = true;
             this.listIngredientes.HorizontalScrollbar = true;
             this.listIngredientes.ItemHeight = 20;
-            this.listIngredientes.Location = new System.Drawing.Point(12, 468);
+            this.listIngredientes.Location = new System.Drawing.Point(626, 447);
             this.listIngredientes.Margin = new System.Windows.Forms.Padding(4);
             this.listIngredientes.Name = "listIngredientes";
-            this.listIngredientes.Size = new System.Drawing.Size(352, 124);
+            this.listIngredientes.Size = new System.Drawing.Size(339, 124);
             this.listIngredientes.TabIndex = 120;
             // 
             // btnBorrar
@@ -426,6 +409,7 @@
             this.btnBorrar.UseCustomBackColor = true;
             this.btnBorrar.UseCustomForeColor = true;
             this.btnBorrar.UseSelectable = true;
+            this.btnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
             // 
             // btnSpace
             // 
@@ -441,6 +425,7 @@
             this.btnSpace.UseCustomBackColor = true;
             this.btnSpace.UseCustomForeColor = true;
             this.btnSpace.UseSelectable = true;
+            this.btnSpace.Click += new System.EventHandler(this.BtnSpace_Click);
             // 
             // btnP
             // 
@@ -456,16 +441,15 @@
             this.btnP.UseCustomBackColor = true;
             this.btnP.UseCustomForeColor = true;
             this.btnP.UseSelectable = true;
+            this.btnP.Click += new System.EventHandler(this.BtnP_Click);
             // 
             // metroLabel1
             // 
-            this.metroLabel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel1.Location = new System.Drawing.Point(387, 433);
+            this.metroLabel1.Location = new System.Drawing.Point(997, 418);
             this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(97, 25);
@@ -490,6 +474,7 @@
             this.btnLimpiar.UseCustomBackColor = true;
             this.btnLimpiar.UseCustomForeColor = true;
             this.btnLimpiar.UseSelectable = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.BtnLimpiar_Click);
             // 
             // txtGuarnicion
             // 
@@ -498,7 +483,7 @@
             // 
             // 
             this.txtGuarnicion.CustomButton.Image = null;
-            this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(166, 2);
+            this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(153, 2);
             this.txtGuarnicion.CustomButton.Margin = new System.Windows.Forms.Padding(4);
             this.txtGuarnicion.CustomButton.Name = "";
             this.txtGuarnicion.CustomButton.Size = new System.Drawing.Size(71, 71);
@@ -509,7 +494,7 @@
             this.txtGuarnicion.CustomButton.Visible = false;
             this.txtGuarnicion.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtGuarnicion.Lines = new string[0];
-            this.txtGuarnicion.Location = new System.Drawing.Point(387, 468);
+            this.txtGuarnicion.Location = new System.Drawing.Point(997, 447);
             this.txtGuarnicion.Margin = new System.Windows.Forms.Padding(4);
             this.txtGuarnicion.MaxLength = 32767;
             this.txtGuarnicion.Multiline = true;
@@ -521,7 +506,7 @@
             this.txtGuarnicion.SelectionLength = 0;
             this.txtGuarnicion.SelectionStart = 0;
             this.txtGuarnicion.ShortcutsEnabled = true;
-            this.txtGuarnicion.Size = new System.Drawing.Size(240, 76);
+            this.txtGuarnicion.Size = new System.Drawing.Size(227, 76);
             this.txtGuarnicion.TabIndex = 128;
             this.txtGuarnicion.UseCustomBackColor = true;
             this.txtGuarnicion.UseCustomForeColor = true;
@@ -544,6 +529,7 @@
             this.btnM.UseCustomBackColor = true;
             this.btnM.UseCustomForeColor = true;
             this.btnM.UseSelectable = true;
+            this.btnM.Click += new System.EventHandler(this.BtnM_Click);
             // 
             // btnN
             // 
@@ -559,6 +545,7 @@
             this.btnN.UseCustomBackColor = true;
             this.btnN.UseCustomForeColor = true;
             this.btnN.UseSelectable = true;
+            this.btnN.Click += new System.EventHandler(this.BtnN_Click);
             // 
             // btnB
             // 
@@ -574,6 +561,7 @@
             this.btnB.UseCustomBackColor = true;
             this.btnB.UseCustomForeColor = true;
             this.btnB.UseSelectable = true;
+            this.btnB.Click += new System.EventHandler(this.BtnB_Click);
             // 
             // btnV
             // 
@@ -589,6 +577,7 @@
             this.btnV.UseCustomBackColor = true;
             this.btnV.UseCustomForeColor = true;
             this.btnV.UseSelectable = true;
+            this.btnV.Click += new System.EventHandler(this.BtnV_Click);
             // 
             // btnC
             // 
@@ -604,6 +593,7 @@
             this.btnC.UseCustomBackColor = true;
             this.btnC.UseCustomForeColor = true;
             this.btnC.UseSelectable = true;
+            this.btnC.Click += new System.EventHandler(this.BtnC_Click);
             // 
             // btnX
             // 
@@ -619,6 +609,7 @@
             this.btnX.UseCustomBackColor = true;
             this.btnX.UseCustomForeColor = true;
             this.btnX.UseSelectable = true;
+            this.btnX.Click += new System.EventHandler(this.BtnX_Click);
             // 
             // btnZ
             // 
@@ -634,6 +625,7 @@
             this.btnZ.UseCustomBackColor = true;
             this.btnZ.UseCustomForeColor = true;
             this.btnZ.UseSelectable = true;
+            this.btnZ.Click += new System.EventHandler(this.BtnZ_Click);
             // 
             // btnÑ
             // 
@@ -649,6 +641,7 @@
             this.btnÑ.UseCustomBackColor = true;
             this.btnÑ.UseCustomForeColor = true;
             this.btnÑ.UseSelectable = true;
+            this.btnÑ.Click += new System.EventHandler(this.BtnÑ_Click);
             // 
             // btnL
             // 
@@ -664,6 +657,7 @@
             this.btnL.UseCustomBackColor = true;
             this.btnL.UseCustomForeColor = true;
             this.btnL.UseSelectable = true;
+            this.btnL.Click += new System.EventHandler(this.BtnL_Click);
             // 
             // btnK
             // 
@@ -679,6 +673,7 @@
             this.btnK.UseCustomBackColor = true;
             this.btnK.UseCustomForeColor = true;
             this.btnK.UseSelectable = true;
+            this.btnK.Click += new System.EventHandler(this.BtnK_Click);
             // 
             // btnJ
             // 
@@ -694,6 +689,7 @@
             this.btnJ.UseCustomBackColor = true;
             this.btnJ.UseCustomForeColor = true;
             this.btnJ.UseSelectable = true;
+            this.btnJ.Click += new System.EventHandler(this.BtnJ_Click);
             // 
             // btnH
             // 
@@ -709,6 +705,7 @@
             this.btnH.UseCustomBackColor = true;
             this.btnH.UseCustomForeColor = true;
             this.btnH.UseSelectable = true;
+            this.btnH.Click += new System.EventHandler(this.BtnH_Click);
             // 
             // btnG
             // 
@@ -724,6 +721,7 @@
             this.btnG.UseCustomBackColor = true;
             this.btnG.UseCustomForeColor = true;
             this.btnG.UseSelectable = true;
+            this.btnG.Click += new System.EventHandler(this.BtnG_Click);
             // 
             // btnF
             // 
@@ -739,6 +737,7 @@
             this.btnF.UseCustomBackColor = true;
             this.btnF.UseCustomForeColor = true;
             this.btnF.UseSelectable = true;
+            this.btnF.Click += new System.EventHandler(this.BtnF_Click);
             // 
             // btnD
             // 
@@ -754,6 +753,7 @@
             this.btnD.UseCustomBackColor = true;
             this.btnD.UseCustomForeColor = true;
             this.btnD.UseSelectable = true;
+            this.btnD.Click += new System.EventHandler(this.BtnD_Click);
             // 
             // btnS
             // 
@@ -769,6 +769,7 @@
             this.btnS.UseCustomBackColor = true;
             this.btnS.UseCustomForeColor = true;
             this.btnS.UseSelectable = true;
+            this.btnS.Click += new System.EventHandler(this.BtnS_Click);
             // 
             // btnA
             // 
@@ -784,6 +785,7 @@
             this.btnA.UseCustomBackColor = true;
             this.btnA.UseCustomForeColor = true;
             this.btnA.UseSelectable = true;
+            this.btnA.Click += new System.EventHandler(this.BtnA_Click);
             // 
             // btnO
             // 
@@ -799,6 +801,7 @@
             this.btnO.UseCustomBackColor = true;
             this.btnO.UseCustomForeColor = true;
             this.btnO.UseSelectable = true;
+            this.btnO.Click += new System.EventHandler(this.BtnO_Click);
             // 
             // btnI
             // 
@@ -814,6 +817,7 @@
             this.btnI.UseCustomBackColor = true;
             this.btnI.UseCustomForeColor = true;
             this.btnI.UseSelectable = true;
+            this.btnI.Click += new System.EventHandler(this.BtnI_Click);
             // 
             // btnU
             // 
@@ -829,6 +833,7 @@
             this.btnU.UseCustomBackColor = true;
             this.btnU.UseCustomForeColor = true;
             this.btnU.UseSelectable = true;
+            this.btnU.Click += new System.EventHandler(this.BtnU_Click);
             // 
             // Y
             // 
@@ -844,6 +849,7 @@
             this.Y.UseCustomBackColor = true;
             this.Y.UseCustomForeColor = true;
             this.Y.UseSelectable = true;
+            this.Y.Click += new System.EventHandler(this.Y_Click);
             // 
             // btnT
             // 
@@ -859,6 +865,7 @@
             this.btnT.UseCustomBackColor = true;
             this.btnT.UseCustomForeColor = true;
             this.btnT.UseSelectable = true;
+            this.btnT.Click += new System.EventHandler(this.BtnT_Click);
             // 
             // btnR
             // 
@@ -874,6 +881,7 @@
             this.btnR.UseCustomBackColor = true;
             this.btnR.UseCustomForeColor = true;
             this.btnR.UseSelectable = true;
+            this.btnR.Click += new System.EventHandler(this.BtnR_Click);
             // 
             // btnE
             // 
@@ -889,6 +897,7 @@
             this.btnE.UseCustomBackColor = true;
             this.btnE.UseCustomForeColor = true;
             this.btnE.UseSelectable = true;
+            this.btnE.Click += new System.EventHandler(this.BtnE_Click);
             // 
             // btnW
             // 
@@ -904,6 +913,7 @@
             this.btnW.UseCustomBackColor = true;
             this.btnW.UseCustomForeColor = true;
             this.btnW.UseSelectable = true;
+            this.btnW.Click += new System.EventHandler(this.BtnW_Click);
             // 
             // btnQ
             // 
@@ -919,6 +929,7 @@
             this.btnQ.UseCustomBackColor = true;
             this.btnQ.UseCustomForeColor = true;
             this.btnQ.UseSelectable = true;
+            this.btnQ.Click += new System.EventHandler(this.BtnQ_Click);
             // 
             // txtProducto
             // 
@@ -1014,6 +1025,7 @@
             this.Controls.Add(this.listProductos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.Movable = false;
             this.Name = "FormCliente";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Default;
