@@ -10,7 +10,7 @@ namespace Logic.Service
     public class CloudService
     {
         RestClient client;
-        string access_token;
+        string access_token = string.Empty;
 
         public CloudService()
         {

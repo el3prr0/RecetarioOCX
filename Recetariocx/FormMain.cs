@@ -20,10 +20,13 @@ namespace Recetariocx
         IngredienteRepository _IngredienteRepository;
         InstruccionRepository _InstruccionRepository;
         ImagenRepository _ImagenRepository;
+        IEnumerable<Instruccion> instrucciones;
         private int selected = 0;
         private string[] folderFile = null;
         private readonly string imagenpath;
         private string Url = ConfigurationManager.AppSettings["UrlImagen"].ToString();
+        public int Vproductid;
+        
         public FormMain()
         {
             InitializeComponent();
@@ -55,19 +58,20 @@ namespace Recetariocx
             }
         }
 
-        private async void ListProductos_SelectedIndexChanged(object sender, EventArgs e)
+        public async void ListProductos_SelectedIndexChanged(object sender, EventArgs e)
         {
             var producto = (Producto)listProductos.SelectedItem;
             if(producto != null)
             {
                 await CargarListas(producto.Id);
                 txtGuarnicion.Text = producto.Guarnicion;
+                Vproductid = producto.Id;                
             }
             
         }
 
 
-        private async Task CargarListas(int productoId)
+        public async Task CargarListas(int productoId)
         {
             var ingredientes = await _IngredienteRepository.GetWithProduct(productoId);
             timer1.Enabled = false;
@@ -79,7 +83,7 @@ namespace Recetariocx
             }
 
 
-            var instrucciones = await _InstruccionRepository.GetWithProduct(productoId);
+            instrucciones = await _InstruccionRepository.GetWithProduct(productoId);
             listInstrucciones.Items.Clear();
             foreach(Instruccion instruccion in instrucciones)
             {
@@ -159,17 +163,7 @@ namespace Recetariocx
             }
         }
 
-        private async void TxtProducto_TextChanged(object sender, EventArgs e)
-        {
-            if (txtProducto.Text.Trim().Length > 0)
-            {
-                await BuscarProductos(txtProducto.Text.Trim().ToUpper());
-            }
-            else
-            {
-                await BuscarProductos("");
-            }
-        }
+
 
         private void BtnTimer_Click(object sender, EventArgs e)
         {
@@ -195,158 +189,7 @@ namespace Recetariocx
             prevImage();
         }
 
-        private void BtnBorrar_Click(object sender, EventArgs e)
-        {
-            if (txtProducto.Text.Length > 0)
-            {
-                txtProducto.Text = txtProducto.Text.TrimEnd(txtProducto.Text[txtProducto.Text.Length - 1]);
-            }
-        }
-
-        private void BtnQ_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "Q";
-        }
-
-        private void BtnW_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "W";
-        }
-
-        private void BtnE_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "E";
-        }
-
-        private void BtnR_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "R";
-        }
-
-        private void BtnT_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "T";
-        }
-
-        private void Y_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "Y";
-        }
-
-        private void BtnU_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "U";
-        }
-
-        private void BtnI_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "I";
-        }
-
-        private void BtnO_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "O";
-        }
-
-        private void BtnA_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "A";
-        }
-
-        private void BtnS_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "S";
-        }
-
-        private void BtnD_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "D";
-        }
-
-        private void BtnF_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "F";
-        }
-
-        private void BtnG_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "G";
-        }
-
-        private void BtnH_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "H";
-        }
-
-        private void BtnJ_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "J";
-        }
-
-        private void BtnK_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "K";
-        }
-
-        private void BtnP_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "P";
-        }
-
-        private void BtnLimpiar_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text = string.Empty;
-        }
-
-        private void BtnZ_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "Z";
-        }
-
-        private void BtnX_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "X";
-        }
-
-        private void BtnC_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "C";
-        }
-
-        private void BtnV_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "V";
-        }
-
-        private void BtnB_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "B";
-        }
-
-        private void BtnN_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "N";
-        }
-
-        private void BtnM_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "M";
-        }
-
-        private void BtnÑ_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "Ñ";
-        }
-
-        private void BtnL_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += "L";
-        }
-
-        private void BtnSpace_Click(object sender, EventArgs e)
-        {
-            txtProducto.Text += " ";
-        }
+        
 
         private void ListInstrucciones_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -368,5 +211,67 @@ namespace Recetariocx
             pbLogo.Image.Dispose();
             pbLogo.Image = null;
         }
+
+        private async void TxtProducto_TextChanged_1(object sender, EventArgs e)
+        {
+            if (txtProductoOK.Text.Trim().Length > 0)
+            {
+                await BuscarProductos(txtProductoOK.Text.Trim().ToUpper());
+            }
+            else
+            {
+                await BuscarProductos("");
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (txtProductoOK.Text.Length > 0)
+            {
+                txtProductoOK.Text = txtProductoOK.Text.TrimEnd(txtProductoOK.Text[txtProductoOK.Text.Length - 1]);
+
+                txtProductoOK.Focus();
+            }
+        }
+
+        private void PbImagenes_MouseMove(object sender, MouseEventArgs e)
+        {
+            agrandaimg();
+
+        }
+
+        private void FormMain_MouseMove(object sender, MouseEventArgs e)
+        {
+            pbImagenes.Height = 220;
+            pbImagenes.Width = 350;
+
+            //location de img
+            pbImagenes.Top = 280;
+            pbImagenes.Left = 15;
+        }
+
+        private void agrandaimg()
+        {
+            pbImagenes.Height = 400;
+            pbImagenes.Width = 600;
+
+            //location de img
+            pbImagenes.Top= 200;
+            pbImagenes.Left = 15;
+
+        }
+
+        private void PbImagenes_Click(object sender, EventArgs e)
+        {
+            agrandaimg();
+        }
+
+        private void ListInstrucciones_DoubleClick(object sender, EventArgs e)
+        {
+            Formdialog FRM = new Formdialog(instrucciones);
+            FRM.ShowDialog();
+            
+        }
     }
 }
+

@@ -142,9 +142,9 @@
             // 
             // 
             this.txtUsuario.CustomButton.Image = null;
-            this.txtUsuario.CustomButton.Location = new System.Drawing.Point(184, 1);
+            this.txtUsuario.CustomButton.Location = new System.Drawing.Point(246, 1);
             this.txtUsuario.CustomButton.Name = "";
-            this.txtUsuario.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.txtUsuario.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtUsuario.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtUsuario.CustomButton.TabIndex = 1;
             this.txtUsuario.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -169,13 +169,14 @@
             // 
             // txtPassword
             // 
+            this.txtPassword.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
             this.txtPassword.CustomButton.Image = null;
-            this.txtPassword.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtPassword.CustomButton.Location = new System.Drawing.Point(182, 1);
             this.txtPassword.CustomButton.Name = "";
-            this.txtPassword.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.txtPassword.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtPassword.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPassword.CustomButton.TabIndex = 1;
             this.txtPassword.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -204,9 +205,9 @@
             // 
             // 
             this.txtNombre.CustomButton.Image = null;
-            this.txtNombre.CustomButton.Location = new System.Drawing.Point(356, 1);
+            this.txtNombre.CustomButton.Location = new System.Drawing.Point(474, 1);
             this.txtNombre.CustomButton.Name = "";
-            this.txtNombre.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.txtNombre.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtNombre.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtNombre.CustomButton.TabIndex = 1;
             this.txtNombre.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -234,9 +235,9 @@
             // 
             // 
             this.txtCorreo.CustomButton.Image = null;
-            this.txtCorreo.CustomButton.Location = new System.Drawing.Point(184, 1);
+            this.txtCorreo.CustomButton.Location = new System.Drawing.Point(246, 1);
             this.txtCorreo.CustomButton.Name = "";
-            this.txtCorreo.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.txtCorreo.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtCorreo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtCorreo.CustomButton.TabIndex = 1;
             this.txtCorreo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -264,9 +265,9 @@
             // 
             // 
             this.txtTelefono.CustomButton.Image = null;
-            this.txtTelefono.CustomButton.Location = new System.Drawing.Point(136, 1);
+            this.txtTelefono.CustomButton.Location = new System.Drawing.Point(182, 1);
             this.txtTelefono.CustomButton.Name = "";
-            this.txtTelefono.CustomButton.Size = new System.Drawing.Size(16, 17);
+            this.txtTelefono.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtTelefono.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtTelefono.CustomButton.TabIndex = 1;
             this.txtTelefono.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -352,7 +353,7 @@
             "Empleado",
             "Cliente"});
             this.cbNivel.Location = new System.Drawing.Point(33, 405);
-            this.cbNivel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbNivel.Margin = new System.Windows.Forms.Padding(2);
             this.cbNivel.Name = "cbNivel";
             this.cbNivel.Size = new System.Drawing.Size(269, 29);
             this.cbNivel.TabIndex = 147;

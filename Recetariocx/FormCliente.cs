@@ -160,17 +160,7 @@ namespace Recetariocx
             }
         }
 
-        private async void TxtProducto_TextChanged(object sender, EventArgs e)
-        {
-            if (txtProducto.Text.Trim().Length > 0)
-            {
-                await BuscarProductos(txtProducto.Text.Trim().ToUpper());
-            }
-            else
-            {
-                await BuscarProductos("");
-            }
-        }
+        
 
         private void BtnTimer_Click(object sender, EventArgs e)
         {
@@ -355,6 +345,23 @@ namespace Recetariocx
         private void BtnSpace_Click(object sender, EventArgs e)
         {
             txtProducto.Text += " ";
+        }
+
+        private void TxtProducto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private async void txtProducto_TextChanged(object sender, EventArgs e)
+        {
+            if (txtProducto.Text.Trim().Length > 0)
+            {
+                await BuscarProductos(txtProducto.Text.Trim().ToUpper());
+            }
+            else
+            {
+                await BuscarProductos("");
+            }
         }
     }
 }

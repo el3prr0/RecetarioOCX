@@ -22,7 +22,7 @@ Section "Install"
 
 
 
-  File /r D:\Projects\RecetarioOCX\Recetariocx\bin\Release\
+  File /r C:\Barthender\RecetarioOCX-master\Recetariocx\bin\Release\
   
   CreateShortCut "$DESKTOP\${MUI_PRODUCT}.lnk" "$INSTDIR\Release\${MUI_FILE}.exe" ""
 

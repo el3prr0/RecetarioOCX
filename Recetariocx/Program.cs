@@ -19,6 +19,7 @@ namespace Recetariocx
 
             Application.Run(new FormInicio());
             Application.Run(new formmenu());
+           
         }
     }
 }

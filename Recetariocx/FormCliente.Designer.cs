@@ -87,16 +87,17 @@
             // 
             // listProductos
             // 
+            this.listProductos.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listProductos.BackColor = System.Drawing.Color.Orange;
             this.listProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listProductos.ForeColor = System.Drawing.Color.MidnightBlue;
             this.listProductos.FormattingEnabled = true;
-            this.listProductos.ItemHeight = 24;
-            this.listProductos.Location = new System.Drawing.Point(626, 266);
-            this.listProductos.Margin = new System.Windows.Forms.Padding(4);
+            this.listProductos.ItemHeight = 18;
+            this.listProductos.Location = new System.Drawing.Point(558, 227);
             this.listProductos.Name = "listProductos";
             this.listProductos.ScrollAlwaysVisible = true;
-            this.listProductos.Size = new System.Drawing.Size(603, 148);
+            this.listProductos.Size = new System.Drawing.Size(397, 148);
             this.listProductos.TabIndex = 71;
             this.listProductos.SelectedIndexChanged += new System.EventHandler(this.ListProductos_SelectedIndexChanged);
             // 
@@ -109,10 +110,9 @@
             // 
             this.btnPrevious.BackColor = System.Drawing.Color.DarkOrange;
             this.btnPrevious.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnPrevious.Location = new System.Drawing.Point(112, 306);
-            this.btnPrevious.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPrevious.Location = new System.Drawing.Point(157, 206);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(59, 28);
+            this.btnPrevious.Size = new System.Drawing.Size(44, 23);
             this.btnPrevious.TabIndex = 88;
             this.btnPrevious.Text = "<<";
             this.btnPrevious.UseCustomBackColor = true;
@@ -124,10 +124,9 @@
             // 
             this.btnNext.BackColor = System.Drawing.Color.DarkOrange;
             this.btnNext.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnNext.Location = new System.Drawing.Point(405, 306);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNext.Location = new System.Drawing.Point(377, 206);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(59, 28);
+            this.btnNext.Size = new System.Drawing.Size(44, 23);
             this.btnNext.TabIndex = 89;
             this.btnNext.Text = ">>";
             this.btnNext.UseCustomBackColor = true;
@@ -139,10 +138,9 @@
             // 
             this.btnTimer.BackColor = System.Drawing.Color.DarkOrange;
             this.btnTimer.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnTimer.Location = new System.Drawing.Point(180, 306);
-            this.btnTimer.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTimer.Location = new System.Drawing.Point(208, 206);
             this.btnTimer.Name = "btnTimer";
-            this.btnTimer.Size = new System.Drawing.Size(216, 28);
+            this.btnTimer.Size = new System.Drawing.Size(162, 23);
             this.btnTimer.TabIndex = 90;
             this.btnTimer.Text = "Detener";
             this.btnTimer.UseCustomBackColor = true;
@@ -156,10 +154,9 @@
             this.metroLabel2.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel2.Location = new System.Drawing.Point(623, 234);
-            this.metroLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel2.Location = new System.Drawing.Point(556, 199);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(92, 25);
+            this.metroLabel2.Size = new System.Drawing.Size(88, 25);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel2.TabIndex = 91;
             this.metroLabel2.Text = "Productos";
@@ -176,36 +173,37 @@
             // pbLogo
             // 
             this.pbLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbLogo.BackColor = System.Drawing.Color.Khaki;
-            this.pbLogo.Location = new System.Drawing.Point(989, 42);
-            this.pbLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbLogo.BackColor = System.Drawing.Color.White;
+            this.pbLogo.Location = new System.Drawing.Point(758, 34);
+            this.pbLogo.Margin = new System.Windows.Forms.Padding(2);
             this.pbLogo.Name = "pbLogo";
-            this.pbLogo.Size = new System.Drawing.Size(201, 186);
+            this.pbLogo.Size = new System.Drawing.Size(151, 151);
             this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbLogo.TabIndex = 95;
             this.pbLogo.TabStop = false;
             // 
             // pbImagenes
             // 
-            this.pbImagenes.BackColor = System.Drawing.Color.Khaki;
-            this.pbImagenes.Location = new System.Drawing.Point(31, 347);
-            this.pbImagenes.Margin = new System.Windows.Forms.Padding(4);
+            this.pbImagenes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.pbImagenes.BackColor = System.Drawing.Color.White;
+            this.pbImagenes.Location = new System.Drawing.Point(13, 237);
             this.pbImagenes.Name = "pbImagenes";
-            this.pbImagenes.Size = new System.Drawing.Size(563, 363);
+            this.pbImagenes.Size = new System.Drawing.Size(532, 361);
             this.pbImagenes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbImagenes.TabIndex = 82;
             this.pbImagenes.TabStop = false;
             // 
             // metroLabel3
             // 
+            this.metroLabel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel3.Location = new System.Drawing.Point(619, 606);
-            this.metroLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel3.Location = new System.Drawing.Point(552, 503);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(104, 25);
+            this.metroLabel3.Size = new System.Drawing.Size(100, 25);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel3.TabIndex = 135;
             this.metroLabel3.Text = "Descripcion";
@@ -215,14 +213,14 @@
             // 
             // metroLabel4
             // 
+            this.metroLabel4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel4.Location = new System.Drawing.Point(626, 418);
-            this.metroLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel4.Location = new System.Drawing.Point(556, 375);
             this.metroLabel4.Name = "metroLabel4";
-            this.metroLabel4.Size = new System.Drawing.Size(111, 25);
+            this.metroLabel4.Size = new System.Drawing.Size(105, 25);
             this.metroLabel4.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel4.TabIndex = 130;
             this.metroLabel4.Text = "Ingredientes";
@@ -232,15 +230,16 @@
             // 
             // txtPrecio
             // 
+            this.txtPrecio.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtPrecio.BackColor = System.Drawing.Color.Orange;
             // 
             // 
             // 
             this.txtPrecio.CustomButton.Image = null;
-            this.txtPrecio.CustomButton.Location = new System.Drawing.Point(99, 1);
-            this.txtPrecio.CustomButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPrecio.CustomButton.Location = new System.Drawing.Point(68, 2);
+            this.txtPrecio.CustomButton.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.CustomButton.Name = "";
-            this.txtPrecio.CustomButton.Size = new System.Drawing.Size(35, 35);
+            this.txtPrecio.CustomButton.Size = new System.Drawing.Size(25, 25);
             this.txtPrecio.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPrecio.CustomButton.TabIndex = 1;
             this.txtPrecio.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -250,8 +249,8 @@
             this.txtPrecio.FontWeight = MetroFramework.MetroTextBoxWeight.Bold;
             this.txtPrecio.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtPrecio.Lines = new string[0];
-            this.txtPrecio.Location = new System.Drawing.Point(1089, 545);
-            this.txtPrecio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPrecio.Location = new System.Drawing.Point(859, 470);
+            this.txtPrecio.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecio.MaxLength = 32767;
             this.txtPrecio.Name = "txtPrecio";
             this.txtPrecio.PasswordChar = '\0';
@@ -261,7 +260,7 @@
             this.txtPrecio.SelectionLength = 0;
             this.txtPrecio.SelectionStart = 0;
             this.txtPrecio.ShortcutsEnabled = true;
-            this.txtPrecio.Size = new System.Drawing.Size(135, 37);
+            this.txtPrecio.Size = new System.Drawing.Size(96, 30);
             this.txtPrecio.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtPrecio.TabIndex = 137;
             this.txtPrecio.UseCustomBackColor = true;
@@ -273,16 +272,17 @@
             // 
             // txtDescripcion
             // 
+            this.txtDescripcion.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtDescripcion.BackColor = System.Drawing.Color.Orange;
             this.txtDescripcion.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             // 
             // 
             // 
             this.txtDescripcion.CustomButton.Image = null;
-            this.txtDescripcion.CustomButton.Location = new System.Drawing.Point(528, 2);
-            this.txtDescripcion.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescripcion.CustomButton.Location = new System.Drawing.Point(337, 2);
             this.txtDescripcion.CustomButton.Name = "";
-            this.txtDescripcion.CustomButton.Size = new System.Drawing.Size(71, 71);
+            this.txtDescripcion.CustomButton.Size = new System.Drawing.Size(57, 57);
             this.txtDescripcion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtDescripcion.CustomButton.TabIndex = 1;
             this.txtDescripcion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -290,8 +290,7 @@
             this.txtDescripcion.CustomButton.Visible = false;
             this.txtDescripcion.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtDescripcion.Lines = new string[0];
-            this.txtDescripcion.Location = new System.Drawing.Point(622, 635);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtDescripcion.Location = new System.Drawing.Point(558, 531);
             this.txtDescripcion.MaxLength = 32767;
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
@@ -302,7 +301,7 @@
             this.txtDescripcion.SelectionLength = 0;
             this.txtDescripcion.SelectionStart = 0;
             this.txtDescripcion.ShortcutsEnabled = true;
-            this.txtDescripcion.Size = new System.Drawing.Size(602, 76);
+            this.txtDescripcion.Size = new System.Drawing.Size(397, 62);
             this.txtDescripcion.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtDescripcion.TabIndex = 133;
             this.txtDescripcion.UseCustomBackColor = true;
@@ -314,16 +313,12 @@
             // 
             // metroLabel9
             // 
-            this.metroLabel9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.metroLabel9.AutoSize = true;
             this.metroLabel9.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel9.Location = new System.Drawing.Point(31, 42);
-            this.metroLabel9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel9.Location = new System.Drawing.Point(23, 34);
             this.metroLabel9.Name = "metroLabel9";
-            this.metroLabel9.Size = new System.Drawing.Size(61, 20);
+            this.metroLabel9.Size = new System.Drawing.Size(59, 19);
             this.metroLabel9.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel9.TabIndex = 140;
             this.metroLabel9.Text = "Nombre";
@@ -333,14 +328,14 @@
             // 
             // metroLabel5
             // 
+            this.metroLabel5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel5.Location = new System.Drawing.Point(989, 546);
-            this.metroLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel5.Location = new System.Drawing.Point(782, 474);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(76, 25);
+            this.metroLabel5.Size = new System.Drawing.Size(73, 25);
             this.metroLabel5.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel5.TabIndex = 157;
             this.metroLabel5.Text = "Precio $";
@@ -350,16 +345,12 @@
             // 
             // metroLabel8
             // 
-            this.metroLabel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.metroLabel8.AutoSize = true;
             this.metroLabel8.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel8.Location = new System.Drawing.Point(31, 306);
-            this.metroLabel8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel8.Location = new System.Drawing.Point(19, 206);
             this.metroLabel8.Name = "metroLabel8";
-            this.metroLabel8.Size = new System.Drawing.Size(69, 20);
+            this.metroLabel8.Size = new System.Drawing.Size(65, 19);
             this.metroLabel8.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel8.TabIndex = 141;
             this.metroLabel8.Text = "Imagenes";
@@ -372,8 +363,7 @@
             this.metroLabel7.AutoSize = true;
             this.metroLabel7.BackColor = System.Drawing.Color.DarkMagenta;
             this.metroLabel7.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.metroLabel7.Location = new System.Drawing.Point(1023, 262);
-            this.metroLabel7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel7.Location = new System.Drawing.Point(818, 221);
             this.metroLabel7.Name = "metroLabel7";
             this.metroLabel7.Size = new System.Drawing.Size(0, 0);
             this.metroLabel7.Style = MetroFramework.MetroColorStyle.Green;
@@ -383,16 +373,16 @@
             // 
             // listIngredientes
             // 
+            this.listIngredientes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.listIngredientes.BackColor = System.Drawing.Color.Orange;
             this.listIngredientes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listIngredientes.ForeColor = System.Drawing.Color.MidnightBlue;
             this.listIngredientes.FormattingEnabled = true;
             this.listIngredientes.HorizontalScrollbar = true;
-            this.listIngredientes.ItemHeight = 20;
-            this.listIngredientes.Location = new System.Drawing.Point(626, 447);
-            this.listIngredientes.Margin = new System.Windows.Forms.Padding(4);
+            this.listIngredientes.ItemHeight = 16;
+            this.listIngredientes.Location = new System.Drawing.Point(558, 403);
             this.listIngredientes.Name = "listIngredientes";
-            this.listIngredientes.Size = new System.Drawing.Size(339, 124);
+            this.listIngredientes.Size = new System.Drawing.Size(216, 100);
             this.listIngredientes.TabIndex = 120;
             // 
             // btnBorrar
@@ -400,10 +390,9 @@
             this.btnBorrar.BackColor = System.Drawing.Color.DarkOrange;
             this.btnBorrar.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnBorrar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnBorrar.Location = new System.Drawing.Point(855, 86);
-            this.btnBorrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBorrar.Location = new System.Drawing.Point(641, 70);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(96, 39);
+            this.btnBorrar.Size = new System.Drawing.Size(72, 32);
             this.btnBorrar.TabIndex = 156;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseCustomBackColor = true;
@@ -416,10 +405,9 @@
             this.btnSpace.BackColor = System.Drawing.Color.DarkOrange;
             this.btnSpace.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnSpace.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnSpace.Location = new System.Drawing.Point(854, 185);
-            this.btnSpace.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSpace.Location = new System.Drawing.Point(640, 150);
             this.btnSpace.Name = "btnSpace";
-            this.btnSpace.Size = new System.Drawing.Size(96, 39);
+            this.btnSpace.Size = new System.Drawing.Size(72, 32);
             this.btnSpace.TabIndex = 155;
             this.btnSpace.Text = "Espacio";
             this.btnSpace.UseCustomBackColor = true;
@@ -432,10 +420,9 @@
             this.btnP.BackColor = System.Drawing.Color.DarkOrange;
             this.btnP.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnP.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnP.Location = new System.Drawing.Point(760, 134);
-            this.btnP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnP.Location = new System.Drawing.Point(570, 109);
             this.btnP.Name = "btnP";
-            this.btnP.Size = new System.Drawing.Size(79, 39);
+            this.btnP.Size = new System.Drawing.Size(59, 32);
             this.btnP.TabIndex = 127;
             this.btnP.Text = "P";
             this.btnP.UseCustomBackColor = true;
@@ -445,14 +432,14 @@
             // 
             // metroLabel1
             // 
+            this.metroLabel1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.BackColor = System.Drawing.Color.Transparent;
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroLabel1.Location = new System.Drawing.Point(997, 418);
-            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.metroLabel1.Location = new System.Drawing.Point(780, 376);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(97, 25);
+            this.metroLabel1.Size = new System.Drawing.Size(95, 25);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroLabel1.TabIndex = 129;
             this.metroLabel1.Text = "Guarnicion";
@@ -465,10 +452,9 @@
             this.btnLimpiar.BackColor = System.Drawing.Color.DarkOrange;
             this.btnLimpiar.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnLimpiar.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLimpiar.Location = new System.Drawing.Point(854, 135);
-            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLimpiar.Location = new System.Drawing.Point(640, 110);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(96, 39);
+            this.btnLimpiar.Size = new System.Drawing.Size(72, 32);
             this.btnLimpiar.TabIndex = 147;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseCustomBackColor = true;
@@ -478,15 +464,15 @@
             // 
             // txtGuarnicion
             // 
+            this.txtGuarnicion.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.txtGuarnicion.BackColor = System.Drawing.Color.Orange;
             // 
             // 
             // 
             this.txtGuarnicion.CustomButton.Image = null;
-            this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(153, 2);
-            this.txtGuarnicion.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGuarnicion.CustomButton.Location = new System.Drawing.Point(110, 2);
             this.txtGuarnicion.CustomButton.Name = "";
-            this.txtGuarnicion.CustomButton.Size = new System.Drawing.Size(71, 71);
+            this.txtGuarnicion.CustomButton.Size = new System.Drawing.Size(57, 57);
             this.txtGuarnicion.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtGuarnicion.CustomButton.TabIndex = 1;
             this.txtGuarnicion.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -494,8 +480,7 @@
             this.txtGuarnicion.CustomButton.Visible = false;
             this.txtGuarnicion.ForeColor = System.Drawing.Color.MidnightBlue;
             this.txtGuarnicion.Lines = new string[0];
-            this.txtGuarnicion.Location = new System.Drawing.Point(997, 447);
-            this.txtGuarnicion.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGuarnicion.Location = new System.Drawing.Point(785, 403);
             this.txtGuarnicion.MaxLength = 32767;
             this.txtGuarnicion.Multiline = true;
             this.txtGuarnicion.Name = "txtGuarnicion";
@@ -506,7 +491,7 @@
             this.txtGuarnicion.SelectionLength = 0;
             this.txtGuarnicion.SelectionStart = 0;
             this.txtGuarnicion.ShortcutsEnabled = true;
-            this.txtGuarnicion.Size = new System.Drawing.Size(227, 76);
+            this.txtGuarnicion.Size = new System.Drawing.Size(170, 62);
             this.txtGuarnicion.TabIndex = 128;
             this.txtGuarnicion.UseCustomBackColor = true;
             this.txtGuarnicion.UseCustomForeColor = true;
@@ -520,10 +505,9 @@
             this.btnM.BackColor = System.Drawing.Color.DarkOrange;
             this.btnM.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnM.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnM.Location = new System.Drawing.Point(576, 185);
-            this.btnM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnM.Location = new System.Drawing.Point(432, 150);
             this.btnM.Name = "btnM";
-            this.btnM.Size = new System.Drawing.Size(79, 39);
+            this.btnM.Size = new System.Drawing.Size(59, 32);
             this.btnM.TabIndex = 154;
             this.btnM.Text = "M";
             this.btnM.UseCustomBackColor = true;
@@ -536,10 +520,9 @@
             this.btnN.BackColor = System.Drawing.Color.DarkOrange;
             this.btnN.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnN.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnN.Location = new System.Drawing.Point(484, 185);
-            this.btnN.Margin = new System.Windows.Forms.Padding(4);
+            this.btnN.Location = new System.Drawing.Point(363, 150);
             this.btnN.Name = "btnN";
-            this.btnN.Size = new System.Drawing.Size(79, 39);
+            this.btnN.Size = new System.Drawing.Size(59, 32);
             this.btnN.TabIndex = 153;
             this.btnN.Text = "N";
             this.btnN.UseCustomBackColor = true;
@@ -552,10 +535,9 @@
             this.btnB.BackColor = System.Drawing.Color.DarkOrange;
             this.btnB.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnB.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnB.Location = new System.Drawing.Point(394, 185);
-            this.btnB.Margin = new System.Windows.Forms.Padding(4);
+            this.btnB.Location = new System.Drawing.Point(296, 150);
             this.btnB.Name = "btnB";
-            this.btnB.Size = new System.Drawing.Size(79, 39);
+            this.btnB.Size = new System.Drawing.Size(59, 32);
             this.btnB.TabIndex = 152;
             this.btnB.Text = "B";
             this.btnB.UseCustomBackColor = true;
@@ -568,10 +550,9 @@
             this.btnV.BackColor = System.Drawing.Color.DarkOrange;
             this.btnV.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnV.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnV.Location = new System.Drawing.Point(303, 185);
-            this.btnV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnV.Location = new System.Drawing.Point(227, 150);
             this.btnV.Name = "btnV";
-            this.btnV.Size = new System.Drawing.Size(79, 39);
+            this.btnV.Size = new System.Drawing.Size(59, 32);
             this.btnV.TabIndex = 151;
             this.btnV.Text = "V";
             this.btnV.UseCustomBackColor = true;
@@ -584,10 +565,9 @@
             this.btnC.BackColor = System.Drawing.Color.DarkOrange;
             this.btnC.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnC.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnC.Location = new System.Drawing.Point(212, 185);
-            this.btnC.Margin = new System.Windows.Forms.Padding(4);
+            this.btnC.Location = new System.Drawing.Point(159, 150);
             this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(79, 39);
+            this.btnC.Size = new System.Drawing.Size(59, 32);
             this.btnC.TabIndex = 150;
             this.btnC.Text = "C";
             this.btnC.UseCustomBackColor = true;
@@ -600,10 +580,9 @@
             this.btnX.BackColor = System.Drawing.Color.DarkOrange;
             this.btnX.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnX.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnX.Location = new System.Drawing.Point(122, 185);
-            this.btnX.Margin = new System.Windows.Forms.Padding(4);
+            this.btnX.Location = new System.Drawing.Point(92, 150);
             this.btnX.Name = "btnX";
-            this.btnX.Size = new System.Drawing.Size(79, 39);
+            this.btnX.Size = new System.Drawing.Size(59, 32);
             this.btnX.TabIndex = 149;
             this.btnX.Text = "X";
             this.btnX.UseCustomBackColor = true;
@@ -616,10 +595,9 @@
             this.btnZ.BackColor = System.Drawing.Color.DarkOrange;
             this.btnZ.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnZ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnZ.Location = new System.Drawing.Point(30, 185);
-            this.btnZ.Margin = new System.Windows.Forms.Padding(4);
+            this.btnZ.Location = new System.Drawing.Point(22, 150);
             this.btnZ.Name = "btnZ";
-            this.btnZ.Size = new System.Drawing.Size(80, 39);
+            this.btnZ.Size = new System.Drawing.Size(60, 32);
             this.btnZ.TabIndex = 148;
             this.btnZ.Text = "Z";
             this.btnZ.UseCustomBackColor = true;
@@ -632,10 +610,9 @@
             this.btnÑ.BackColor = System.Drawing.Color.DarkOrange;
             this.btnÑ.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnÑ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnÑ.Location = new System.Drawing.Point(668, 185);
-            this.btnÑ.Margin = new System.Windows.Forms.Padding(4);
+            this.btnÑ.Location = new System.Drawing.Point(501, 150);
             this.btnÑ.Name = "btnÑ";
-            this.btnÑ.Size = new System.Drawing.Size(80, 39);
+            this.btnÑ.Size = new System.Drawing.Size(60, 32);
             this.btnÑ.TabIndex = 131;
             this.btnÑ.Text = "Ñ";
             this.btnÑ.UseCustomBackColor = true;
@@ -648,10 +625,9 @@
             this.btnL.BackColor = System.Drawing.Color.DarkOrange;
             this.btnL.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnL.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnL.Location = new System.Drawing.Point(762, 185);
-            this.btnL.Margin = new System.Windows.Forms.Padding(4);
+            this.btnL.Location = new System.Drawing.Point(572, 150);
             this.btnL.Name = "btnL";
-            this.btnL.Size = new System.Drawing.Size(79, 39);
+            this.btnL.Size = new System.Drawing.Size(59, 32);
             this.btnL.TabIndex = 146;
             this.btnL.Text = "L";
             this.btnL.UseCustomBackColor = true;
@@ -664,10 +640,9 @@
             this.btnK.BackColor = System.Drawing.Color.DarkOrange;
             this.btnK.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnK.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnK.Location = new System.Drawing.Point(668, 135);
-            this.btnK.Margin = new System.Windows.Forms.Padding(4);
+            this.btnK.Location = new System.Drawing.Point(501, 110);
             this.btnK.Name = "btnK";
-            this.btnK.Size = new System.Drawing.Size(79, 39);
+            this.btnK.Size = new System.Drawing.Size(59, 32);
             this.btnK.TabIndex = 145;
             this.btnK.Text = "K";
             this.btnK.UseCustomBackColor = true;
@@ -680,10 +655,9 @@
             this.btnJ.BackColor = System.Drawing.Color.DarkOrange;
             this.btnJ.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnJ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnJ.Location = new System.Drawing.Point(575, 135);
-            this.btnJ.Margin = new System.Windows.Forms.Padding(4);
+            this.btnJ.Location = new System.Drawing.Point(431, 110);
             this.btnJ.Name = "btnJ";
-            this.btnJ.Size = new System.Drawing.Size(79, 39);
+            this.btnJ.Size = new System.Drawing.Size(59, 32);
             this.btnJ.TabIndex = 144;
             this.btnJ.Text = "J";
             this.btnJ.UseCustomBackColor = true;
@@ -696,10 +670,9 @@
             this.btnH.BackColor = System.Drawing.Color.DarkOrange;
             this.btnH.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnH.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnH.Location = new System.Drawing.Point(483, 135);
-            this.btnH.Margin = new System.Windows.Forms.Padding(4);
+            this.btnH.Location = new System.Drawing.Point(362, 110);
             this.btnH.Name = "btnH";
-            this.btnH.Size = new System.Drawing.Size(79, 39);
+            this.btnH.Size = new System.Drawing.Size(59, 32);
             this.btnH.TabIndex = 143;
             this.btnH.Text = "H";
             this.btnH.UseCustomBackColor = true;
@@ -712,10 +685,9 @@
             this.btnG.BackColor = System.Drawing.Color.DarkOrange;
             this.btnG.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnG.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnG.Location = new System.Drawing.Point(392, 135);
-            this.btnG.Margin = new System.Windows.Forms.Padding(4);
+            this.btnG.Location = new System.Drawing.Point(294, 110);
             this.btnG.Name = "btnG";
-            this.btnG.Size = new System.Drawing.Size(79, 39);
+            this.btnG.Size = new System.Drawing.Size(59, 32);
             this.btnG.TabIndex = 139;
             this.btnG.Text = "G";
             this.btnG.UseCustomBackColor = true;
@@ -728,10 +700,9 @@
             this.btnF.BackColor = System.Drawing.Color.DarkOrange;
             this.btnF.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnF.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnF.Location = new System.Drawing.Point(302, 135);
-            this.btnF.Margin = new System.Windows.Forms.Padding(4);
+            this.btnF.Location = new System.Drawing.Point(226, 110);
             this.btnF.Name = "btnF";
-            this.btnF.Size = new System.Drawing.Size(79, 39);
+            this.btnF.Size = new System.Drawing.Size(59, 32);
             this.btnF.TabIndex = 138;
             this.btnF.Text = "F";
             this.btnF.UseCustomBackColor = true;
@@ -744,10 +715,9 @@
             this.btnD.BackColor = System.Drawing.Color.DarkOrange;
             this.btnD.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnD.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnD.Location = new System.Drawing.Point(211, 135);
-            this.btnD.Margin = new System.Windows.Forms.Padding(4);
+            this.btnD.Location = new System.Drawing.Point(158, 110);
             this.btnD.Name = "btnD";
-            this.btnD.Size = new System.Drawing.Size(79, 39);
+            this.btnD.Size = new System.Drawing.Size(59, 32);
             this.btnD.TabIndex = 136;
             this.btnD.Text = "D";
             this.btnD.UseCustomBackColor = true;
@@ -760,10 +730,9 @@
             this.btnS.BackColor = System.Drawing.Color.DarkOrange;
             this.btnS.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnS.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnS.Location = new System.Drawing.Point(120, 135);
-            this.btnS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnS.Location = new System.Drawing.Point(90, 110);
             this.btnS.Name = "btnS";
-            this.btnS.Size = new System.Drawing.Size(79, 39);
+            this.btnS.Size = new System.Drawing.Size(59, 32);
             this.btnS.TabIndex = 134;
             this.btnS.Text = "S";
             this.btnS.UseCustomBackColor = true;
@@ -776,10 +745,9 @@
             this.btnA.BackColor = System.Drawing.Color.DarkOrange;
             this.btnA.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnA.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnA.Location = new System.Drawing.Point(28, 135);
-            this.btnA.Margin = new System.Windows.Forms.Padding(4);
+            this.btnA.Location = new System.Drawing.Point(21, 110);
             this.btnA.Name = "btnA";
-            this.btnA.Size = new System.Drawing.Size(80, 39);
+            this.btnA.Size = new System.Drawing.Size(60, 32);
             this.btnA.TabIndex = 132;
             this.btnA.Text = "A";
             this.btnA.UseCustomBackColor = true;
@@ -792,10 +760,9 @@
             this.btnO.BackColor = System.Drawing.Color.DarkOrange;
             this.btnO.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnO.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnO.Location = new System.Drawing.Point(762, 86);
-            this.btnO.Margin = new System.Windows.Forms.Padding(4);
+            this.btnO.Location = new System.Drawing.Point(572, 70);
             this.btnO.Name = "btnO";
-            this.btnO.Size = new System.Drawing.Size(79, 39);
+            this.btnO.Size = new System.Drawing.Size(59, 32);
             this.btnO.TabIndex = 126;
             this.btnO.Text = "O";
             this.btnO.UseCustomBackColor = true;
@@ -808,10 +775,9 @@
             this.btnI.BackColor = System.Drawing.Color.DarkOrange;
             this.btnI.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnI.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnI.Location = new System.Drawing.Point(668, 86);
-            this.btnI.Margin = new System.Windows.Forms.Padding(4);
+            this.btnI.Location = new System.Drawing.Point(501, 70);
             this.btnI.Name = "btnI";
-            this.btnI.Size = new System.Drawing.Size(79, 39);
+            this.btnI.Size = new System.Drawing.Size(59, 32);
             this.btnI.TabIndex = 125;
             this.btnI.Text = "I";
             this.btnI.UseCustomBackColor = true;
@@ -824,10 +790,9 @@
             this.btnU.BackColor = System.Drawing.Color.DarkOrange;
             this.btnU.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnU.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnU.Location = new System.Drawing.Point(575, 86);
-            this.btnU.Margin = new System.Windows.Forms.Padding(4);
+            this.btnU.Location = new System.Drawing.Point(431, 70);
             this.btnU.Name = "btnU";
-            this.btnU.Size = new System.Drawing.Size(79, 39);
+            this.btnU.Size = new System.Drawing.Size(59, 32);
             this.btnU.TabIndex = 124;
             this.btnU.Text = "U";
             this.btnU.UseCustomBackColor = true;
@@ -840,10 +805,9 @@
             this.Y.BackColor = System.Drawing.Color.DarkOrange;
             this.Y.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.Y.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Y.Location = new System.Drawing.Point(483, 86);
-            this.Y.Margin = new System.Windows.Forms.Padding(4);
+            this.Y.Location = new System.Drawing.Point(362, 70);
             this.Y.Name = "Y";
-            this.Y.Size = new System.Drawing.Size(79, 39);
+            this.Y.Size = new System.Drawing.Size(59, 32);
             this.Y.TabIndex = 123;
             this.Y.Text = "Y";
             this.Y.UseCustomBackColor = true;
@@ -856,10 +820,9 @@
             this.btnT.BackColor = System.Drawing.Color.DarkOrange;
             this.btnT.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnT.Location = new System.Drawing.Point(392, 86);
-            this.btnT.Margin = new System.Windows.Forms.Padding(4);
+            this.btnT.Location = new System.Drawing.Point(294, 70);
             this.btnT.Name = "btnT";
-            this.btnT.Size = new System.Drawing.Size(79, 39);
+            this.btnT.Size = new System.Drawing.Size(59, 32);
             this.btnT.TabIndex = 122;
             this.btnT.Text = "T";
             this.btnT.UseCustomBackColor = true;
@@ -872,10 +835,9 @@
             this.btnR.BackColor = System.Drawing.Color.DarkOrange;
             this.btnR.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnR.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnR.Location = new System.Drawing.Point(302, 86);
-            this.btnR.Margin = new System.Windows.Forms.Padding(4);
+            this.btnR.Location = new System.Drawing.Point(226, 70);
             this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(79, 39);
+            this.btnR.Size = new System.Drawing.Size(59, 32);
             this.btnR.TabIndex = 121;
             this.btnR.Text = "R";
             this.btnR.UseCustomBackColor = true;
@@ -888,10 +850,9 @@
             this.btnE.BackColor = System.Drawing.Color.DarkOrange;
             this.btnE.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnE.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnE.Location = new System.Drawing.Point(211, 86);
-            this.btnE.Margin = new System.Windows.Forms.Padding(4);
+            this.btnE.Location = new System.Drawing.Point(158, 70);
             this.btnE.Name = "btnE";
-            this.btnE.Size = new System.Drawing.Size(79, 39);
+            this.btnE.Size = new System.Drawing.Size(59, 32);
             this.btnE.TabIndex = 119;
             this.btnE.Text = "E";
             this.btnE.UseCustomBackColor = true;
@@ -904,10 +865,9 @@
             this.btnW.BackColor = System.Drawing.Color.DarkOrange;
             this.btnW.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnW.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnW.Location = new System.Drawing.Point(120, 86);
-            this.btnW.Margin = new System.Windows.Forms.Padding(4);
+            this.btnW.Location = new System.Drawing.Point(90, 70);
             this.btnW.Name = "btnW";
-            this.btnW.Size = new System.Drawing.Size(79, 39);
+            this.btnW.Size = new System.Drawing.Size(59, 32);
             this.btnW.TabIndex = 118;
             this.btnW.Text = "W";
             this.btnW.UseCustomBackColor = true;
@@ -920,10 +880,9 @@
             this.btnQ.BackColor = System.Drawing.Color.DarkOrange;
             this.btnQ.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.btnQ.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnQ.Location = new System.Drawing.Point(28, 86);
-            this.btnQ.Margin = new System.Windows.Forms.Padding(4);
+            this.btnQ.Location = new System.Drawing.Point(21, 70);
             this.btnQ.Name = "btnQ";
-            this.btnQ.Size = new System.Drawing.Size(80, 39);
+            this.btnQ.Size = new System.Drawing.Size(60, 32);
             this.btnQ.TabIndex = 117;
             this.btnQ.Text = "Q";
             this.btnQ.UseCustomBackColor = true;
@@ -933,25 +892,21 @@
             // 
             // txtProducto
             // 
-            this.txtProducto.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtProducto.BackColor = System.Drawing.Color.LavenderBlush;
             // 
             // 
             // 
             this.txtProducto.CustomButton.Image = null;
-            this.txtProducto.CustomButton.Location = new System.Drawing.Point(759, 2);
-            this.txtProducto.CustomButton.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProducto.CustomButton.Location = new System.Drawing.Point(448, 1);
             this.txtProducto.CustomButton.Name = "";
-            this.txtProducto.CustomButton.Size = new System.Drawing.Size(23, 23);
+            this.txtProducto.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtProducto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtProducto.CustomButton.TabIndex = 1;
             this.txtProducto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txtProducto.CustomButton.UseSelectable = true;
             this.txtProducto.CustomButton.Visible = false;
             this.txtProducto.Lines = new string[0];
-            this.txtProducto.Location = new System.Drawing.Point(119, 42);
-            this.txtProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtProducto.Location = new System.Drawing.Point(89, 34);
             this.txtProducto.MaxLength = 32767;
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.PasswordChar = '\0';
@@ -960,20 +915,22 @@
             this.txtProducto.SelectionLength = 0;
             this.txtProducto.SelectionStart = 0;
             this.txtProducto.ShortcutsEnabled = true;
-            this.txtProducto.Size = new System.Drawing.Size(785, 28);
+            this.txtProducto.Size = new System.Drawing.Size(470, 23);
             this.txtProducto.TabIndex = 116;
             this.txtProducto.UseSelectable = true;
             this.txtProducto.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtProducto.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.txtProducto.TextChanged += new System.EventHandler(this.txtProducto_TextChanged);
+            this.txtProducto.Click += new System.EventHandler(this.TxtProducto_Click);
             // 
             // FormCliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1307, 757);
+            this.ClientSize = new System.Drawing.Size(980, 615);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.txtPrecio);
@@ -1024,10 +981,8 @@
             this.Controls.Add(this.pbImagenes);
             this.Controls.Add(this.listProductos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Movable = false;
             this.Name = "FormCliente";
-            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Default;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormCliente_FormClosing);

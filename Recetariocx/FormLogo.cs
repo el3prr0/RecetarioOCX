@@ -41,10 +41,15 @@ namespace Recetariocx
             {
                 
                 var imagenBit = ImagenesHelper.ResizeImage(new Bitmap(BuscarImagen.FileName), 400, 200);
-                pbLogo.Image.Dispose();
-                pbLogo.Image = null;
+
+                if (pbLogo.Image != null) {
+                    pbLogo.Image.Dispose();
+                    pbLogo.Image = null;
+                }
+                
                 if (File.Exists(imagenpath))
                 {
+                   
                     File.Delete(imagenpath);
                 }
                 pbLogo.Image = imagenBit;

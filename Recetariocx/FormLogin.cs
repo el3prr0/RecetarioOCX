@@ -58,11 +58,15 @@ namespace Recetariocx
                     else
                     {
                         MetroFramework.MetroMessageBox.Show(this, "Ingresar Contrase o Usuario valido", "Avertencia");
+                        txtPassword.Text = "";
+                        txtPassword.Focus();
                     }
                 }
                 else
                 {
                     MetroFramework.MetroMessageBox.Show(this, "Ingresar Contrase o Usuario valido", "Avertencia");
+                    txtPassword.Text = "";
+                    txtPassword.Focus();
                 }
                 
 
@@ -78,6 +82,50 @@ namespace Recetariocx
             if ((int)e.KeyChar == (int)Keys.Enter)
             {
                 BtnIniciar_Click(null, null);
+            }
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+            //activa el tecladovirtual del textinsumos
+            txtUsuario.TextEntryMode = TextBoxWKeyBoard.TexBoxWKeyBoard.EntryMode.Standard;
+        }
+
+        private void TxtUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtPassword_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtPassword_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                BtnIniciar_Click(null, null);
+            }
+        }
+
+        private void Btnborrar_Click(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text.Length > 0)
+            {
+                txtUsuario.Text = txtUsuario.Text.TrimEnd(txtUsuario.Text[txtUsuario.Text.Length - 1]);
+
+                txtUsuario.Focus();
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.Text.Length > 0)
+            {
+                txtPassword.Text = txtPassword.Text.TrimEnd(txtPassword.Text[txtPassword.Text.Length - 1]);
+
+                txtPassword.Focus();
             }
         }
     }
